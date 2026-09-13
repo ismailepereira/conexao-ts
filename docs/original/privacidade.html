@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="canonical" href="https://conexaots.com/privacidade" />
+  <meta name="robots" content="index, follow" />
+  <title>Política de Privacidade — Conexão Tecnologia e Serviços</title>
+  <meta name="description" content="Política de Privacidade e Proteção de Dados da Conexão Tecnologia e Serviços, em conformidade com a LGPD (Lei 13.709/2018)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{--teal:#1BC9A8;--bg:#060608;--card:#0e0e12;--border:rgba(255,255,255,.08);--text:#e8e8ec;--muted:#7a7a8a;--fh:'Bricolage Grotesque',sans-serif;--fb:'Plus Jakarta Sans',sans-serif;--ease:.32s cubic-bezier(.4,0,.2,1)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{font-size:16px;overflow-x:hidden}
+    body{background:var(--bg);color:var(--text);font-family:var(--fb);line-height:1.7;min-height:100vh}
+    a{color:var(--teal);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* ── HEADER ── */
+    #hdr{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 0;background:rgba(4,4,4,.98);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav{display:flex;align-items:center;justify-content:space-between;max-width:860px;margin:0 auto;padding:0 1.5rem}
+    .nav-logo{display:flex;align-items:center;gap:.75rem}
+    .nav-logo img{height:38px;width:auto}
+    .nav-brand{font-family:var(--fh);font-size:.9rem;font-weight:700;color:#fff}
+    .nav-brand span{display:block;font-size:.58rem;font-weight:400;color:rgba(255,255,255,.5);letter-spacing:.1em;text-transform:uppercase}
+    .nav-back{font-size:.8rem;color:var(--muted);padding:.4rem .8rem;border-radius:7px;border:1px solid var(--border);transition:var(--ease)}
+    .nav-back:hover{color:#fff;border-color:rgba(255,255,255,.2);text-decoration:none}
+
+    /* ── CONTEÚDO ── */
+    .wrap{max-width:860px;margin:0 auto;padding:7rem 1.5rem 5rem}
+    .page-label{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);display:flex;align-items:center;gap:.5rem;margin-bottom:1rem}
+    .page-label::before{content:'';width:18px;height:2px;background:var(--teal)}
+    h1{font-family:var(--fh);font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:.75rem}
+    .meta{font-size:.82rem;color:var(--muted);margin-bottom:3rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+
+    /* ── SEÇÕES ── */
+    .section{margin-bottom:2.5rem}
+    h2{font-family:var(--fh);font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:.85rem;padding-left:.85rem;border-left:3px solid var(--teal)}
+    p{color:rgba(255,255,255,.78);font-size:.92rem;margin-bottom:.85rem}
+    p:last-child{margin-bottom:0}
+    ul,ol{padding-left:1.4rem;color:rgba(255,255,255,.78);font-size:.92rem;display:flex;flex-direction:column;gap:.45rem}
+    ul{list-style:disc}
+    ol{list-style:decimal}
+    li{line-height:1.65}
+
+    /* ── DESTAQUES ── */
+    .highlight{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.25rem 1.5rem;margin:1.25rem 0}
+    .highlight strong{color:#fff}
+
+    /* ── TABELA ── */
+    .tbl-wrap{overflow-x:auto;margin:1rem 0}
+    table{width:100%;border-collapse:collapse;font-size:.85rem}
+    th{background:rgba(27,201,168,.08);color:var(--teal);font-weight:600;text-align:left;padding:.7rem 1rem;border-bottom:1px solid rgba(27,201,168,.2)}
+    td{padding:.7rem 1rem;border-bottom:1px solid var(--border);color:rgba(255,255,255,.75);vertical-align:top}
+    tr:last-child td{border-bottom:none}
+
+    /* ── CONTATO ── */
+    .contact-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.5rem;display:flex;flex-direction:column;gap:.6rem}
+    .contact-row{display:flex;align-items:flex-start;gap:.75rem;font-size:.88rem}
+    .contact-ico{width:32px;height:32px;border-radius:8px;background:rgba(27,201,168,.1);border:1px solid rgba(27,201,168,.2);display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0}
+    .contact-lbl{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.15rem}
+    .contact-val{color:#fff;font-weight:500}
+
+    /* ── RODAPÉ ── */
+    footer{text-align:center;padding:2rem 1rem;border-top:1px solid var(--border);font-size:.78rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+
+<header id="hdr">
+  <nav class="nav">
+    <a href="/" class="nav-logo" style="text-decoration:none">
+      <img src="logo_transparente.png" alt="Conexão Tecnologia" />
+      <div class="nav-brand">Conexão<span>Tecnologia e Serviços</span></div>
+    </a>
+    <a href="/" class="nav-back">← Voltar ao site</a>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <div class="page-label">Legal</div>
+  <h1>Política de Privacidade</h1>
+  <div class="meta">
+    Última atualização: 07 de abril de 2026 &nbsp;·&nbsp;
+    Em conformidade com a <strong style="color:#fff">LGPD — Lei nº 13.709/2018</strong>
+  </div>
+
+  <!-- 1 -->
+  <div class="section">
+    <h2>1. Quem somos</h2>
+    <p>
+      A <strong style="color:#fff">Conexão Tecnologia e Serviços</strong> é uma empresa
+      especializada em AI Agents, Micro SaaS, Cloud Computing e Consultoria em TI,
+      com sede em Rondonópolis/MT, Brasil.
+    </p>
+    <p>
+      Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e
+      protegemos os dados pessoais dos visitantes e clientes do site
+      <a href="https://conexaots.com">conexaots.com</a>, em conformidade com a
+      Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).
+    </p>
+  </div>
+
+  <!-- 2 -->
+  <div class="section">
+    <h2>2. Dados que coletamos</h2>
+    <p>Coletamos apenas os dados necessários para a prestação dos nossos serviços:</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>Dado</th><th>Finalidade</th><th>Base legal (LGPD)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Nome completo</td><td>Identificação e comunicação</td><td>Execução de contrato / Legítimo interesse</td></tr>
+          <tr><td>E-mail</td><td>Resposta a contatos e diagnósticos</td><td>Execução de contrato / Consentimento</td></tr>
+          <tr><td>Telefone / WhatsApp</td><td>Contato comercial</td><td>Consentimento</td></tr>
+          <tr><td>Nome da empresa e segmento</td><td>Personalização do atendimento</td><td>Legítimo interesse</td></tr>
+          <tr><td>Descrição do desafio</td><td>Elaboração de diagnóstico gratuito</td><td>Consentimento</td></tr>
+          <tr><td>Dados de navegação (IP, User Agent)</td><td>Segurança e métricas de acesso</td><td>Legítimo interesse</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:.85rem">
+      Não coletamos dados sensíveis conforme definido no Art. 5º, II da LGPD,
+      nem dados de menores de 18 anos.
+    </p>
+  </div>
+
+  <!-- 3 -->
+  <div class="section">
+    <h2>3. Como usamos seus dados</h2>
+    <ul>
+      <li>Responder solicitações de contato e diagnóstico gratuito</li>
+      <li>Enviar informações sobre nossos serviços quando solicitado</li>
+      <li>Melhorar a experiência de navegação e o desempenho do site</li>
+      <li>Cumprir obrigações legais e regulatórias</li>
+      <li>Prevenir fraudes e garantir a segurança da plataforma</li>
+    </ul>
+    <div class="highlight">
+      <strong>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros
+      para fins de marketing.</strong>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="section">
+    <h2>4. Compartilhamento de dados</h2>
+    <p>Seus dados podem ser compartilhados apenas nas seguintes situações:</p>
+    <ul>
+      <li><strong style="color:#fff">Prestadores de serviço:</strong> empresas que nos auxiliam na operação do site (hospedagem, e-mail), sempre sob acordos de confidencialidade e proteção de dados</li>
+      <li><strong style="color:#fff">Obrigação legal:</strong> quando exigido por lei, ordem judicial ou autoridade competente</li>
+      <li><strong style="color:#fff">Proteção de direitos:</strong> para exercer ou defender direitos legais da empresa</li>
+    </ul>
+  </div>
+
+  <!-- 5 -->
+  <div class="section">
+    <h2>5. Armazenamento e segurança</h2>
+    <p>
+      Os dados são armazenados em servidores seguros (Hostinger, Brasil/UE) com
+      proteção por senha, criptografia em trânsito (HTTPS/TLS) e acesso restrito
+      a colaboradores autorizados.
+    </p>
+    <p>
+      Os dados são mantidos pelo tempo necessário para cumprir as finalidades
+      descritas nesta política ou conforme exigido por lei — em geral, por até
+      <strong style="color:#fff">5 anos</strong> após o último contato.
+    </p>
+  </div>
+
+  <!-- 6 -->
+  <div class="section">
+    <h2>6. Seus direitos (LGPD — Art. 18)</h2>
+    <p>Você tem os seguintes direitos em relação aos seus dados pessoais:</p>
+    <ol>
+      <li><strong style="color:#fff">Confirmação e acesso:</strong> saber se tratamos seus dados e acessá-los</li>
+      <li><strong style="color:#fff">Correção:</strong> solicitar a correção de dados incompletos, inexatos ou desatualizados</li>
+      <li><strong style="color:#fff">Anonimização ou eliminação:</strong> de dados desnecessários ou tratados em desconformidade</li>
+      <li><strong style="color:#fff">Portabilidade:</strong> receber seus dados em formato estruturado</li>
+      <li><strong style="color:#fff">Revogação do consentimento:</strong> a qualquer momento, sem prejuízo das operações anteriores</li>
+      <li><strong style="color:#fff">Oposição:</strong> se discordar do tratamento realizado com base em legítimo interesse</li>
+      <li><strong style="color:#fff">Eliminação:</strong> dos dados tratados com base em consentimento</li>
+    </ol>
+    <p style="margin-top:.85rem">
+      Para exercer qualquer um desses direitos, entre em contato pelo e-mail abaixo.
+      Responderemos em até <strong style="color:#fff">15 dias úteis</strong>.
+    </p>
+  </div>
+
+  <!-- 7 -->
+  <div class="section">
+    <h2>7. Cookies e rastreamento</h2>
+    <p>
+      Utilizamos cookies de sessão estritamente necessários para o funcionamento
+      do painel administrativo. Não utilizamos cookies de rastreamento de terceiros,
+      pixels de publicidade ou ferramentas de analytics externas como Google Analytics.
+    </p>
+    <p>
+      Você pode configurar seu navegador para recusar cookies, mas isso pode
+      afetar a funcionalidade de algumas áreas do site.
+    </p>
+  </div>
+
+  <!-- 8 -->
+  <div class="section">
+    <h2>8. Integrações com terceiros</h2>
+    <p>
+      O site pode integrar-se a plataformas de terceiros (Meta/Instagram, LinkedIn)
+      para distribuição de conteúdo. Essas plataformas possuem suas próprias
+      políticas de privacidade, que recomendamos consultar:
+    </p>
+    <ul>
+      <li><a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Política de Privacidade da Meta</a></li>
+      <li><a href="https://www.linkedin.com/legal/privacy-policy" target="_blank" rel="noopener">Política de Privacidade do LinkedIn</a></li>
+    </ul>
+  </div>
+
+  <!-- 9 -->
+  <div class="section">
+    <h2>9. Alterações nesta política</h2>
+    <p>
+      Podemos atualizar esta Política de Privacidade periodicamente. A data de
+      "última atualização" no topo da página indica quando ocorreu a revisão mais
+      recente. Em caso de alterações relevantes, notificaremos através do site.
+    </p>
+  </div>
+
+  <!-- 10 -->
+  <div class="section">
+    <h2>10. Encarregado de Dados (DPO) e Contato</h2>
+    <p>
+      Para dúvidas, solicitações relacionadas aos seus dados pessoais ou para
+      exercer seus direitos previstos na LGPD, entre em contato:
+    </p>
+    <div class="contact-card" style="margin-top:1rem">
+      <div class="contact-row">
+        <div class="contact-ico">🏢</div>
+        <div>
+          <div class="contact-lbl">Empresa</div>
+          <div class="contact-val">Conexão Tecnologia e Serviços</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-ico">📍</div>
+        <div>
+          <div class="contact-lbl">Endereço</div>
+          <div class="contact-val">Rondonópolis, Mato Grosso — Brasil</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-ico">✉️</div>
+        <div>
+          <div class="contact-lbl">E-mail para solicitações de dados</div>
+          <div class="contact-val"><a href="mailto:privacidade@conexaots.com">privacidade@conexaots.com</a></div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-ico">🌐</div>
+        <div>
+          <div class="contact-lbl">Site</div>
+          <div class="contact-val"><a href="https://conexaots.com">conexaots.com</a></div>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:1rem;font-size:.82rem;color:var(--muted)">
+      Caso não obtenha resposta satisfatória, você tem o direito de peticionar
+      à <strong style="color:#fff">Autoridade Nacional de Proteção de Dados (ANPD)</strong>
+      em <a href="https://www.gov.br/anpd" target="_blank" rel="noopener">gov.br/anpd</a>.
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Conexão Tecnologia e Serviços · Rondonópolis/MT ·
+  <a href="/">Voltar ao site</a>
+</footer>
+
+</body>
+</html>

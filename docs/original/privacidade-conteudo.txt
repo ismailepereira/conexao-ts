@@ -1,0 +1,126 @@
+=== META
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="index, follow" />
+<meta name="description" content="Política de Privacidade e Proteção de Dados da Conexão Tecnologia e Serviços, em conformidade com a LGPD (Lei 13.709/2018)." />
+=== JSON-LD
+
+=== TEXTO
+                Política de Privacidade — Conexão Tecnologia e Serviços
+                        [header #hdr]
+                        [nav .nav]
+                        </>
+                        (img logo_transparente.png alt=Conexão Tecnologia)
+                        Conexão
+                        Tecnologia e Serviços
+                        </> ← Voltar ao site
+                        [main .wrap]
+                        Legal
+                        <H1> Política de Privacidade
+                        Última atualização: 07 de abril de 2026 · Em conformidade com a
+                        LGPD — Lei nº 13.709/2018
+                        <H2> 1. Quem somos
+                        A
+                        Conexão Tecnologia e Serviços
+                        é uma empresa especializada em AI Agents, Micro SaaS, Cloud Computing e Consultoria em TI, com sede em Rondonópolis/MT, Brasil.
+                        Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos os dados pessoais dos visitantes e clientes do site
+                        <https://conexaots.com> conexaots.com
+                        , em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).
+                        <H2> 2. Dados que coletamos
+                        Coletamos apenas os dados necessários para a prestação dos nossos serviços:
+                        Dado
+                        Finalidade
+                        Base legal (LGPD)
+                        Nome completo
+                        Identificação e comunicação
+                        Execução de contrato / Legítimo interesse
+                        E-mail
+                        Resposta a contatos e diagnósticos
+                        Execução de contrato / Consentimento
+                        Telefone / WhatsApp
+                        Contato comercial
+                        Consentimento
+                        Nome da empresa e segmento
+                        Personalização do atendimento
+                        Legítimo interesse
+                        Descrição do desafio
+                        Elaboração de diagnóstico gratuito
+                        Consentimento
+                        Dados de navegação (IP, User Agent)
+                        Segurança e métricas de acesso
+                        Legítimo interesse
+                        Não coletamos dados sensíveis conforme definido no Art. 5º, II da LGPD, nem dados de menores de 18 anos.
+                        <H2> 3. Como usamos seus dados
+                        Responder solicitações de contato e diagnóstico gratuito
+                        Enviar informações sobre nossos serviços quando solicitado
+                        Melhorar a experiência de navegação e o desempenho do site
+                        Cumprir obrigações legais e regulatórias
+                        Prevenir fraudes e garantir a segurança da plataforma
+                        Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros para fins de marketing.
+                        <H2> 4. Compartilhamento de dados
+                        Seus dados podem ser compartilhados apenas nas seguintes situações:
+                        Prestadores de serviço:
+                        empresas que nos auxiliam na operação do site (hospedagem, e-mail), sempre sob acordos de confidencialidade e proteção de dados
+                        Obrigação legal:
+                        quando exigido por lei, ordem judicial ou autoridade competente
+                        Proteção de direitos:
+                        para exercer ou defender direitos legais da empresa
+                        <H2> 5. Armazenamento e segurança
+                        Os dados são armazenados em servidores seguros (Hostinger, Brasil/UE) com proteção por senha, criptografia em trânsito (HTTPS/TLS) e acesso restrito a colaboradores autorizados.
+                        Os dados são mantidos pelo tempo necessário para cumprir as finalidades descritas nesta política ou conforme exigido por lei — em geral, por até
+                        5 anos
+                        após o último contato.
+                        <H2> 6. Seus direitos (LGPD — Art. 18)
+                        Você tem os seguintes direitos em relação aos seus dados pessoais:
+                        Confirmação e acesso:
+                        saber se tratamos seus dados e acessá-los
+                        Correção:
+                        solicitar a correção de dados incompletos, inexatos ou desatualizados
+                        Anonimização ou eliminação:
+                        de dados desnecessários ou tratados em desconformidade
+                        Portabilidade:
+                        receber seus dados em formato estruturado
+                        Revogação do consentimento:
+                        a qualquer momento, sem prejuízo das operações anteriores
+                        Oposição:
+                        se discordar do tratamento realizado com base em legítimo interesse
+                        Eliminação:
+                        dos dados tratados com base em consentimento
+                        Para exercer qualquer um desses direitos, entre em contato pelo e-mail abaixo. Responderemos em até
+                        15 dias úteis
+                        .
+                        <H2> 7. Cookies e rastreamento
+                        Utilizamos cookies de sessão estritamente necessários para o funcionamento do painel administrativo. Não utilizamos cookies de rastreamento de terceiros, pixels de publicidade ou ferramentas de analytics externas como Google Analytics.
+                        Você pode configurar seu navegador para recusar cookies, mas isso pode afetar a funcionalidade de algumas áreas do site.
+                        <H2> 8. Integrações com terceiros
+                        O site pode integrar-se a plataformas de terceiros (Meta/Instagram, LinkedIn) para distribuição de conteúdo. Essas plataformas possuem suas próprias políticas de privacidade, que recomendamos consultar:
+                        <https://www.facebook.com/privacy/policy/> Política de Privacidade da Meta
+                        <https://www.linkedin.com/legal/privacy-policy> Política de Privacidade do LinkedIn
+                        <H2> 9. Alterações nesta política
+                        Podemos atualizar esta Política de Privacidade periodicamente. A data de "última atualização" no topo da página indica quando ocorreu a revisão mais recente. Em caso de alterações relevantes, notificaremos através do site.
+                        <H2> 10. Encarregado de Dados (DPO) e Contato
+                        Para dúvidas, solicitações relacionadas aos seus dados pessoais ou para exercer seus direitos previstos na LGPD, entre em contato:
+                        🏢
+                        Empresa
+                        Conexão Tecnologia e Serviços
+                        📍
+                        Endereço
+                        Rondonópolis, Mato Grosso — Brasil
+                        ✉️
+                        E-mail para solicitações de dados
+                        <mailto:privacidade@conexaots.com> privacidade@conexaots.com
+                        🌐
+                        Site
+                        <https://conexaots.com> conexaots.com
+                        Caso não obtenha resposta satisfatória, você tem o direito de peticionar à
+                        Autoridade Nacional de Proteção de Dados (ANPD)
+                        em
+                        <https://www.gov.br/anpd> gov.br/anpd
+                        .
+                        [footer ]
+                        © 2026 Conexão Tecnologia e Serviços · Rondonópolis/MT ·
+                        </> Voltar ao site
+=== JS: fetch/api/endpoints
+
+
+=== JS: strings de conteudo (posts/overlays) amostra

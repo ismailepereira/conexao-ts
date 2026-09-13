@@ -1,0 +1,86 @@
+<dialog class="dialogo" id="dialogo-diagnostico" aria-labelledby="dialogo-titulo">
+  <div class="dialogo__rolagem">
+    <div class="dialogo__topo">
+      <div>
+        <h2 id="dialogo-titulo">Diagnóstico Gratuito — 30 minutos</h2>
+        <p>Preencha e entraremos em contato para agendar sua sessão</p>
+      </div>
+      <button class="dialogo__fechar" type="button" data-fecha-dialogo aria-label="Fechar"><iconify-icon icon="solar:close-circle-linear" width="20"></iconify-icon></button>
+    </div>
+
+    <div class="dialogo__corpo">
+      <form id="form-diagnostico" novalidate>
+        <div class="form-grade">
+          <div class="campo">
+            <label for="diag-nome">Nome <span class="req">*</span></label>
+            <input id="diag-nome" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required>
+          </div>
+          <div class="campo">
+            <label for="diag-empresa">Empresa</label>
+            <input id="diag-empresa" name="empresa" type="text" placeholder="Sua empresa" autocomplete="organization">
+          </div>
+          <div class="campo">
+            <label for="diag-email">E-mail <span class="req">*</span></label>
+            <input id="diag-email" name="email" type="email" placeholder="seu@email.com" autocomplete="email" required>
+          </div>
+          <div class="campo">
+            <label for="diag-tel">WhatsApp <span class="req">*</span></label>
+            <input id="diag-tel" name="telefone" type="tel" inputmode="numeric" placeholder="(65) 9 0000-0000" autocomplete="tel-national" required>
+          </div>
+          <div class="campo campo--cheio">
+            <label for="diag-segmento">Segmento da empresa</label>
+            <select id="diag-segmento" name="segmento">
+              <option value="">Selecione...</option>
+              <option>Agronegócio</option>
+              <option>Construção Civil</option>
+              <option>Escritório Jurídico</option>
+              <option>Barbearia ou Salão</option>
+              <option>Comércio e Varejo</option>
+              <option>Indústria</option>
+              <option>Prestação de Serviços</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="campo campo--cheio">
+            <label for="diag-desafio">Qual é o principal desafio da sua operação hoje?</label>
+            <textarea id="diag-desafio" name="desafio" placeholder="Ex: processos manuais, falta de controle, dificuldade para atender clientes..."></textarea>
+          </div>
+          <div class="campo campo--cheio">
+            <label for="diag-origem">Como nos encontrou?</label>
+            <select id="diag-origem" name="origem">
+              <option value="">Selecione...</option>
+              <option>Google / Pesquisa online</option>
+              <option>WhatsApp</option>
+              <option>Indicação de alguém</option>
+              <option>Instagram</option>
+              <option>LinkedIn</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="campo campo--isca" aria-hidden="true">
+            <label for="diag-site">Site</label>
+            <input id="diag-site" name="site" type="text" tabindex="-1" autocomplete="off">
+          </div>
+        </div>
+        <button class="btn btn-3d btn--g" type="submit" style="width:100%">Solicitar diagnóstico gratuito <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></button>
+        <p class="form-aviso">Ao enviar, você concorda com a nossa <a href="{{base}}privacidade.html">Política de Privacidade</a>.</p>
+        <div class="form-status" role="status" aria-live="polite" hidden></div>
+      </form>
+
+      <div class="sucesso" id="diagnostico-sucesso" hidden>
+        <div class="sucesso__ic"><iconify-icon icon="solar:check-circle-bold" width="28"></iconify-icon></div>
+        <h3>Diagnóstico solicitado com sucesso!</h3>
+        <p>Recebemos sua solicitação. Veja o que acontece agora:</p>
+        <ol>
+          <li><b>1</b><div><strong>Análise da solicitação</strong><span>Revisamos seu desafio e preparamos perguntas para a sessão.</span></div></li>
+          <li><b>2</b><div><strong>Contato em até 24h</strong><span>Entramos em contato pelo WhatsApp para agendar a sessão de 30 minutos.</span></div></li>
+          <li><b>3</b><div><strong>Diagnóstico gratuito</strong><span>Sessão de 30 min: mapeamos seus gargalos e apresentamos as soluções certas.</span></div></li>
+        </ol>
+        <div class="sucesso__rodape">
+          <p>Prefere agilizar? Nos chame agora pelo WhatsApp.</p>
+          <a class="btn btn-3d" data-wa href="https://wa.me/5565981172676?text=Ol%C3%A1!%20Acabei%20de%20solicitar%20um%20diagn%C3%B3stico%20gratuito%20pelo%20site." target="_blank" rel="noopener">Chamar no WhatsApp <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</dialog>

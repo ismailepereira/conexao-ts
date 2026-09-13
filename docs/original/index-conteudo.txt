@@ -1,0 +1,735 @@
+=== META
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1BC9A8">
+<meta name="description" content="Conexão Tecnologia e Serviços — AI Agents, Micro SaaS, Cloud Computing e Consultoria em TI. Transformamos desafios operacionais em soluções digitais que geram resultado real. Diagnóstico gratuito." />
+<meta property="og:type"        content="website" />
+<meta property="og:url"         content="https://conexaots.com/" />
+<meta property="og:title"       content="Conexão Tecnologia e Serviços | AI Agents e Sistemas sob Medida" />
+<meta property="og:description" content="Tecnologia que resolve de verdade — sem promessa, sem enrolação. AI Agents, Micro SaaS, Cloud e Consultoria em TI. Diagnóstico gratuito." />
+<meta property="og:image"       content="https://conexaots.com/og-image.jpg" />
+<meta property="og:locale"      content="pt_BR" />
+<meta property="og:site_name"   content="Conexão Tecnologia e Serviços" />
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="Conexão Tecnologia e Serviços | AI Agents e Sistemas sob Medida" />
+<meta name="twitter:description" content="Tecnologia que resolve de verdade. AI Agents, Micro SaaS, Cloud e Consultoria em TI. Diagnóstico gratuito." />
+<meta name="twitter:image"       content="https://conexaots.com/og-image.jpg" />
+=== JSON-LD
+{
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization","LocalBusiness"],
+        "@id": "https://conexaots.com/#organization",
+        "name": "Conexão Tecnologia e Serviços",
+        "url": "https://conexaots.com",
+        "logo": "https://conexaots.com/logo_transparente.png",
+        "image": "https://conexaots.com/og-image.jpg",
+        "description": "AI Agents, Micro SaaS, Cloud Computing e Consultoria em TI. Transformamos desafios operacionais em soluções digitais que geram resultado real.",
+        "telephone": "+55-65-98117-2676",
+        "email": "itamar@conexaots.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "BR"
+        },
+        "areaServed": {"@type":"Country","name":"Brasil"},
+        "sameAs": ["https://wa.me/5565981172676"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços de Tecnologia",
+          "itemListElement": [
+            {"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Agents","description":"Agentes de inteligência artificial personalizados para automação de processos empresariais."}},
+            {"@type":"Offer","itemOffered":{"@type":"Service","name":"Micro SaaS","description":"Sistemas sob medida desenvolvidos para resolver problemas específicos de cada negócio."}},
+            {"@type":"Offer","itemOffered":{"@type":"Service","name":"Cloud Computing","description":"Infraestrutura em nuvem segura, escalável e com suporte especializado."}},
+            {"@type":"Offer","itemOffered":{"@type":"Service","name":"Consultoria em TI","description":"Diagnóstico e roadmap tecnológico alinhado à estratégia e orçamento da empresa."}}
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://conexaots.com/#website",
+        "url": "https://conexaots.com",
+        "name": "Conexão Tecnologia e Serviços",
+        "publisher": {"@id":"https://conexaots.com/#organization"}
+      }
+    ]
+  }
+=== TEXTO
+                        Conexão Tecnologia e Serviços | AI Agents, Micro SaaS e Automação para Empresas
+                        [header #hdr]
+                        [nav .nav]
+                        (img logo_transparente.png alt=Conexão Tecnologia e Serviços)
+                        CONEXÃO
+                        Tecnologia e Serviços
+                        Home
+                        [div #nav-svc-drop .nav-has-drop]
+                        Serviços
+                        AI Agents
+                        Micro SaaS
+                        Cloud Computing
+                        Consultoria em TI
+                        </blog> Blog
+                        Contato
+                        <https://wa.me/5565981172676?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Conex%C3%A3o%20e%20gostaria%20de%20conhecer%20as%20solu%C3%A7%C3%B5es.> Falar conosco
+                        [div #mob-menu]
+                        Home
+                        Serviços (ver todos)
+                        AI Agents
+                        Micro SaaS
+                        Cloud Computing
+                        Consultoria em TI
+                        </blog> Blog
+                        Contato
+                        <https://wa.me/5565981172676> Falar conosco
+                        [main ]
+                        [section #tab-home .tab-pane]
+                        Soluções reais para empresas orientadas a resultado
+                        <H1> Tecnologia que
+                        resolve de verdade
+                        — sem promessa, sem enrolação
+                        AI Agents, sistemas sob medida e cloud para empresas que precisam de resultado, não de apresentação bonita. Atendimento direto, sem intermediários.
+                        Diagnóstico gratuito →
+                        Ver soluções
+                        Estratégico
+                        Tecnologia alinhada ao seu negócio →
+                        Assertivo
+                        Solução certa, sem desperdício →
+                        Personalizado
+                        Desenvolvido para a sua realidade →
+                        (img logo_transparente.png alt=Conexão — ícone)
+                        Agentes de IA
+                        Cloud Computing
+                        Micro SaaS
+                        Consultoria em TI
+                        Setores que já atendemos
+                        Agronegócio
+                        Construção Civil
+                        Escritórios Jurídicos
+                        Barbearias e Salões
+                        Comércio e Varejo
+                        <H3> Diagnóstico Tecnológico Gratuito — 30 minutos
+                        Mapeamos os gargalos da sua operação e mostramos quais tecnologias geram mais impacto. Sem compromisso, sem enrolação.
+                        Agendar agora →
+                        [section ]
+                        Diferenciais
+                        <H2> Por que nos
+                        escolher
+                        01
+                        Atendimento direto
+                        Você fala diretamente com quem vai desenvolver. Sem intermediários, sem jogo de telefone.
+                        02
+                        Entrega rápida
+                        Primeiras versões funcionais em dias, não meses. Você vê resultado antes de qualquer compromisso maior.
+                        03
+                        Tecnologia certa
+                        Não vendemos ferramenta. Mapeamos o problema e escolhemos a solução que faz sentido para o seu negócio.
+                        04
+                        Stack moderna
+                        Trabalhamos com as melhores ferramentas do mercado — IA, automação, APIs robustas — sem dependência de sistemas legados.
+                        05
+                        Suporte pós-entrega
+                        O projeto não termina na entrega. Ficamos disponíveis para ajustes, evoluções e suporte contínuo.
+                        06
+                        Resultado mensurável
+                        Definimos métricas de sucesso antes de começar. Você sabe o que esperar e quando esperar.
+                        [section ]
+                        Sobre a Conexão
+                        <H2> Tecnologia de resultado,
+                        sem enrolação
+                        Somos uma empresa de tecnologia especializada em transformar desafios operacionais em soluções digitais que realmente funcionam no dia a dia das empresas — do agronegócio à advocacia, da construção civil ao comércio.
+                        Trabalhamos com atenção ao detalhe, comunicação direta e foco total em resultado. Nosso compromisso é simples: tecnologia que serve ao negócio — não o contrário.
+                        100% remoto
+                        Atendemos todo o Brasil
+                        4 serviços
+                        Especializados
+                        Direto
+                        Sem intermediários
+                        Diagnóstico antes de qualquer proposta
+                        Nunca propomos solução sem entender o problema. Começamos sempre ouvindo.
+                        Atendimento direto, sem terceiros
+                        Você fala diretamente com quem desenvolve. Sem jogo de telefone, sem retrabalho.
+                        Resultado mensurável
+                        Definimos métricas de sucesso antes de começar. Você sabe o que esperar e quando.
+                        Tecnologias
+                        <H3> Stack que utilizamos nos projetos
+                        [div #stackGrid .stack-grid]
+                        Claude
+                        Agentes de IA
+                        OpenAI
+                        LLMs GPT
+                        React
+                        Frontend
+                        Node.js
+                        Backend JS
+                        Android
+                        Mobile
+                        iOS
+                        Mobile Apple
+                        n8n
+                        Automação
+                        WhatsApp API
+                        Mensageria
+                        PHP
+                        Backend
+                        MySQL
+                        Banco relacional
+                        PostgreSQL
+                        Banco avançado
+                        Google Cloud
+                        Infraestrutura
+                        Meta API
+                        Social & Ads
+                        Gemini
+                        LLM Google
+                        [section ]
+                        Modelos de engajamento
+                        <H2> Formas de trabalhar
+                        conosco
+                        Cada empresa tem um momento diferente. Escolha o modelo que melhor se encaixa na sua necessidade.
+                        Projeto Pontual
+                        Escopo definido, prazo claro e entrega objetiva. Ideal para quem precisa resolver um problema específico sem vínculo contínuo.
+                        Quando usar
+                        Automação pontual, integração de sistemas, MVP, landing page ou ferramenta interna.
+                        Popular
+                        Consultoria Estratégica
+                        Diagnóstico profundo da operação, mapeamento de oportunidades e roadmap de tecnologia personalizado para o seu negócio.
+                        Quando usar
+                        Empresa que quer crescer com tecnologia mas não sabe por onde começar ou o que priorizar.
+                        Parceiro Técnico
+                        Atuamos como time de tecnologia da sua empresa — disponíveis de forma contínua para desenvolver, manter e evoluir seus sistemas.
+                        Quando usar
+                        Empresa em crescimento que precisa de tecnologia confiável sem o custo de um time interno.
+                        Agendar diagnóstico gratuito →
+                        [section #solucoes]
+                        O que fazemos
+                        <H2> Nossas
+                        Soluções
+                        Clique em um serviço para conhecer todos os detalhes.
+                        [article .svc-card]
+                        Novo
+                        <H3> AI Agents
+                        Automatize processos e tome decisões com inteligência. Agentes de IA personalizados que trabalham 24/7.
+                        Atendimento automatizado via WhatsApp
+                        Qualificação e nutrição de leads
+                        Integração com ERPs e CRMs
+                        RAG sobre documentos internos
+                        Ver detalhes →
+                        [article .svc-card]
+                        Popular
+                        <H3> Micro SaaS
+                        Transforme uma dor de mercado em receita recorrente. Produtos digitais enxutos e escaláveis.
+                        MVP em tempo reduzido
+                        Arquitetura multi-tenant
+                        Assinaturas e billing integrados
+                        Dashboard de métricas em tempo real
+                        Ver detalhes →
+                        [article .svc-card]
+                        Essencial
+                        <H3> Cloud Computing
+                        Infraestrutura robusta, segura e com custo otimizado. Migre para a nuvem com quem entende.
+                        Migração para AWS / GCP / Azure
+                        Containers, Kubernetes e CI/CD
+                        Monitoramento e alertas 24/7
+                        Backup, DR e compliance
+                        Ver detalhes →
+                        [article .svc-card]
+                        Estratégico
+                        <H3> Consultoria em TI para Gestão
+                        Alinhe tecnologia com estratégia. Apoiamos gestores a decidirem melhor com dados.
+                        Diagnóstico e roadmap tecnológico
+                        Seleção e implantação de sistemas
+                        Gestão de projetos e squads
+                        KPIs e dashboards gerenciais
+                        Ver detalhes →
+                        [section #tab-servicos .tab-pane]
+                        O que fazemos
+                        <H2> Nossas
+                        Soluções
+                        Clique em um serviço para conhecer todos os detalhes.
+                        [article .svc-card]
+                        Novo
+                        <H3> AI Agents
+                        Automatize processos e tome decisões com inteligência. Agentes de IA personalizados que trabalham 24/7.
+                        Atendimento automatizado via WhatsApp
+                        Qualificação e nutrição de leads
+                        Integração com ERPs e CRMs
+                        RAG sobre documentos internos
+                        Ver detalhes →
+                        [article .svc-card]
+                        Popular
+                        <H3> Micro SaaS
+                        Transforme uma dor de mercado em receita recorrente. Produtos digitais enxutos e escaláveis.
+                        MVP em tempo reduzido
+                        Arquitetura multi-tenant
+                        Assinaturas e billing integrados
+                        Dashboard de métricas em tempo real
+                        Ver detalhes →
+                        [article .svc-card]
+                        Essencial
+                        <H3> Cloud Computing
+                        Infraestrutura robusta, segura e com custo otimizado. Migre para a nuvem com quem entende.
+                        Migração para AWS / GCP / Azure
+                        Containers, Kubernetes e CI/CD
+                        Monitoramento e alertas 24/7
+                        Backup, DR e compliance
+                        Ver detalhes →
+                        [article .svc-card]
+                        Estratégico
+                        <H3> Consultoria em TI para Gestão
+                        Alinhe tecnologia com estratégia. Apoiamos gestores a decidirem melhor com dados.
+                        Diagnóstico e roadmap tecnológico
+                        Seleção e implantação de sistemas
+                        Gestão de projetos e squads
+                        KPIs e dashboards gerenciais
+                        Ver detalhes →
+                        Como trabalhamos
+                        <H2> Do problema à solução em
+                        4 passos
+                        01
+                        <H3> Diagnóstico
+                        Sessão gratuita de 30 minutos: mapeamos seus processos, gargalos e objetivos antes de propor qualquer solução.
+                        30 min
+                        Você recebe: análise do cenário atual
+                        02
+                        <H3> Estratégia
+                        Desenhamos a arquitetura ideal, o roadmap de implementação e a proposta alinhada ao seu orçamento e prazo real.
+                        3–5 dias
+                        Você recebe: proposta detalhada
+                        03
+                        <H3> Desenvolvimento
+                        Ciclos ágeis de 2 semanas com entregas incrementais. Você acompanha o progresso em tempo real e valida cada etapa.
+                        Sprints de 2 sem
+                        Você recebe: entregas validáveis
+                        04
+                        <H3> Suporte Contínuo
+                        Monitoramos, mantemos e evoluímos a solução após o lançamento. Canal direto no WhatsApp para suporte sem fila.
+                        Contínuo
+                        Você recebe: SLA de resposta em 4h
+                        [section #tab-blog .tab-pane]
+                        Voltar ao início
+                        3 artigos publicados
+                        Conteúdo e Insights
+                        <H2> Nosso
+                        Blog
+                        Artigos práticos sobre automação, IA e tecnologia aplicadas a negócios reais.
+                        [div #blog-list .blog-grid]
+                        [article .blog-card]
+                        Consultoria em TI
+                        ·
+                        01 Mar 2025
+                        ·
+                        8 min
+                        <H3> Tecnologia Estratégica: quando a TI deixa de ser suporte e passa a impulsionar o negócio
+                        Empresas que alinham tecnologia à estratégia tomam decisões melhores, operam com mais eficiência e saem na frente da concorrência.
+                        IP
+                        Itamar Pereira
+                        Ler
+                        [article .blog-card]
+                        Micro SaaS
+                        ·
+                        08 Mar 2025
+                        ·
+                        7 min
+                        <H3> Tecnologia Assertiva: a solução certa para o problema certo
+                        Empresas modernas estão abandonando sistemas gigantescos e adotando soluções focadas que resolvem problemas específicos com eficiência real.
+                        IP
+                        Itamar Pereira
+                        Ler
+                        [article .blog-card]
+                        AI Agents
+                        ·
+                        15 Mar 2025
+                        ·
+                        7 min
+                        <H3> Tecnologia Personalizada: soluções desenvolvidas para a realidade da sua empresa
+                        Sistemas genéricos resolvem problemas genéricos. Quando a operação tem características próprias, a tecnologia precisa se adaptar ao negócio — não o contrário.
+                        IP
+                        Itamar Pereira
+                        Ler
+                        [section #tab-contato .tab-pane]
+                        Vamos conversar
+                        <H2> Pronto para transformar seu negócio com
+                        tecnologia?
+                        Fale diretamente com nosso especialista. Atendemos empresas em todo o Brasil, 100% remoto. Sem intermediários, sem enrolação.
+                        Diagnóstico gratuito — 30 minutos
+                        Mapeamos seu desafio e mostramos a solução certa. Sem compromisso.
+                        <https://wa.me/5565981172676?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20Conex%C3%A3o.>
+                        WhatsApp
+                        +55 (65) 98117-2676
+                        <#>
+                        E-mail
+                        [div #email-val .ch-val]
+                        itamar@conexaots.com
+                        Localização
+                        Rondonópolis, MT — Brasil
+                        [form #contact-form .c-form]
+                        Nome *
+                        (input name=nome type=text placeholder=Seu nome required=True)
+                        Empresa
+                        (input name=empresa type=text placeholder=Sua empresa required=False)
+                        E-mail *
+                        (input name=email type=email placeholder=seu@email.com required=True)
+                        WhatsApp
+                        (input name=fone type=tel placeholder=(65) 9 0000-0000 required=False)
+                        Serviço de interesse
+                        (select name=servico type=None placeholder=None required=False)
+                        Selecione...
+                        AI Agents
+                        Micro SaaS
+                        Cloud Computing
+                        Consultoria em TI
+                        Outro
+                        Mensagem *
+                        (textarea name=msg type=None placeholder=Descreva brevemente seu desafio, processo ou projeto. Vamos entender antes de propor qualquer solução... required=True)
+                        Enviar mensagem →
+                        [div #form-fb]
+                        [div #diag-modal]
+                        Diagnóstico Gratuito — 30 minutos
+                        Preencha e entraremos em contato para agendar sua sessão
+                        [div #diag-form-wrap]
+                        Nome *
+                        (input name=None type=text placeholder=Seu nome required=False)
+                        Empresa
+                        (input name=None type=text placeholder=Sua empresa required=False)
+                        E-mail *
+                        (input name=None type=email placeholder=seu@email.com required=False)
+                        WhatsApp *
+                        (input name=None type=tel placeholder=(65) 9 0000-0000 required=False)
+                        Segmento da empresa
+                        (select name=None type=None placeholder=None required=False)
+                        Selecione...
+                        Agronegócio
+                        Construção Civil
+                        Escritório Jurídico
+                        Barbearia ou Salão
+                        Comércio e Varejo
+                        Indústria
+                        Prestação de Serviços
+                        Outro
+                        Qual é o principal desafio da sua operação hoje?
+                        (textarea name=None type=None placeholder=Ex: processos manuais, falta de controle, dificuldade para atender clientes... required=False)
+                        Como nos encontrou?
+                        (select name=None type=None placeholder=None required=False)
+                        Selecione...
+                        Google / Pesquisa online
+                        WhatsApp
+                        Indicação de alguém
+                        Instagram
+                        LinkedIn
+                        Outro
+                        Solicitar diagnóstico gratuito →
+                        [div #diag-form-fb]
+                        [div #diag-success]
+                        ✅
+                        <H3> Diagnóstico solicitado com sucesso!
+                        Recebemos sua solicitação. Veja o que acontece agora:
+                        1
+                        Análise da solicitação
+                        Revisamos seu desafio e preparamos perguntas para a sessão.
+                        2
+                        Contato em até 24h
+                        Entramos em contato pelo WhatsApp para agendar a sessão de 30 minutos.
+                        3
+                        Diagnóstico gratuito
+                        Sessão de 30 min: mapeamos seus gargalos e apresentamos as soluções certas.
+                        Prefere agilizar? Nos chame agora pelo WhatsApp.
+                        <https://wa.me/5565981172676?text=Ol%C3%A1!%20Acabei%20de%20solicitar%20um%20diagn%C3%B3stico%20gratuito%20pelo%20site.> Chamar no WhatsApp →
+                        [div #svc-overlay]
+                        Voltar ao site
+                        [div #ovl-ai-agents .svc-ovl-content]
+                        AI Agents
+                        <H2> Agentes de IA
+                        Personalizados
+                        para Gestão Empresarial
+                        Automatize processos, acelere decisões e transforme dados em resultados com inteligência artificial adaptada ao seu negócio.
+                        Demonstração em vídeo em breve
+                        <H2> Inteligência Artificial que se adapta à realidade da sua empresa
+                        Hoje, empresas geram mais dados e executam mais tarefas do que nunca. Porém, muitas decisões ainda dependem de processos manuais, relatórios demorados e informações dispersas — resultando em atrasos, erros operacionais e oportunidades perdidas.
+                        Na Conexão, não trabalhamos com soluções genéricas. Desenvolvemos Agentes de IA personalizados, treinados para entender os processos, os dados e a dinâmica do seu negócio.
+                        <H4> Automação de processos operacionais
+                        Tarefas repetitivas deixam de depender de intervenção humana, reduzindo erros e liberando sua equipe para atividades estratégicas.
+                        <H4> Análise de dados e apoio à decisão
+                        O agente interpreta informações, identifica padrões e apresenta insights para decisões mais rápidas e seguras.
+                        <H4> Atendimento e relacionamento com clientes
+                        Agentes de IA respondem clientes e acompanham solicitações com rapidez e consistência, 24h por dia.
+                        <H4> Monitoramento inteligente da operação
+                        Alertas automáticos e acompanhamento de indicadores antes que problemas afetem o negócio.
+                        <H3> O grande diferencial: personalização real
+                        Cada empresa tem processos e desafios únicos. Nossos Agentes de IA são desenvolvidos sob medida, aprendendo com os dados e com a rotina da própria empresa. A IA passa a atuar como parte integrada da gestão — não apenas como ferramenta externa.
+                        O resultado: operação mais organizada, decisões mais rápidas e uma empresa preparada para um mercado cada vez mais digital.
+                        Quero meu Agente de IA →
+                        Agendar uma conversa
+                        [div #ovl-micro-saas .svc-ovl-content]
+                        Micro SaaS
+                        <H2> Pequenas soluções digitais que resolvem
+                        grandes desafios das empresas
+                        Softwares especializados, simples e eficientes, criados para resolver problemas específicos da gestão empresarial.
+                        (img imagem_microsaas.png alt=Micro SaaS em operação)
+                        <H2> É exatamente nesse espaço que os Micro SaaS vêm revolucionando a forma como empresas adotam tecnologia
+                        Muitas empresas utilizam sistemas grandes e complexos para tentar resolver todos os desafios da operação. Porém, na prática, boa parte dos problemas do dia a dia está em processos específicos que poderiam ser resolvidos com ferramentas mais simples, rápidas e inteligentes.
+                        Um Micro SaaS é um software focado em resolver um problema muito específico da operação, de forma direta e eficiente. Em vez de plataformas gigantescas com centenas de funcionalidades, ele atua em pontos estratégicos da gestão, gerando resultados rápidos.
+                        Na Conexão Tecnologia e Serviços, desenvolvemos Micro SaaS personalizados, adaptados à realidade de cada segmento e de cada empresa.
+                        Exemplos práticos
+                        <H3> Como um Micro SaaS pode transformar diferentes tipos de negócios
+                        Para entender melhor o impacto desse conceito, veja alguns exemplos práticos.
+                        <H4> Supermercados – controle inteligente de reposição de produtos
+                        Imagine um sistema que analisa automaticamente o histórico de vendas, identifica os produtos que estão saindo mais rápido e alerta a equipe antes que falte mercadoria na gôndola. Um Micro SaaS pode monitorar estoque, prever reposição e até sugerir pedidos ao fornecedor, reduzindo perdas e aumentando vendas.
+                        <H4> Clínicas e consultórios – redução de faltas em consultas
+                        Um Micro SaaS pode acompanhar a agenda, enviar lembretes automáticos personalizados para pacientes, confirmar presença e reorganizar horários quando ocorre um cancelamento. O resultado é uma agenda mais eficiente e menos horários perdidos.
+                        <H4> Salões de beleza – relacionamento inteligente com clientes
+                        O sistema pode analisar o histórico de serviços e lembrar automaticamente quando um cliente costuma retornar para um corte, coloração ou tratamento. A ferramenta envia mensagens personalizadas oferecendo agendamento ou promoções, aumentando a fidelização.
+                        <H4> Indústrias – monitoramento de processos operacionais
+                        Um Micro SaaS pode acompanhar indicadores de produção, identificar atrasos em etapas específicas e gerar alertas para a gestão antes que o problema afete a entrega ao cliente.
+                        <H4> Empresas comerciais – acompanhamento de oportunidades de venda
+                        Um sistema simples pode monitorar propostas enviadas, identificar clientes que ainda não responderam e sugerir ações de follow-up para a equipe comercial.
+                        <H3> Por que o modelo Micro SaaS está crescendo no mundo inteiro
+                        A grande força desse modelo está na combinação de simplicidade e eficiência. Em vez de investir apenas em grandes sistemas, empresas estão adotando ferramentas menores que resolvem problemas específicos com rapidez. Isso permite implementar melhorias constantes na operação sem grandes projetos de tecnologia.
+                        Entre os principais benefícios estão:
+                        implementação rápida · baixo custo de desenvolvimento e manutenção · alta adaptação ao processo da empresa · possibilidade de evoluir o sistema conforme novas necessidades surgem.
+                        Com essa abordagem, a tecnologia passa a funcionar como um conjunto de soluções inteligentes que melhoram continuamente a gestão do negócio.
+                        <H3> Tecnologia pensada para a realidade da sua empresa
+                        Na Conexão Tecnologia e Serviços, cada projeto de Micro SaaS nasce a partir da análise dos processos da empresa. O objetivo é identificar gargalos operacionais e criar soluções digitais específicas que gerem impacto real na produtividade e na tomada de decisão.
+                        Assim, a tecnologia deixa de ser complexa e passa a ser uma ferramenta prática para crescimento e eficiência empresarial.
+                        Quero meu Micro SaaS →
+                        Agendar uma conversa
+                        [div #ovl-cloud .svc-ovl-content]
+                        Cloud Computing
+                        <H2> Infraestrutura moderna para
+                        crescimento e eficiência
+                        Leve seus sistemas, dados e operações para a nuvem com segurança, escalabilidade e alta performance.
+                        Demonstração em vídeo em breve
+                        <H2> A nuvem não é apenas uma mudança tecnológica — ela redefine a forma como sua empresa opera
+                        Muitas empresas ainda operam com servidores locais, infraestrutura limitada e altos custos de manutenção. Equipamentos precisam ser atualizados, backups exigem atenção constante e qualquer falha pode interromper operações importantes.
+                        Enquanto isso, organizações que adotam Cloud Computing estão transformando sua forma de operar, ganhando mais segurança, flexibilidade e capacidade de crescimento.
+                        É nesse cenário que projetos de infraestrutura em nuvem se tornam uma estratégia essencial para empresas que querem operar com mais eficiência e preparação para o futuro.
+                        Exemplos práticos
+                        <H3> Como a computação em nuvem pode transformar diferentes tipos de negócios
+                        A nuvem redefine a forma como sistemas, dados e equipes trabalham no dia a dia. Veja alguns exemplos práticos.
+                        <H4> Supermercados – operação contínua e segura
+                        Com Cloud Computing, o ERP e os dados da empresa ficam hospedados em infraestrutura robusta e redundante, reduzindo riscos de paralisação e garantindo acesso rápido às informações de gestão, frente de caixa e controle de estoque.
+                        <H4> Clínicas e hospitais – acesso seguro a informações médicas
+                        Prontuários eletrônicos, agendas e sistemas administrativos podem ser acessados com segurança por profissionais autorizados, mesmo em diferentes unidades ou locais de atendimento.
+                        <H4> Indústrias – integração de dados operacionais
+                        Empresas industriais podem centralizar dados de produção, estoque e logística na nuvem, permitindo monitoramento em tempo real e melhor coordenação entre setores.
+                        <H4> Empresas comerciais – mobilidade para equipes de vendas
+                        Equipes comerciais passam a acessar sistemas e relatórios de qualquer lugar, utilizando notebooks, tablets ou smartphones, sem depender da estrutura física da empresa.
+                        <H4> Empresas em crescimento – escalabilidade sem grandes investimentos
+                        À medida que a empresa cresce, a infraestrutura em nuvem pode expandir rapidamente sem necessidade de comprar novos servidores ou equipamentos.
+                        <H3> Por que a Cloud Computing se tornou padrão para empresas modernas
+                        A computação em nuvem se consolidou como um dos pilares da transformação digital porque oferece vantagens claras para a gestão empresarial.
+                        Principais benefícios:
+                        redução de custos com infraestrutura física · alta disponibilidade e redundância · backup automatizado e segurança de dados · escalabilidade para acompanhar o crescimento · acesso remoto seguro aos sistemas corporativos.
+                        Com a nuvem, a tecnologia deixa de ser uma preocupação operacional e passa a ser uma base sólida para inovação e crescimento.
+                        <H3> Projetos de nuvem planejados para a realidade da sua empresa
+                        Na Conexão Tecnologia e Serviços, os projetos de Cloud Computing são desenvolvidos de forma estratégica. Avaliamos a infraestrutura atual, os sistemas utilizados e as necessidades de crescimento da empresa para construir uma arquitetura de nuvem segura, eficiente e preparada para o futuro.
+                        O objetivo não é apenas migrar servidores, mas criar uma base tecnológica confiável que sustente a evolução da gestão empresarial.
+                        Quero ir para a nuvem →
+                        Agendar uma conversa
+                        [div #ovl-consultoria .svc-ovl-content]
+                        Consultoria em TI
+                        <H2> Escolha as tecnologias certas e prepare sua empresa para uma gestão orientada por
+                        dados e inteligência
+                        Consultoria especializada na escolha de ERP, integração de sistemas e adoção de ferramentas modernas de gestão.
+                        Demonstração em vídeo em breve
+                        <H2> O desafio não está em adquirir tecnologia, mas em escolher as soluções certas para o seu negócio
+                        Muitas empresas investem em tecnologia esperando mais controle, eficiência e crescimento. Porém, na prática, uma escolha errada de sistema ou uma implementação mal planejada pode gerar processos mais complexos, retrabalho e desperdício de recursos.
+                        É exatamente nesse ponto que a Consultoria em TI para gestão empresarial se torna essencial. Na Conexão Tecnologia e Serviços, ajudamos empresas a tomar decisões estratégicas sobre tecnologia — especialmente na escolha de ERP e na adoção de ferramentas modernas de gestão, análise de dados e inteligência artificial.
+                        Exemplos práticos
+                        <H3> Como a consultoria em TI pode transformar a gestão da empresa
+                        Uma decisão tecnológica bem orientada pode impactar diretamente produtividade, controle financeiro, eficiência operacional e capacidade de crescimento.
+                        <H4> Supermercados – escolha de um ERP preparado para varejo
+                        A consultoria ajuda a avaliar as opções de ERP do mercado e selecionar a solução mais adequada para integrar frente de caixa, controle de estoque, compras e gestão financeira conforme o volume de operações e estratégia da empresa.
+                        <H4> Indústrias – integração entre produção, estoque e gestão financeira
+                        A escolha correta do ERP conecta produção, compras, logística e custos, permitindo maior controle da operação e melhor análise da rentabilidade de cada produto.
+                        <H4> Distribuidores e atacadistas – eficiência na gestão comercial e logística
+                        Identificamos soluções que integrem vendas, pedidos, estoque e entregas, garantindo mais agilidade na operação e melhor controle da cadeia comercial.
+                        <H4> Empresas em crescimento – estrutura tecnológica preparada para expansão
+                        Negócios que estão se profissionalizando precisam migrar de controles informais para plataformas de gestão mais robustas e integradas. A consultoria orienta essa transição com segurança.
+                        <H3> Tecnologia pensada para gerar inteligência na gestão
+                        Além da escolha do ERP, a consultoria também orienta empresas na adoção de outras tecnologias que ampliam a capacidade de gestão.
+                        Entre elas:
+                        plataformas de Business Intelligence (BI) para análise de dados · infraestrutura em Cloud Computing para segurança e escalabilidade · Micro SaaS especializados para desafios específicos · Agentes de Inteligência Artificial que automatizam processos e auxiliam na tomada de decisão.
+                        Com a combinação correta dessas tecnologias, a empresa passa a operar com mais informação, mais controle e decisões mais rápidas.
+                        <H3> Decisões tecnológicas mais seguras e estratégicas
+                        Escolher um ERP ou uma plataforma tecnológica é uma decisão que pode impactar a empresa por muitos anos. Por isso, contar com uma visão externa especializada ajuda a evitar erros comuns e identificar oportunidades que muitas vezes passam despercebidas.
+                        Na Conexão Tecnologia e Serviços, nossa consultoria analisa processos, necessidades e objetivos do negócio para orientar escolhas tecnológicas que realmente façam sentido para a empresa. O resultado é uma gestão mais estruturada, preparada para crescer em um mercado cada vez mais orientado por dados e inovação.
+                        Quero uma consultoria →
+                        Agendar uma conversa
+                        [div #post-overlay]
+                        Voltar ao site
+                        [div #post-tecnologia-personalizada]
+                        AI Agents
+                        <H1> Tecnologia Personalizada: soluções desenvolvidas para a realidade da sua empresa
+                        CT
+                        Equipe Conexão
+                        ·
+                        15 de março de 2025
+                        ·
+                        7 min de leitura
+                        Cada empresa possui processos próprios, desafios específicos e uma forma única de operar. Mesmo quando atuam no mesmo setor, dois negócios raramente funcionam exatamente da mesma maneira.
+                        Apesar disso, muitas organizações acabam adotando sistemas genéricos que tentam atender a todos os tipos de empresa ao mesmo tempo. O resultado costuma ser conhecido: processos que precisam se adaptar ao software, equipes que criam controles paralelos em planilhas e uma sensação constante de que o sistema
+                        "não encaixa"
+                        na operação.
+                        <H2> O limite das soluções genéricas
+                        Sistemas prontos têm um papel importante no mercado. Mas quando a empresa cresce ou possui características específicas, essas soluções começam a apresentar limitações claras:
+                        Processos que não se encaixam no sistema
+                        Necessidade constante de planilhas complementares
+                        Dificuldade para extrair informações importantes
+                        Falta de integração entre ferramentas
+                        Quando isso acontece, a tecnologia deixa de ajudar e passa a exigir adaptações constantes da empresa. A personalização surge justamente para resolver esse problema.
+                        <H3> Um exemplo prático: o escritório jurídico e o controle de prazos
+                        Um escritório de advocacia utiliza um sistema jurídico padrão do mercado para cadastrar processos e clientes. Porém, o sistema não reflete a forma como o escritório organiza internamente seus casos — cada advogado tem critérios próprios de prioridade, e os alertas de prazo genéricos geram mais ruído do que clareza.
+                        Uma solução personalizada resolve exatamente isso: painel de prazos filtrado por advogado responsável, alertas configurados de acordo com a complexidade de cada tipo de processo e relatório semanal automático para os sócios com os casos mais críticos.
+                        O sistema passa a funcionar como o escritório trabalha — não como o fornecedor imaginou que ele deveria trabalhar.
+                        <H2> Aplicações em diferentes segmentos
+                        <H4> Comércio e varejo
+                        Soluções que acompanham o comportamento de compra, organizam promoções e melhoram o controle de estoque de forma integrada.
+                        <H4> Indústrias
+                        Sistemas adaptados aos processos produtivos reais, integrando produção, logística e custos sem forçar a operação a se moldar ao software.
+                        <H4> Prestadores de serviços
+                        Ferramentas específicas para gestão de atendimento, organização de agendas e acompanhamento de resultados operacionais.
+                        <H4> Empresas em crescimento
+                        Sistemas que evoluem junto com o negócio, acompanhando novas demandas sem exigir troca completa de plataforma.
+                        <H2> Tecnologias que tornam a personalização possível
+                        Micro SaaS
+                        Aplicações desenvolvidas sob medida para desafios específicos da operação.
+                        Cloud Computing
+                        Infraestrutura para criar e escalar soluções com rapidez e sem grandes investimentos.
+                        ERP Flexíveis
+                        Sistemas de gestão com configuração avançada e integração com outras ferramentas.
+                        AI Agents
+                        Ferramentas que aprendem com os dados da empresa e automatizam processos de forma inteligente.
+                        <H3> Quer tecnologia que se adapta ao seu negócio?
+                        Na Conexão, desenvolvemos soluções a partir da sua operação — não do que está na prateleira. Começamos com um diagnóstico gratuito de 30 minutos para entender a sua realidade antes de propor qualquer coisa.
+                        Agendar diagnóstico gratuito →
+                        Ver AI Agents
+                        [div #post-tecnologia-assertiva]
+                        Micro SaaS
+                        <H1> Tecnologia Assertiva: a solução certa para o problema certo
+                        CT
+                        Equipe Conexão
+                        ·
+                        08 de março de 2025
+                        ·
+                        7 min de leitura
+                        Em muitas empresas, investir em tecnologia ainda significa comprar sistemas grandes, complexos e cheios de funcionalidades que raramente são utilizadas. O resultado costuma ser conhecido: alto custo, baixa utilização e pouca melhoria real na operação.
+                        Mas existe uma abordagem muito mais eficiente: ser assertivo. Significa escolher a solução certa para o problema certo — sem desperdício de recursos, tempo ou esforço. Em vez de ferramentas excessivamente complexas, empresas modernas estão adotando tecnologias mais focadas, objetivas e alinhadas às necessidades reais do negócio.
+                        <H2> O problema do excesso de tecnologia
+                        Durante muitos anos, o mercado de software corporativo seguiu uma lógica simples: quanto mais funcionalidades, melhor. Na prática, isso criou plataformas gigantescas que tentam resolver tudo ao mesmo tempo — e acabam não resolvendo nada direito.
+                        Muitas empresas usam apenas uma fração das funcionalidades disponíveis
+                        Processos ficam mais complexos do que deveriam
+                        Equipes têm dificuldade para aprender e utilizar os sistemas
+                        O custo de implantação e manutenção se torna elevado
+                        Quando a tecnologia deixa de simplificar o trabalho e passa a complicá-lo, algo claramente está fora de lugar.
+                        <H3> Um exemplo prático: o supermercado e as perdas por vencimento
+                        Uma abordagem tradicional diante de perdas frequentes por vencimento de produtos sugeriria trocar todo o sistema de gestão. Mas muitas vezes o problema está apenas na falta de visibilidade sobre produtos próximos ao vencimento.
+                        Uma solução assertiva resolve exatamente isso: monitora datas de validade, gera alertas automáticos para a equipe e sugere promoções para itens próximos do vencimento.
+                        Sem grandes mudanças na infraestrutura, com impacto direto no lucro.
+                        <H2> Aplicações em diferentes setores
+                        <H4> Comércio
+                        Soluções que acompanham o ciclo de vendas, identificam clientes que precisam de follow-up e organizam o processo comercial com simplicidade.
+                        <H4> Indústrias
+                        Sistemas focados que monitoram etapas específicas da produção, identificando gargalos que afetam prazos e produtividade.
+                        <H4> Prestadores de serviço
+                        Soluções simples para organizar agendas, reduzir faltas de clientes e melhorar o relacionamento sem complicar a operação.
+                        <H4> Empresas em crescimento
+                        Tecnologias específicas para controle financeiro, análise de dados ou acompanhamento de indicadores — adotadas de forma gradual e sem grandes riscos.
+                        <H2> As tecnologias que tornam isso possível
+                        Micro SaaS
+                        Aplicações leves desenvolvidas para resolver problemas pontuais com rapidez e eficiência.
+                        Cloud Computing
+                        Implantação rápida sem grandes investimentos em infraestrutura física.
+                        ERP Especializados
+                        Sistemas focados em segmentos específicos, sem funcionalidades desnecessárias.
+                        AI Agents
+                        Automação de processos e geração de insights operacionais com precisão.
+                        <H3> Quer descobrir quais soluções geram impacto real no seu negócio?
+                        Na Conexão, identificamos os gargalos reais da sua operação e indicamos a tecnologia certa — sem vender sistema que você não precisa. Começamos com um diagnóstico gratuito de 30 minutos.
+                        Agendar diagnóstico gratuito →
+                        Ver Micro SaaS
+                        [div #post-tecnologia-estrategica]
+                        Consultoria em TI
+                        <H1> Tecnologia Estratégica: quando a TI deixa de ser suporte e passa a impulsionar o negócio
+                        CT
+                        Equipe Conexão
+                        ·
+                        01 de março de 2025
+                        ·
+                        8 min de leitura
+                        Em muitas empresas, a tecnologia ainda é vista apenas como suporte operacional — algo necessário para manter sistemas funcionando, computadores conectados e dados armazenados. No cenário empresarial atual, essa visão está mudando rapidamente.
+                        Empresas que utilizam tecnologia de forma estratégica conseguem tomar decisões melhores, operar com mais eficiência e se adaptar com mais rapidez às mudanças do mercado. A pergunta que muitos gestores começam a fazer não é mais
+                        "qual sistema precisamos comprar?"
+                        , mas sim:
+                        "como a tecnologia pode fortalecer nossa estratégia de negócio?"
+                        <H2> O que significa tecnologia alinhada ao negócio
+                        Tecnologia estratégica não é simplesmente adquirir softwares modernos ou adotar as últimas tendências digitais. O verdadeiro valor está em alinhá-la aos objetivos da empresa.
+                        Isso significa que cada investimento em tecnologia precisa responder a perguntas como:
+                        Esse sistema melhora nossa eficiência operacional?
+                        Ele nos ajuda a entender melhor nossos clientes?
+                        Facilita a tomada de decisão da gestão?
+                        Contribui para o crescimento da empresa?
+                        Quando a tecnologia é escolhida com esse foco, ela deixa de ser um custo e passa a ser um
+                        ativo estratégico
+                        da empresa.
+                        <H3> Um exemplo prático: o caso de um supermercado
+                        Imagine um supermercado com grande volume de vendas, mas com problemas frequentes de ruptura de estoque. Sem estratégia tecnológica, o gestor depende de relatórios manuais e da experiência da equipe para compras.
+                        Agora imagine o mesmo negócio com tecnologia alinhada à gestão: um ERP integrado controlando vendas e estoque, um painel de BI mostrando os produtos de maior giro, alertas automáticos de reposição e dados históricos prevendo demandas sazonais. Nesse cenário, a tecnologia não apenas registra informações —
+                        ela orienta decisões.
+                        <H2> O impacto em diferentes tipos de empresas
+                        <H4> Indústrias
+                        Sistemas integrados para acompanhar produção, custos e estoque em tempo real — identificando gargalos e melhorando o planejamento produtivo.
+                        <H4> Empresas comerciais
+                        Plataformas que acompanham oportunidades, propostas e relacionamento com clientes, tornando o processo comercial mais organizado e previsível.
+                        <H4> Prestadores de serviços
+                        Integração de agenda, atendimento, faturamento e análise de desempenho — aumentando o controle e melhorando a experiência do cliente.
+                        <H2> As tecnologias que estão acelerando essa transformação
+                        Nos últimos anos, algumas soluções têm se destacado por gerar impacto real na gestão empresarial:
+                        ERP Modernos
+                        Integram todas as áreas da empresa com visão completa das operações.
+                        Cloud Computing
+                        Infraestrutura com segurança, disponibilidade e escalabilidade para crescer.
+                        Micro SaaS
+                        Aplicações específicas que resolvem problemas pontuais com rapidez e eficiência.
+                        AI Agents
+                        Automatizam processos, analisam dados e apoiam gestores na tomada de decisão.
+                        <H2> O risco de investir em tecnologia sem estratégia
+                        Muitas empresas investem em tecnologia e ficam frustradas. O motivo quase sempre é o mesmo: a decisão foi tomada sem análise adequada. Isso resulta em sistemas que não atendem ao negócio, dificuldade de integração entre plataformas, baixa adoção pelos colaboradores e investimentos altos com pouco retorno.
+                        Por isso, antes de adotar qualquer solução tecnológica, é fundamental entender como ela se encaixa na
+                        estratégia da empresa
+                        — não apenas nas especificações técnicas.
+                        <H3> Pronto para alinhar tecnologia à estratégia da sua empresa?
+                        Na Conexão, começamos sempre com um diagnóstico gratuito de 30 minutos: mapeamos os gargalos da sua operação e mostramos quais tecnologias geram mais impacto para o seu negócio. Sem compromisso, sem enrolação.
+                        Agendar diagnóstico gratuito →
+                        Ver Consultoria em TI
+                        [footer ]
+                        (img logo_transparente.png alt=Conexão)
+                        CONEXÃO
+                        Tecnologia e Serviços
+                        Tecnologia com propósito — construindo soluções inteligentes que geram impacto real nos negócios.
+                        <https://wa.me/5565981172676>
+                        <H4> Serviços
+                        AI Agents
+                        Micro SaaS
+                        Cloud Computing
+                        Consultoria em TI
+                        <H4> Empresa
+                        Como trabalhamos
+                        Blog
+                        Contato
+                        <H4> Contato
+                        <https://wa.me/5565981172676> +55 (65) 98117-2676
+                        <#>
+                        itamar@conexaots.com
+                        Brasil — Atendimento 100% remoto
+                        © 2025 Conexão Tecnologia e Serviços. Todos os direitos reservados.
+                        </privacidade.html> Política de Privacidade
+                        </privacidade.html#lgpd> LGPD
+                        Feito com tecnologia e propósito
+                        Diagnóstico gratuito! 🚀
+                        <https://wa.me/5565981172676?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Conex%C3%A3o%20e%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20gratuito.>
+=== JS: fetch/api/endpoints
+apiPost('registrarEvento'
+apiPost('salvarContato'
+apiPost('salvarDiagnostico'
+
+=== JS: strings de conteudo (posts/overlays) amostra

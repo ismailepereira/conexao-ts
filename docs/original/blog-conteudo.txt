@@ -1,0 +1,235 @@
+=== META
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1BC9A8">
+<meta name="description" content="Automação, IA e tecnologia aplicadas a negócios reais. Artigos práticos sobre AI Agents, Micro SaaS, Cloud e Consultoria em TI." />
+<meta property="og:type"        content="website" />
+<meta property="og:url"         content="https://conexaots.com/blog" />
+<meta property="og:title"       content="Blog — Conexão Tecnologia e Serviços" />
+<meta property="og:description" content="Automação, IA e tecnologia aplicadas a negócios reais. Sem jargão, sem teoria vazia." />
+<meta property="og:image"       content="https://conexaots.com/og-image.jpg" />
+<meta property="og:locale"      content="pt_BR" />
+=== JSON-LD
+
+=== TEXTO
+                Blog — Conexão Tecnologia e Serviços | Rondonópolis/MT
+                        [header #hdr]
+                        [nav .nav]
+                        </>
+                        (img logo_transparente.png alt=Conexão Tecnologia e Serviços)
+                        CONEXÃO
+                        Tecnologia e Serviços
+                        </> Voltar ao site
+                        [main ]
+                        [div #blog-list]
+                        Conteúdo e Insights
+                        <H1> Ideias que
+                        funcionam
+                        Automação, IA e tecnologia aplicadas a negócios reais.
+                        [div #blog-count .blog-count]
+                        [div #blog-grid .blog-grid]
+                        [article .blog-card]
+                        Consultoria em TI
+                        ·
+                        01 Mar 2025
+                        ·
+                        8 min
+                        <H2> Tecnologia Estratégica: quando a TI deixa de ser suporte e passa a impulsionar o negócio
+                        Empresas que alinham tecnologia à estratégia tomam decisões melhores, operam com mais eficiência e saem na frente da concorrência.
+                        IP
+                        Itamar Pereira
+                        Ler
+                        [article .blog-card]
+                        Micro SaaS
+                        ·
+                        08 Mar 2025
+                        ·
+                        7 min
+                        <H2> Tecnologia Assertiva: a solução certa para o problema certo
+                        Empresas modernas estão abandonando sistemas gigantescos e adotando soluções focadas que resolvem problemas específicos com eficiência real.
+                        IP
+                        Itamar Pereira
+                        Ler
+                        [article .blog-card]
+                        AI Agents
+                        ·
+                        15 Mar 2025
+                        ·
+                        7 min
+                        <H2> Tecnologia Personalizada: soluções desenvolvidas para a realidade da sua empresa
+                        Sistemas genéricos resolvem problemas genéricos. Quando a operação tem características próprias, a tecnologia precisa se adaptar ao negócio — não o contrário.
+                        IP
+                        Itamar Pereira
+                        Ler
+                        [div #post-overlay]
+                        Voltar ao Blog
+                        [div #post-tecnologia-estrategica]
+                        Consultoria em TI
+                        <H1> Tecnologia Estratégica: quando a TI deixa de ser suporte e passa a impulsionar o negócio
+                        IP
+                        Itamar Pereira
+                        ·
+                        01 de março de 2025
+                        ·
+                        8 min de leitura
+                        Durante anos, a tecnologia foi vista dentro das empresas como um setor de suporte — algo necessário para manter os computadores funcionando, resolver problemas técnicos e garantir que o e-mail não caísse. Útil, mas distante das decisões estratégicas.
+                        Esse modelo ainda existe em muitas organizações. E é exatamente aí que está o problema: enquanto essas empresas usam a tecnologia apenas para "não parar", outras já estão usando para crescer, tomar decisões melhores e operar com muito mais eficiência.
+                        <H2> O que significa TI estratégica na prática
+                        Quando falamos em tecnologia estratégica, não estamos falando de sistemas caros ou softwares complexos. Estamos falando de uma mudança de perspectiva: a tecnologia deixa de ser reativa e passa a ser um agente ativo na criação de valor para o negócio.
+                        Isso significa usar dados para tomar decisões, automatizar o que é repetitivo para liberar a equipe para o que importa e criar sistemas que acompanham o crescimento da empresa — em vez de limitá-lo.
+                        <H3> Um exemplo prático: o escritório jurídico e o controle de prazos
+                        Um escritório de advocacia que usa planilhas para controlar prazos processuais corre riscos desnecessários — e gasta muito tempo em trabalho manual. Com uma solução simples e personalizada, o controle de prazos passa a ser automático, com alertas por WhatsApp para o advogado responsável e um painel de visão geral para os sócios.
+                        O resultado: menos risco, menos retrabalho e mais tempo para o que gera receita.
+                        Isso é TI estratégica.
+                        <H2> Como alinhar tecnologia à estratégia do negócio
+                        <H4> Diagnóstico antes de qualquer solução
+                        Entender os gargalos reais da operação antes de propor qualquer tecnologia. Muitas empresas compram sistemas e depois tentam encaixar os processos neles — deveria ser o contrário.
+                        <H4> KPIs e indicadores visíveis
+                        Tecnologia estratégica cria visibilidade. Gestores precisam ver em tempo real o que está acontecendo no negócio — não descobrir no final do mês pelo relatório.
+                        <H4> Equipe como aliada, não obstáculo
+                        A melhor tecnologia é aquela que a equipe usa. Sistemas complexos que ninguém consegue operar geram resistência e ficam abandonados. Simplicidade é estratégia.
+                        <H4> Soluções que evoluem com o negócio
+                        O sistema ideal hoje pode não ser o ideal em dois anos. Tecnologia estratégica é planejada para crescer junto — não para ser substituída toda vez que a empresa muda.
+                        <H3> Por que a TI estratégica está ganhando espaço
+                        O custo de ferramentas tecnológicas caiu drasticamente nos últimos anos. Soluções que antes eram acessíveis apenas para grandes empresas agora estão ao alcance de negócios de qualquer tamanho. Combinadas com uma abordagem estratégica, essas ferramentas criam vantagens competitivas reais.
+                        Empresas que entendem isso mais cedo saem na frente — não porque gastaram mais em tecnologia, mas porque
+                        escolheram a tecnologia certa para o problema certo.
+                        <H2> O impacto em diferentes tipos de empresa
+                        <H4> Comércio e varejo
+                        Controle de estoque inteligente, análise de giro de produtos, promoções automáticas para itens próximos ao vencimento e previsão de demanda baseada em histórico.
+                        <H4> Agronegócio
+                        Gestão de safra, controle de insumos, monitoramento de custos por talhão e automação de relatórios para financiamento e rastreabilidade.
+                        <H4> Prestadores de serviços
+                        Organização de agenda, redução de faltas com confirmação automática via WhatsApp e análise de quais serviços geram mais receita.
+                        <H3> Tecnologia alinhada à estratégia da sua empresa
+                        Na Conexão Tecnologia e Serviços, o ponto de partida é sempre o negócio — não a tecnologia. Antes de propor qualquer solução, fazemos um diagnóstico completo para entender os processos, os gargalos e os objetivos da empresa. O resultado é uma proposta alinhada à realidade, ao orçamento e às metas de crescimento.
+                        Agendar diagnóstico gratuito →
+                        </> Ver todos os serviços
+                        [div #post-tecnologia-assertiva]
+                        Micro SaaS
+                        <H1> Tecnologia Assertiva: a solução certa para o problema certo
+                        IP
+                        Itamar Pereira
+                        ·
+                        08 de março de 2025
+                        ·
+                        7 min de leitura
+                        Em muitas empresas, investir em tecnologia ainda significa comprar sistemas grandes, complexos e cheios de funcionalidades que raramente são utilizadas. O resultado costuma ser conhecido: alto custo, baixa utilização e pouca melhoria real na operação.
+                        Mas existe uma abordagem muito mais eficiente: ser assertivo. Significa escolher a solução certa para o problema certo — sem desperdício de recursos, tempo ou esforço. Em vez de ferramentas excessivamente complexas, empresas modernas estão adotando tecnologias mais focadas, objetivas e alinhadas às necessidades reais do negócio.
+                        <H2> O problema do excesso de tecnologia
+                        Durante muitos anos, o mercado de software corporativo seguiu uma lógica simples: quanto mais funcionalidades, melhor. Na prática, isso criou plataformas gigantescas que tentam resolver tudo ao mesmo tempo — e acabam não resolvendo nada direito.
+                        Muitas empresas usam apenas uma fração das funcionalidades disponíveis
+                        Processos ficam mais complexos do que deveriam
+                        Equipes têm dificuldade para aprender e utilizar os sistemas
+                        O custo de implantação e manutenção se torna elevado
+                        <H3> Um exemplo prático: o supermercado e as perdas por vencimento
+                        Uma abordagem tradicional diante de perdas frequentes por vencimento de produtos sugeriria trocar todo o sistema de gestão. Mas muitas vezes o problema está apenas na falta de visibilidade sobre produtos próximos ao vencimento.
+                        Uma solução assertiva resolve exatamente isso: monitora datas de validade, gera alertas automáticos para a equipe e sugere promoções para itens próximos do vencimento.
+                        Sem grandes mudanças na infraestrutura, com impacto direto no lucro.
+                        <H2> Aplicações em diferentes setores
+                        <H4> Comércio
+                        Soluções que acompanham o ciclo de vendas, identificam clientes que precisam de follow-up e organizam o processo comercial com simplicidade.
+                        <H4> Indústrias
+                        Sistemas focados que monitoram etapas específicas da produção, identificando gargalos que afetam prazos e produtividade.
+                        <H4> Prestadores de serviço
+                        Soluções simples para organizar agendas, reduzir faltas de clientes e melhorar o relacionamento sem complicar a operação.
+                        <H4> Empresas em crescimento
+                        Tecnologias específicas para controle financeiro, análise de dados ou acompanhamento de indicadores — adotadas de forma gradual e sem grandes riscos.
+                        <H2> Por que o modelo Micro SaaS está crescendo
+                        <H3> Simples, focado e eficiente
+                        A grande força desse modelo está na combinação de simplicidade e eficiência. Em vez de investir apenas em grandes sistemas, empresas estão adotando ferramentas menores que resolvem problemas específicos com rapidez.
+                        Entre os principais benefícios:
+                        implementação rápida · baixo custo · alta adaptação ao processo · possibilidade de evoluir conforme novas necessidades surgem.
+                        Na Conexão Tecnologia e Serviços, cada projeto de Micro SaaS nasce a partir da análise dos processos da empresa. O objetivo é identificar gargalos operacionais e criar soluções digitais específicas que gerem impacto real na produtividade e na tomada de decisão.
+                        Quero meu Micro SaaS →
+                        </> Ver todos os serviços
+                        [div #post-tecnologia-personalizada]
+                        AI Agents
+                        <H1> Tecnologia Personalizada: soluções desenvolvidas para a realidade da sua empresa
+                        IP
+                        Itamar Pereira
+                        ·
+                        15 de março de 2025
+                        ·
+                        7 min de leitura
+                        Cada empresa possui processos próprios, desafios específicos e uma forma única de operar. Mesmo quando atuam no mesmo setor, dois negócios raramente funcionam exatamente da mesma maneira.
+                        Apesar disso, muitas organizações acabam adotando sistemas genéricos que tentam atender a todos os tipos de empresa ao mesmo tempo. O resultado costuma ser conhecido: processos que precisam se adaptar ao software, equipes que criam controles paralelos em planilhas e uma sensação constante de que o sistema
+                        "não encaixa"
+                        na operação.
+                        <H2> O limite das soluções genéricas
+                        Processos que não se encaixam no sistema
+                        Necessidade constante de planilhas complementares
+                        Dificuldade para extrair informações importantes
+                        Falta de integração entre ferramentas
+                        <H3> Um exemplo prático: o escritório jurídico e o controle de prazos
+                        Um escritório de advocacia utiliza um sistema jurídico padrão do mercado para cadastrar processos e clientes. Porém, o sistema não reflete a forma como o escritório organiza internamente seus casos.
+                        Uma solução personalizada resolve exatamente isso: painel de prazos filtrado por advogado, alertas configurados por tipo de processo e relatório semanal automático para os sócios.
+                        O sistema passa a funcionar como o escritório trabalha — não como o fornecedor imaginou que ele deveria trabalhar.
+                        <H2> Aplicações em diferentes segmentos
+                        <H4> Comércio e varejo
+                        Soluções que acompanham o comportamento de compra, organizam promoções e melhoram o controle de estoque de forma integrada.
+                        <H4> Indústrias
+                        Sistemas adaptados aos processos produtivos reais, integrando produção, logística e custos sem forçar a operação a se moldar ao software.
+                        <H4> Prestadores de serviços
+                        Ferramentas específicas para gestão de atendimento, organização de agendas e acompanhamento de resultados operacionais.
+                        <H4> Empresas em crescimento
+                        Sistemas que evoluem junto com o negócio, acompanhando novas demandas sem exigir troca completa de plataforma.
+                        <H3> Quer tecnologia que se adapta ao seu negócio?
+                        Na Conexão, desenvolvemos soluções a partir da sua operação — não do que está na prateleira. Começamos com um diagnóstico gratuito de 30 minutos para entender a sua realidade antes de propor qualquer coisa.
+                        Agendar diagnóstico gratuito →
+                        </> Ver AI Agents
+                        [div #diag-modal]
+                        Diagnóstico Gratuito — 30 minutos
+                        Preencha e entraremos em contato para agendar sua sessão
+                        [div #diag-form-wrap]
+                        Nome *
+                        (input name=None type=text placeholder=Seu nome required=False)
+                        Empresa
+                        (input name=None type=text placeholder=Sua empresa required=False)
+                        E-mail *
+                        (input name=None type=email placeholder=seu@email.com required=False)
+                        WhatsApp *
+                        (input name=None type=tel placeholder=(65) 9 0000-0000 required=False)
+                        Segmento da empresa
+                        (select name=None type=None placeholder=None required=False)
+                        Selecione...
+                        Agronegócio
+                        Construção Civil
+                        Escritório Jurídico
+                        Barbearia ou Salão
+                        Comércio e Varejo
+                        Indústria
+                        Prestação de Serviços
+                        Outro
+                        Principal desafio da sua operação hoje
+                        (textarea name=None type=None placeholder=Ex: processos manuais, falta de controle... required=False)
+                        Como nos encontrou?
+                        (select name=None type=None placeholder=None required=False)
+                        Selecione...
+                        Google / Pesquisa online
+                        WhatsApp
+                        Indicação de alguém
+                        Instagram
+                        LinkedIn
+                        Outro
+                        Solicitar diagnóstico gratuito →
+                        [div #diag-form-fb]
+                        [div #diag-success]
+                        ✅
+                        <H3> Diagnóstico solicitado com sucesso!
+                        Recebemos sua solicitação e entraremos em contato pelo WhatsApp em até 24h para agendar sua sessão.
+                        <https://wa.me/5565981172676?text=Olá!%20Acabei%20de%20solicitar%20um%20diagnóstico%20gratuito%20pelo%20blog.> Chamar no WhatsApp →
+                        [footer ]
+                        © 2025 Conexão Tecnologia e Serviços. Todos os direitos reservados.
+                        </>
+                        Voltar ao site principal
+                        Diagnóstico gratuito! 🚀
+                        <https://wa.me/5565981172676?text=Olá!%20Vim%20pelo%20blog%20da%20Conexão%20e%20gostaria%20de%20agendar%20um%20diagnóstico%20gratuito.>
+=== JS: fetch/api/endpoints
+apiPost('getConteudoPublico'
+apiPost('getConteudosDestaque'
+apiPost('salvarDiagnostico'
+
+=== JS: strings de conteudo (posts/overlays) amostra
+CAT
+schema

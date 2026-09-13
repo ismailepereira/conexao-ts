@@ -1,0 +1,14 @@
+# Ambiente
+.env
+.env.*
+!.env.example
+
+# Sistema
+Thumbs.db
+.DS_Store
+__pycache__/
+
+# Impeccable: estado local e capturas de revisão
+.impeccable/config.local.json
+.impeccable/review/
+.impeccable/build/

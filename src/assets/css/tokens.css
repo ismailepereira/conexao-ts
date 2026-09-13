@@ -1,0 +1,73 @@
+/* =============================================================
+   Tokens — Conexão Tecnologia e Serviços
+   Sistema da home do Ismaile (canvas creme, cartões com luz no
+   topo, sombra em camadas) com a tinta em verde-petróleo e o
+   acento dividido nas três cores do logo.
+   ============================================================= */
+:root {
+  /* Superfícies */
+  --canvas:    #FAF8F3;
+  --surface:   #FFFFFF;
+  --surface-2: #F3F0E8;
+  --line:      #E5E1D7;
+  --line-2:    #D6D0C0;
+
+  /* Tinta */
+  --ink:    #10292A;
+  --ink-2:  #1A3B3B;
+  --ink-3:  #0A1D1E;
+  --body:   #43534F;
+  --subtle: #5E6D68;
+
+  /* As três cores do logo: *-ink é a versão para texto sobre o creme */
+  --teal:        #00A391;
+  --teal-ink:    #007A6C;
+  --teal-deep:   #006A5E;
+  --teal-light:  #4FD6C3;
+  --coral:       #EE4B41;
+  --coral-ink:   #B8352D;
+  --coral-light: #FF8F84;
+  --amber:       #F59E1C;
+  --amber-ink:   #9A5B00;
+  --amber-light: #FFC46B;
+
+  /* Cores exatas do arquivo do logo (só na marca) */
+  --marca-teal:  #00B3A2;
+  --marca-coral: #FF4540;
+  --marca-amber: #FFA126;
+
+  /* Sobre fundo escuro */
+  --on-dark:   #F4F2EC;
+  --on-dark-2: rgba(244, 242, 236, .80);
+  --on-dark-3: rgba(244, 242, 236, .62);
+  --line-dark: rgba(244, 242, 236, .14);
+
+  /* Tipografia */
+  --fonte: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:  "JetBrains Mono", ui-monospace, Consolas, monospace;
+
+  /* Ritmo */
+  --wrap:  1200px;
+  --gut:   clamp(20px, 5vw, 64px);
+  --secao: clamp(72px, 10vw, 116px);
+  --nav-h: 68px;
+
+  --r-sm: 8px;
+  --r:    12px;
+  --r-lg: 18px;
+
+  /* Elevação: uma luz só, de cima e da esquerda */
+  --luz-topo: inset 0 1px 0 rgba(255, 255, 255, .9);
+  --sombra-1: 0 1px 1px rgba(16, 41, 42, .04), 0 3px 6px -2px rgba(16, 41, 42, .06), 0 12px 24px -10px rgba(16, 41, 42, .10);
+  --sombra-2: 0 2px 3px rgba(16, 41, 42, .05), 0 8px 16px -4px rgba(16, 41, 42, .09), 0 26px 48px -16px rgba(16, 41, 42, .20);
+  --sombra-3: 0 30px 60px -24px rgba(10, 29, 30, .45);
+
+  --curva: cubic-bezier(.2, .8, .2, 1);
+  --saida: cubic-bezier(.16, 1, .3, 1);
+}
+
+/* Papel de cor por serviço: o componente lê --cor / --cor-ink / --cor-light */
+.cor-teal  { --cor: var(--teal);  --cor-ink: var(--teal-ink);  --cor-light: var(--teal-light);  --cor-marca: var(--marca-teal); }
+.cor-coral { --cor: var(--coral); --cor-ink: var(--coral-ink); --cor-light: var(--coral-light); --cor-marca: var(--marca-coral); }
+.cor-amber { --cor: var(--amber); --cor-ink: var(--amber-ink); --cor-light: var(--amber-light); --cor-marca: var(--marca-amber); }
+.cor-ink   { --cor: var(--ink-2); --cor-ink: var(--ink);       --cor-light: #9FC2BD;             --cor-marca: var(--ink-2); }

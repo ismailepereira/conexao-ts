@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#1BC9A8">
+  <title>Blog — Conexão Tecnologia e Serviços | Rondonópolis/MT</title>
+  <meta name="description" content="Automação, IA e tecnologia aplicadas a negócios reais. Artigos práticos sobre AI Agents, Micro SaaS, Cloud e Consultoria em TI." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://conexaots.com/blog" />
+  <meta property="og:title"       content="Blog — Conexão Tecnologia e Serviços" />
+  <meta property="og:description" content="Automação, IA e tecnologia aplicadas a negócios reais. Sem jargão, sem teoria vazia." />
+  <meta property="og:image"       content="https://conexaots.com/og-image.jpg" />
+  <meta property="og:locale"      content="pt_BR" />
+  <link rel="canonical" href="https://conexaots.com/blog" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{--teal:#1BC9A8;--coral:#E8574A;--amber:#E8A020;--bg:#060608;--card:#0e0e12;--border:rgba(255,255,255,0.08);--text:#e8e8ec;--muted:#7a7a8a;--fh:'Bricolage Grotesque',sans-serif;--fb:'Plus Jakarta Sans',sans-serif;--r:12px;--ease:.32s cubic-bezier(.4,0,.2,1)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{font-size:16px;overflow-x:hidden}
+    body{background:var(--bg);color:var(--text);font-family:var(--fb);line-height:1.65;overflow-x:hidden;min-height:100vh}
+    a{color:inherit;text-decoration:none}
+    ul{list-style:none}
+    button{cursor:pointer;border:none;background:none;font-family:inherit;color:inherit}
+    img{max-width:100%;display:block;height:auto}
+    .container{max-width:1180px;margin:0 auto;padding:0 clamp(1rem,4vw,1.5rem);width:100%}
+    .g-text{background:linear-gradient(90deg,var(--teal),#38d9c0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .label{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:.85rem}
+    .label::before{content:'';width:18px;height:2px;background:var(--teal)}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.72rem 1.6rem;border-radius:50px;font-family:var(--fh);font-weight:600;font-size:.88rem;transition:var(--ease);cursor:pointer}
+    .btn-p{background:linear-gradient(135deg,#14b896,var(--teal));color:#000;border:none}
+    .btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(27,201,168,.25)}
+    .btn-o{border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.75);background:rgba(255,255,255,.03)}
+    .btn-o:hover{border-color:var(--teal);color:var(--teal);background:rgba(27,201,168,.05)}
+
+    /* ── HEADER ── */
+    #hdr{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 0;border-bottom:1px solid transparent;transition:var(--ease)}
+    #hdr.solid{background:rgba(4,4,4,.98);backdrop-filter:blur(20px);border-bottom-color:rgba(255,255,255,.14);box-shadow:0 2px 28px rgba(0,0,0,.7)}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .nav-logo{display:flex;align-items:center;gap:.8rem;background:none;border:none;cursor:pointer;padding:0}
+    .nav-logo img{height:42px;width:auto}
+    .nav-brand{font-family:var(--fh);font-size:.95rem;font-weight:700;line-height:1.2;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.8)}
+    .nav-brand span{display:block;font-size:.6rem;font-weight:400;color:rgba(255,255,255,.6);letter-spacing:.1em;text-transform:uppercase}
+    .nav-back{display:inline-flex;align-items:center;gap:.5rem;font-size:.82rem;color:var(--muted);padding:.42rem .85rem;border-radius:7px;border:1px solid var(--border);background:var(--card);transition:var(--ease);cursor:pointer}
+    .nav-back:hover{color:#fff;border-color:rgba(255,255,255,.2)}
+    .nav-back svg{width:14px;height:14px}
+
+    /* ── BLOG LIST ── */
+    .blog-hero{padding:8rem 0 3.5rem}
+    .blog-hero h1{font-family:var(--fh);font-size:clamp(2rem,4vw,3.2rem);font-weight:800;line-height:1.1;letter-spacing:-.03em;margin-bottom:.75rem}
+    .blog-hero p{color:var(--muted);font-size:1rem;max-width:560px}
+    .blog-count{font-size:.78rem;color:var(--muted);margin-top:.65rem}
+    .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.25rem;padding-bottom:5rem}
+    .blog-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:var(--ease);display:flex;flex-direction:column;cursor:pointer}
+    .blog-card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.13)}
+    .blog-thumb{width:100%;height:170px;display:flex;align-items:center;justify-content:center;font-size:2.2rem;flex-shrink:0}
+    .blog-body{padding:1.35rem;flex:1;display:flex;flex-direction:column}
+    .blog-meta{display:flex;align-items:center;gap:.6rem;font-size:.72rem;color:var(--muted);margin-bottom:.65rem}
+    .blog-cat{color:var(--teal);font-weight:600}
+    .blog-h3{font-family:var(--fh);font-size:1rem;font-weight:700;line-height:1.3;margin-bottom:.5rem}
+    .blog-exc{font-size:.83rem;color:var(--muted);margin-bottom:1rem;flex:1}
+    .blog-foot{display:flex;align-items:center;justify-content:space-between;padding-top:.85rem;border-top:1px solid var(--border)}
+    .blog-author{display:flex;align-items:center;gap:.5rem;font-size:.77rem;color:var(--muted)}
+    .av{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--amber));display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;color:#000}
+    .blog-more{font-size:.78rem;font-weight:600;color:var(--teal);display:inline-flex;align-items:center;gap:.3rem;transition:gap var(--ease)}
+    .blog-more:hover{gap:.55rem}
+
+    /* ── ARTIGO (overlay) ── */
+    #post-overlay{position:fixed;inset:0;z-index:400;background:var(--bg);overflow-y:auto;transform:translateX(100%);transition:transform .4s cubic-bezier(.4,0,.2,1);will-change:transform}
+    .post-inner{max-width:780px;margin:0 auto;padding:5rem 1.5rem 5rem}
+    .post-back{display:inline-flex;align-items:center;gap:.5rem;font-size:.82rem;color:var(--muted);padding:.42rem .85rem;border-radius:7px;border:1px solid var(--border);background:var(--card);transition:var(--ease);cursor:pointer;position:fixed;top:1.2rem;left:1.5rem;z-index:410}
+    .post-back:hover{color:#fff;border-color:rgba(255,255,255,.2)}
+    .post-back svg{width:14px;height:14px}
+    .ai-highlight{background:linear-gradient(135deg,rgba(27,201,168,.1),rgba(255,184,0,.07));border:1px solid rgba(27,201,168,.25);border-radius:var(--r);padding:1.75rem;margin-top:2rem}
+    .ai-highlight h3{font-family:var(--fh);font-size:1.05rem;font-weight:700;margin-bottom:.75rem;color:var(--teal)}
+    .ai-highlight p{font-size:.87rem;color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:.75rem}
+    .ai-highlight p:last-child{margin-bottom:0}
+    .ai-feat{display:flex;gap:1rem;align-items:flex-start}
+    .ai-feat-ico{width:44px;height:44px;border-radius:10px;background:rgba(27,201,168,.08);border:1px solid rgba(27,201,168,.18);color:var(--teal);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:.1rem}
+    .ai-feat-body h4{font-family:var(--fh);font-size:.9rem;font-weight:700;margin-bottom:.25rem;color:#fff}
+    .ai-feat-body p{font-size:.83rem;color:rgba(255,255,255,.68);margin:0;line-height:1.6}
+
+    /* ── MODAL DIAGNÓSTICO ── */
+    #diag-modal{display:none;position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.75);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:1rem}
+    #diag-modal.open{display:flex}
+    .diag-modal-box{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:2rem;width:100%;max-width:540px;max-height:90vh;overflow-y:auto}
+    .diag-modal-hdr{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:1.5rem}
+    .diag-modal-title{font-family:var(--fh);font-size:1.15rem;font-weight:800;color:#fff}
+    .diag-modal-sub{font-size:.82rem;color:var(--muted);margin-top:.25rem}
+    .diag-modal-close{width:30px;height:30px;border-radius:7px;background:rgba(255,255,255,.06);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:1rem;flex-shrink:0;cursor:pointer;transition:var(--ease)}
+    .diag-modal-close:hover{color:#fff;border-color:rgba(255,255,255,.2)}
+    #diag-success{display:none;text-align:center;padding:1.5rem 0}
+    .f-grp{display:flex;flex-direction:column;gap:.4rem;flex:1}
+    .f-grp label{font-size:.78rem;font-weight:600;color:rgba(255,255,255,.7);letter-spacing:.04em}
+    .f-grp input,.f-grp select,.f-grp textarea{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:.72rem 1rem;font-size:.88rem;color:#fff;font-family:var(--fb);outline:none;transition:border-color var(--ease);width:100%}
+    .f-grp input:focus,.f-grp select:focus,.f-grp textarea:focus{border-color:var(--teal)}
+    .f-grp select option{background:#1a1a20}
+    .f-row{display:flex;gap:.9rem}
+    #diag-form-fb{margin-top:.75rem;font-size:.82rem;min-height:1.2rem}
+    #diag-form-fb.err{color:var(--coral)}
+    #diag-form-fb.ok{color:var(--teal)}
+
+    /* ── WA FLUTUANTE ── */
+    .wa-float{position:fixed;bottom:calc(1.75rem + env(safe-area-inset-bottom));right:1.75rem;z-index:300;display:flex;align-items:center;gap:.65rem}
+    .wa-tip{background:var(--card);border:1px solid var(--border);border-radius:9px;padding:.5rem .85rem;font-size:.77rem;color:var(--muted);white-space:nowrap;opacity:0;transform:translateX(8px);transition:var(--ease);pointer-events:none}
+    .wa-float:hover .wa-tip{opacity:1;transform:none}
+    .wa-btn{width:54px;height:54px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,.38);transition:var(--ease);flex-shrink:0}
+    .wa-btn:hover{transform:scale(1.08);box-shadow:0 6px 26px rgba(37,211,102,.48)}
+    .wa-btn svg{width:26px;height:26px;fill:#fff}
+
+    /* ── FOOTER ── */
+    footer{border-top:1px solid var(--border);padding:2rem 0 1.5rem}
+    .ft-bot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.75rem;color:var(--muted)}
+
+    /* ── LUCIDE ICONS ── */
+    .lc{width:16px;height:16px;stroke-width:2;vertical-align:middle;display:inline-block;stroke:currentColor;fill:none}
+
+    /* ── RESPONSIVO ── */
+    @media(max-width:600px){
+      .blog-grid{grid-template-columns:1fr}
+      .blog-hero{padding:6.5rem 0 2.5rem}
+      .f-row{flex-direction:column}
+      .wa-float{bottom:calc(1rem + env(safe-area-inset-bottom));right:1rem}
+      .wa-btn{width:46px;height:46px}
+      .wa-btn svg{width:22px;height:22px}
+      .wa-tip{display:none}
+    }
+
+    /* ── POST-BODY (markdown renderizado) ── */
+    .post-body{font-size:.95rem;color:rgba(255,255,255,.78);line-height:1.85}
+    .post-body p{margin-bottom:1.5rem}
+    .post-body h1,.post-body h2,.post-body h3,.post-body h4{font-family:var(--fh);font-weight:700;color:#fff;margin:2.5rem 0 .85rem;line-height:1.25}
+    .post-body h1{font-size:1.5rem}.post-body h2{font-size:1.25rem}.post-body h3{font-size:1.05rem}
+    .post-body ul,.post-body ol{margin-bottom:1.5rem;padding-left:1.5rem;display:flex;flex-direction:column;gap:.4rem}
+    .post-body ul li{list-style:disc}.post-body ol li{list-style:decimal}
+    .post-body strong{color:rgba(255,255,255,.92);font-weight:600}
+    .post-body em{color:rgba(255,255,255,.75);font-style:italic}
+    .post-body a{color:var(--teal);text-decoration:underline;text-underline-offset:3px}
+    .post-body a:hover{opacity:.8}
+    .post-body code{background:rgba(255,255,255,.07);border:1px solid var(--border);border-radius:4px;padding:.15em .4em;font-size:.87em;font-family:monospace}
+    .post-body pre{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem;margin-bottom:1.5rem;overflow-x:auto}
+    .post-body pre code{background:none;border:none;padding:0;font-size:.85rem}
+    .post-body blockquote{border-left:3px solid var(--teal);padding:.75rem 1.25rem;margin-bottom:1.5rem;background:rgba(27,201,168,.06);border-radius:0 var(--r) var(--r) 0}
+    .post-body blockquote p{margin-bottom:0;color:rgba(255,255,255,.7)}
+    .post-body hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
+    .post-body img{max-width:100%;border-radius:var(--r);margin-bottom:1.5rem}
+    .post-body table{width:100%;border-collapse:collapse;margin-bottom:1.5rem;font-size:.87rem}
+    .post-body th,.post-body td{padding:.6rem .85rem;border:1px solid var(--border);text-align:left}
+    .post-body th{background:rgba(255,255,255,.05);font-weight:600;color:#fff}
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header id="hdr" role="banner">
+  <div class="container">
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="/" class="nav-logo" aria-label="Voltar ao site">
+        <img src="logo_transparente.png" alt="Conexão Tecnologia e Serviços" loading="eager"
+             onerror="this.style.display='none'"/>
+        <div class="nav-brand">CONEXÃO<span>Tecnologia e Serviços</span></div>
+      </a>
+      <a href="/" class="nav-back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Voltar ao site
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- ── HERO DO BLOG ── -->
+<main>
+  <div id="blog-list">
+    <div class="container">
+      <div class="blog-hero">
+        <div class="label">Conteúdo e Insights</div>
+        <h1>Ideias que <span class="g-text">funcionam</span></h1>
+        <p>Automação, IA e tecnologia aplicadas a negócios reais.</p>
+        <div class="blog-count" id="blog-count"></div>
+      </div>
+
+      <div id="blog-grid" class="blog-grid">
+
+        <!-- POST 1 -->
+        <article class="blog-card" onclick="openPost('tecnologia-estrategica')">
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(27,201,168,.15),rgba(80,120,255,.1))">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(27,201,168,.8)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta"><span class="blog-cat">Consultoria em TI</span>·<time datetime="2025-03-01">01 Mar 2025</time>·<span>8 min</span></div>
+            <h2 class="blog-h3">Tecnologia Estratégica: quando a TI deixa de ser suporte e passa a impulsionar o negócio</h2>
+            <p class="blog-exc">Empresas que alinham tecnologia à estratégia tomam decisões melhores, operam com mais eficiência e saem na frente da concorrência.</p>
+            <div class="blog-foot">
+              <div class="blog-author"><div class="av">IP</div><span>Itamar Pereira</span></div>
+              <span class="blog-more">Ler <i data-lucide="arrow-right" class="lc"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- POST 2 -->
+        <article class="blog-card" onclick="openPost('tecnologia-assertiva')">
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(232,87,74,.15),rgba(232,160,32,.1))">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(232,87,74,.8)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta"><span class="blog-cat">Micro SaaS</span>·<time datetime="2025-03-08">08 Mar 2025</time>·<span>7 min</span></div>
+            <h2 class="blog-h3">Tecnologia Assertiva: a solução certa para o problema certo</h2>
+            <p class="blog-exc">Empresas modernas estão abandonando sistemas gigantescos e adotando soluções focadas que resolvem problemas específicos com eficiência real.</p>
+            <div class="blog-foot">
+              <div class="blog-author"><div class="av">IP</div><span>Itamar Pereira</span></div>
+              <span class="blog-more">Ler <i data-lucide="arrow-right" class="lc"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- POST 3 -->
+        <article class="blog-card" onclick="openPost('tecnologia-personalizada')">
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(80,120,255,.15),rgba(27,201,168,.1))">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(80,120,255,.8)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta"><span class="blog-cat">AI Agents</span>·<time datetime="2025-03-15">15 Mar 2025</time>·<span>7 min</span></div>
+            <h2 class="blog-h3">Tecnologia Personalizada: soluções desenvolvidas para a realidade da sua empresa</h2>
+            <p class="blog-exc">Sistemas genéricos resolvem problemas genéricos. Quando a operação tem características próprias, a tecnologia precisa se adaptar ao negócio — não o contrário.</p>
+            <div class="blog-foot">
+              <div class="blog-author"><div class="av">IP</div><span>Itamar Pereira</span></div>
+              <span class="blog-more">Ler <i data-lucide="arrow-right" class="lc"></i></span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       OVERLAY DOS ARTIGOS
+  ══════════════════════════════════════ -->
+  <div id="post-overlay" role="dialog" aria-modal="true" aria-label="Artigo do blog">
+
+    <button class="post-back" onclick="closePost()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      Voltar ao Blog
+    </button>
+
+    <!-- ── ARTIGO 1: TECNOLOGIA ESTRATÉGICA ── -->
+    <div id="post-tecnologia-estrategica" style="display:none">
+      <div class="post-inner">
+        <div style="text-align:left;max-width:none;margin-bottom:2.5rem">
+          <div class="label">Consultoria em TI</div>
+          <h1 style="font-family:var(--fh);font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;line-height:1.18;letter-spacing:-.02em;margin-bottom:1rem;color:#fff">Tecnologia Estratégica: quando a TI deixa de ser suporte e passa a impulsionar o negócio</h1>
+          <div style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;font-size:.8rem;color:var(--muted);padding-bottom:1.5rem;border-bottom:1px solid var(--border)">
+            <div style="display:flex;align-items:center;gap:.5rem"><div class="av">IP</div><span>Itamar Pereira</span></div>
+            <span>·</span><time datetime="2025-03-01">01 de março de 2025</time>
+            <span>·</span><span>8 min de leitura</span>
+          </div>
+        </div>
+
+        <div style="font-size:.95rem;color:rgba(255,255,255,.78);line-height:1.85">
+
+          <p style="font-size:1.08rem;color:rgba(255,255,255,.9);margin-bottom:1.75rem;line-height:1.75">Durante anos, a tecnologia foi vista dentro das empresas como um setor de suporte — algo necessário para manter os computadores funcionando, resolver problemas técnicos e garantir que o e-mail não caísse. Útil, mas distante das decisões estratégicas.</p>
+
+          <p style="margin-bottom:1.5rem">Esse modelo ainda existe em muitas organizações. E é exatamente aí que está o problema: enquanto essas empresas usam a tecnologia apenas para "não parar", outras já estão usando para crescer, tomar decisões melhores e operar com muito mais eficiência.</p>
+
+          <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">O que significa TI estratégica na prática</h2>
+
+          <p style="margin-bottom:1rem">Quando falamos em tecnologia estratégica, não estamos falando de sistemas caros ou softwares complexos. Estamos falando de uma mudança de perspectiva: a tecnologia deixa de ser reativa e passa a ser um agente ativo na criação de valor para o negócio.</p>
+
+          <p style="margin-bottom:1.5rem">Isso significa usar dados para tomar decisões, automatizar o que é repetitivo para liberar a equipe para o que importa e criar sistemas que acompanham o crescimento da empresa — em vez de limitá-lo.</p>
+
+          <div class="ai-highlight" style="margin:2rem 0">
+            <h3>Um exemplo prático: o escritório jurídico e o controle de prazos</h3>
+            <p>Um escritório de advocacia que usa planilhas para controlar prazos processuais corre riscos desnecessários — e gasta muito tempo em trabalho manual. Com uma solução simples e personalizada, o controle de prazos passa a ser automático, com alertas por WhatsApp para o advogado responsável e um painel de visão geral para os sócios.</p>
+            <p>O resultado: menos risco, menos retrabalho e mais tempo para o que gera receita. <strong style="color:rgba(255,255,255,.9)">Isso é TI estratégica.</strong></p>
+          </div>
+
+          <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">Como alinhar tecnologia à estratégia do negócio</h2>
+
+          <div style="display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2rem">
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+              <div class="ai-feat-body"><h4>Diagnóstico antes de qualquer solução</h4><p>Entender os gargalos reais da operação antes de propor qualquer tecnologia. Muitas empresas compram sistemas e depois tentam encaixar os processos neles — deveria ser o contrário.</p></div>
+            </div>
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+              <div class="ai-feat-body"><h4>KPIs e indicadores visíveis</h4><p>Tecnologia estratégica cria visibilidade. Gestores precisam ver em tempo real o que está acontecendo no negócio — não descobrir no final do mês pelo relatório.</p></div>
+            </div>
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <div class="ai-feat-body"><h4>Equipe como aliada, não obstáculo</h4><p>A melhor tecnologia é aquela que a equipe usa. Sistemas complexos que ninguém consegue operar geram resistência e ficam abandonados. Simplicidade é estratégia.</p></div>
+            </div>
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
+              <div class="ai-feat-body"><h4>Soluções que evoluem com o negócio</h4><p>O sistema ideal hoje pode não ser o ideal em dois anos. Tecnologia estratégica é planejada para crescer junto — não para ser substituída toda vez que a empresa muda.</p></div>
+            </div>
+          </div>
+
+          <div class="ai-highlight" style="margin:2rem 0">
+            <h3>Por que a TI estratégica está ganhando espaço</h3>
+            <p>O custo de ferramentas tecnológicas caiu drasticamente nos últimos anos. Soluções que antes eram acessíveis apenas para grandes empresas agora estão ao alcance de negócios de qualquer tamanho. Combinadas com uma abordagem estratégica, essas ferramentas criam vantagens competitivas reais.</p>
+            <p>Empresas que entendem isso mais cedo saem na frente — não porque gastaram mais em tecnologia, mas porque <strong style="color:rgba(255,255,255,.9)">escolheram a tecnologia certa para o problema certo.</strong></p>
+          </div>
+
+          <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">O impacto em diferentes tipos de empresa</h2>
+
+          <div style="display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2rem">
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+              <div class="ai-feat-body"><h4>Comércio e varejo</h4><p>Controle de estoque inteligente, análise de giro de produtos, promoções automáticas para itens próximos ao vencimento e previsão de demanda baseada em histórico.</p></div>
+            </div>
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+              <div class="ai-feat-body"><h4>Agronegócio</h4><p>Gestão de safra, controle de insumos, monitoramento de custos por talhão e automação de relatórios para financiamento e rastreabilidade.</p></div>
+            </div>
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+              <div class="ai-feat-body"><h4>Prestadores de serviços</h4><p>Organização de agenda, redução de faltas com confirmação automática via WhatsApp e análise de quais serviços geram mais receita.</p></div>
+            </div>
+          </div>
+
+          <div style="margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid var(--border)">
+            <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:700;margin-bottom:.75rem;color:#fff">Tecnologia alinhada à estratégia da sua empresa</h3>
+            <p style="font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:.75rem">Na Conexão Tecnologia e Serviços, o ponto de partida é sempre o negócio — não a tecnologia. Antes de propor qualquer solução, fazemos um diagnóstico completo para entender os processos, os gargalos e os objetivos da empresa. O resultado é uma proposta alinhada à realidade, ao orçamento e às metas de crescimento.</p>
+          </div>
+
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.75rem">
+            <button class="btn btn-p" onclick="openDiagModal()">Agendar diagnóstico gratuito →</button>
+            <a href="/" class="btn btn-o">Ver todos os serviços</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ARTIGO 2: TECNOLOGIA ASSERTIVA ── -->
+    <div id="post-tecnologia-assertiva" style="display:none">
+      <div class="post-inner">
+        <div style="text-align:left;max-width:none;margin-bottom:2.5rem">
+          <div class="label">Micro SaaS</div>
+          <h1 style="font-family:var(--fh);font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;line-height:1.18;letter-spacing:-.02em;margin-bottom:1rem;color:#fff">Tecnologia Assertiva: a solução certa para o problema certo</h1>
+          <div style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;font-size:.8rem;color:var(--muted);padding-bottom:1.5rem;border-bottom:1px solid var(--border)">
+            <div style="display:flex;align-items:center;gap:.5rem"><div class="av">IP</div><span>Itamar Pereira</span></div>
+            <span>·</span><time datetime="2025-03-08">08 de março de 2025</time>
+            <span>·</span><span>7 min de leitura</span>
+          </div>
+        </div>
+
+        <div style="font-size:.95rem;color:rgba(255,255,255,.78);line-height:1.85">
+
+          <p style="font-size:1.08rem;color:rgba(255,255,255,.9);margin-bottom:1.75rem;line-height:1.75">Em muitas empresas, investir em tecnologia ainda significa comprar sistemas grandes, complexos e cheios de funcionalidades que raramente são utilizadas. O resultado costuma ser conhecido: alto custo, baixa utilização e pouca melhoria real na operação.</p>
+
+          <p style="margin-bottom:1.5rem">Mas existe uma abordagem muito mais eficiente: ser assertivo. Significa escolher a solução certa para o problema certo — sem desperdício de recursos, tempo ou esforço. Em vez de ferramentas excessivamente complexas, empresas modernas estão adotando tecnologias mais focadas, objetivas e alinhadas às necessidades reais do negócio.</p>
+
+          <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">O problema do excesso de tecnologia</h2>
+
+          <p style="margin-bottom:1rem">Durante muitos anos, o mercado de software corporativo seguiu uma lógica simples: quanto mais funcionalidades, melhor. Na prática, isso criou plataformas gigantescas que tentam resolver tudo ao mesmo tempo — e acabam não resolvendo nada direito.</p>
+
+          <ul style="margin-bottom:1.5rem;display:flex;flex-direction:column;gap:.5rem;padding-left:1.25rem">
+            <li>Muitas empresas usam apenas uma fração das funcionalidades disponíveis</li>
+            <li>Processos ficam mais complexos do que deveriam</li>
+            <li>Equipes têm dificuldade para aprender e utilizar os sistemas</li>
+            <li>O custo de implantação e manutenção se torna elevado</li>
+          </ul>
+
+          <div class="ai-highlight" style="margin:2rem 0">
+            <h3>Um exemplo prático: o supermercado e as perdas por vencimento</h3>
+            <p>Uma abordagem tradicional diante de perdas frequentes por vencimento de produtos sugeriria trocar todo o sistema de gestão. Mas muitas vezes o problema está apenas na falta de visibilidade sobre produtos próximos ao vencimento.</p>
+            <p>Uma solução assertiva resolve exatamente isso: monitora datas de validade, gera alertas automáticos para a equipe e sugere promoções para itens próximos do vencimento. <strong style="color:rgba(255,255,255,.9)">Sem grandes mudanças na infraestrutura, com impacto direto no lucro.</strong></p>
+          </div>
+
+          <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">Aplicações em diferentes setores</h2>
+
+          <div style="display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2rem">
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+              <div class="ai-feat-body"><h4>Comércio</h4><p>Soluções que acompanham o ciclo de vendas, identificam clientes que precisam de follow-up e organizam o processo comercial com simplicidade.</p></div>
+            </div>
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+              <div class="ai-feat-body"><h4>Indústrias</h4><p>Sistemas focados que monitoram etapas específicas da produção, identificando gargalos que afetam prazos e produtividade.</p></div>
+            </div>
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+              <div class="ai-feat-body"><h4>Prestadores de serviço</h4><p>Soluções simples para organizar agendas, reduzir faltas de clientes e melhorar o relacionamento sem complicar a operação.</p></div>
+            </div>
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <div class="ai-feat-body"><h4>Empresas em crescimento</h4><p>Tecnologias específicas para controle financeiro, análise de dados ou acompanhamento de indicadores — adotadas de forma gradual e sem grandes riscos.</p></div>
+            </div>
+          </div>
+
+          <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">Por que o modelo Micro SaaS está crescendo</h2>
+
+          <div class="ai-highlight">
+            <h3>Simples, focado e eficiente</h3>
+            <p>A grande força desse modelo está na combinação de simplicidade e eficiência. Em vez de investir apenas em grandes sistemas, empresas estão adotando ferramentas menores que resolvem problemas específicos com rapidez.</p>
+            <p><strong style="color:rgba(255,255,255,.9)">Entre os principais benefícios:</strong> implementação rápida · baixo custo · alta adaptação ao processo · possibilidade de evoluir conforme novas necessidades surgem.</p>
+          </div>
+
+          <div style="margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid var(--border)">
+            <p style="font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.75">Na Conexão Tecnologia e Serviços, cada projeto de Micro SaaS nasce a partir da análise dos processos da empresa. O objetivo é identificar gargalos operacionais e criar soluções digitais específicas que gerem impacto real na produtividade e na tomada de decisão.</p>
+          </div>
+
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.75rem">
+            <button class="btn btn-p" onclick="openDiagModal()">Quero meu Micro SaaS →</button>
+            <a href="/" class="btn btn-o">Ver todos os serviços</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ARTIGO 3: TECNOLOGIA PERSONALIZADA ── -->
+    <div id="post-tecnologia-personalizada" style="display:none">
+      <div class="post-inner">
+        <div style="text-align:left;max-width:none;margin-bottom:2.5rem">
+          <div class="label">AI Agents</div>
+          <h1 style="font-family:var(--fh);font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;line-height:1.18;letter-spacing:-.02em;margin-bottom:1rem;color:#fff">Tecnologia Personalizada: soluções desenvolvidas para a realidade da sua empresa</h1>
+          <div style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;font-size:.8rem;color:var(--muted);padding-bottom:1.5rem;border-bottom:1px solid var(--border)">
+            <div style="display:flex;align-items:center;gap:.5rem"><div class="av">IP</div><span>Itamar Pereira</span></div>
+            <span>·</span><time datetime="2025-03-15">15 de março de 2025</time>
+            <span>·</span><span>7 min de leitura</span>
+          </div>
+        </div>
+
+        <div style="font-size:.95rem;color:rgba(255,255,255,.78);line-height:1.85">
+
+          <p style="font-size:1.08rem;color:rgba(255,255,255,.9);margin-bottom:1.75rem;line-height:1.75">Cada empresa possui processos próprios, desafios específicos e uma forma única de operar. Mesmo quando atuam no mesmo setor, dois negócios raramente funcionam exatamente da mesma maneira.</p>
+
+          <p style="margin-bottom:1.5rem">Apesar disso, muitas organizações acabam adotando sistemas genéricos que tentam atender a todos os tipos de empresa ao mesmo tempo. O resultado costuma ser conhecido: processos que precisam se adaptar ao software, equipes que criam controles paralelos em planilhas e uma sensação constante de que o sistema <em>"não encaixa"</em> na operação.</p>
+
+          <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">O limite das soluções genéricas</h2>
+
+          <ul style="margin-bottom:1.5rem;display:flex;flex-direction:column;gap:.5rem;padding-left:1.25rem">
+            <li>Processos que não se encaixam no sistema</li>
+            <li>Necessidade constante de planilhas complementares</li>
+            <li>Dificuldade para extrair informações importantes</li>
+            <li>Falta de integração entre ferramentas</li>
+          </ul>
+
+          <div class="ai-highlight" style="margin:2rem 0">
+            <h3>Um exemplo prático: o escritório jurídico e o controle de prazos</h3>
+            <p>Um escritório de advocacia utiliza um sistema jurídico padrão do mercado para cadastrar processos e clientes. Porém, o sistema não reflete a forma como o escritório organiza internamente seus casos.</p>
+            <p>Uma solução personalizada resolve exatamente isso: painel de prazos filtrado por advogado, alertas configurados por tipo de processo e relatório semanal automático para os sócios. <strong style="color:rgba(255,255,255,.9)">O sistema passa a funcionar como o escritório trabalha — não como o fornecedor imaginou que ele deveria trabalhar.</strong></p>
+          </div>
+
+          <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">Aplicações em diferentes segmentos</h2>
+
+          <div style="display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2rem">
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+              <div class="ai-feat-body"><h4>Comércio e varejo</h4><p>Soluções que acompanham o comportamento de compra, organizam promoções e melhoram o controle de estoque de forma integrada.</p></div>
+            </div>
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+              <div class="ai-feat-body"><h4>Indústrias</h4><p>Sistemas adaptados aos processos produtivos reais, integrando produção, logística e custos sem forçar a operação a se moldar ao software.</p></div>
+            </div>
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+              <div class="ai-feat-body"><h4>Prestadores de serviços</h4><p>Ferramentas específicas para gestão de atendimento, organização de agendas e acompanhamento de resultados operacionais.</p></div>
+            </div>
+            <div class="ai-feat">
+              <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+              <div class="ai-feat-body"><h4>Empresas em crescimento</h4><p>Sistemas que evoluem junto com o negócio, acompanhando novas demandas sem exigir troca completa de plataforma.</p></div>
+            </div>
+          </div>
+
+          <div style="background:linear-gradient(135deg,rgba(27,201,168,.1),rgba(80,120,255,.07));border:1px solid rgba(27,201,168,.25);border-radius:var(--r);padding:2rem;margin-top:2.5rem">
+            <h3 style="font-family:var(--fh);font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:.6rem">Quer tecnologia que se adapta ao seu negócio?</h3>
+            <p style="font-size:.9rem;color:rgba(255,255,255,.65);margin-bottom:1.5rem;line-height:1.7">Na Conexão, desenvolvemos soluções a partir da sua operação — não do que está na prateleira. Começamos com um diagnóstico gratuito de 30 minutos para entender a sua realidade antes de propor qualquer coisa.</p>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap">
+              <button class="btn btn-p" onclick="openDiagModal()">Agendar diagnóstico gratuito →</button>
+              <a href="/" class="btn btn-o">Ver AI Agents</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /post-overlay -->
+</main>
+
+<!-- ── MODAL DIAGNÓSTICO ── -->
+<div id="diag-modal" role="dialog" aria-modal="true" aria-label="Solicitar diagnóstico gratuito">
+  <div class="diag-modal-box">
+    <div class="diag-modal-hdr">
+      <div>
+        <div class="diag-modal-title">Diagnóstico Gratuito — 30 minutos</div>
+        <div class="diag-modal-sub">Preencha e entraremos em contato para agendar sua sessão</div>
+      </div>
+      <button class="diag-modal-close" onclick="closeDiagModal()" aria-label="Fechar"><i data-lucide="x" class="lc"></i></button>
+    </div>
+    <div id="diag-form-wrap">
+      <div class="f-row" style="margin-bottom:.9rem">
+        <div class="f-grp"><label>Nome *</label><input type="text" id="diag-nome" placeholder="Seu nome" autocomplete="name"/></div>
+        <div class="f-grp"><label>Empresa</label><input type="text" id="diag-empresa" placeholder="Sua empresa" autocomplete="organization"/></div>
+      </div>
+      <div class="f-row" style="margin-bottom:.9rem">
+        <div class="f-grp"><label>E-mail *</label><input type="email" id="diag-email" placeholder="seu@email.com" autocomplete="email"/></div>
+        <div class="f-grp"><label>WhatsApp *</label><input type="tel" id="diag-tel" placeholder="(65) 9 0000-0000" autocomplete="tel"/></div>
+      </div>
+      <div class="f-grp" style="margin-bottom:.9rem">
+        <label>Segmento da empresa</label>
+        <select id="diag-segmento">
+          <option value="">Selecione...</option>
+          <option>Agronegócio</option><option>Construção Civil</option>
+          <option>Escritório Jurídico</option><option>Barbearia ou Salão</option>
+          <option>Comércio e Varejo</option><option>Indústria</option>
+          <option>Prestação de Serviços</option><option>Outro</option>
+        </select>
+      </div>
+      <div class="f-grp" style="margin-bottom:.9rem">
+        <label>Principal desafio da sua operação hoje</label>
+        <textarea id="diag-desafio" rows="3" placeholder="Ex: processos manuais, falta de controle..."></textarea>
+      </div>
+      <div class="f-grp" style="margin-bottom:1.25rem">
+        <label>Como nos encontrou?</label>
+        <select id="diag-origem">
+          <option value="">Selecione...</option>
+          <option value="Google">Google / Pesquisa online</option>
+          <option value="WhatsApp">WhatsApp</option>
+          <option value="Indicação">Indicação de alguém</option>
+          <option value="Instagram">Instagram</option>
+          <option value="LinkedIn">LinkedIn</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </div>
+      <button class="btn btn-p" id="diag-sbtn" onclick="submitDiagnostico()" style="justify-content:center;width:100%;font-size:.92rem">Solicitar diagnóstico gratuito →</button>
+      <div id="diag-form-fb" role="alert" aria-live="polite"></div>
+    </div>
+    <div id="diag-success">
+      <div style="font-size:2.5rem;margin-bottom:1rem">✅</div>
+      <h3 style="font-family:var(--fh);font-size:1.2rem;font-weight:800;color:#fff;margin-bottom:.75rem">Diagnóstico solicitado com sucesso!</h3>
+      <p style="margin-bottom:1.25rem;font-size:.9rem;color:var(--muted)">Recebemos sua solicitação e entraremos em contato pelo WhatsApp em até 24h para agendar sua sessão.</p>
+      <a href="https://wa.me/5565981172676?text=Olá!%20Acabei%20de%20solicitar%20um%20diagnóstico%20gratuito%20pelo%20blog." target="_blank" rel="noopener" class="btn btn-p" style="display:inline-flex">Chamar no WhatsApp →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="ft-bot">
+      <span>© 2025 Conexão Tecnologia e Serviços. Todos os direitos reservados.</span>
+      <a href="/" style="color:var(--teal);font-size:.8rem;display:inline-flex;align-items:center;gap:.3rem"><i data-lucide="arrow-left" class="lc"></i> Voltar ao site principal</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ── WA FLUTUANTE ── -->
+<div class="wa-float" aria-label="WhatsApp">
+  <div class="wa-tip" aria-hidden="true">Diagnóstico gratuito! 🚀</div>
+  <a href="https://wa.me/5565981172676?text=Olá!%20Vim%20pelo%20blog%20da%20Conexão%20e%20gostaria%20de%20agendar%20um%20diagnóstico%20gratuito."
+     class="wa-btn" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+<script src="https://cdn.jsdelivr.net/npm/marked@14/marked.min.js"></script>
+<script>
+(function(){
+  'use strict';
+
+  var API_URL = 'api.php';
+
+  function apiPost(action, data) {
+    return fetch(API_URL + '?action=' + action, {
+      method: 'POST', credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    }).then(function(r){ return r.json(); }).catch(function(){ return { status: 'error' }; });
+  }
+
+  function escHtml(s) {
+    return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function fmtDate(dt) {
+    if (!dt) return '';
+    try { return new Date(dt).toLocaleDateString('pt-BR',{day:'2-digit',month:'short',year:'numeric'}); }
+    catch(e){ return ''; }
+  }
+
+  // ── Categoria → cores visuais ──────────────────────────────────────────
+  var CAT = {
+    'AI Agents':        {bg:'linear-gradient(135deg,rgba(27,201,168,.15),rgba(80,120,255,.1))',  s:'rgba(27,201,168,.8)'},
+    'Micro SaaS':       {bg:'linear-gradient(135deg,rgba(232,87,74,.15),rgba(232,160,32,.1))',   s:'rgba(232,87,74,.8)'},
+    'Cloud Computing':  {bg:'linear-gradient(135deg,rgba(80,120,255,.15),rgba(168,85,247,.1))',  s:'rgba(80,120,255,.8)'},
+    'Consultoria em TI':{bg:'linear-gradient(135deg,rgba(232,160,32,.15),rgba(27,201,168,.1))',  s:'rgba(232,160,32,.8)'},
+    'Automação':        {bg:'linear-gradient(135deg,rgba(27,201,168,.15),rgba(232,160,32,.1))',  s:'rgba(27,201,168,.8)'},
+  };
+  function catStyle(cat){ return CAT[cat]||{bg:'linear-gradient(135deg,rgba(80,120,255,.15),rgba(27,201,168,.1))',s:'rgba(80,120,255,.8)'}; }
+  function catIcon(s) {
+    return '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="'+s+'" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 8.46a5 5 0 0 0 0 7.07"/></svg>';
+  }
+
+  // ── Carregar lista de posts ────────────────────────────────────────────
+  function loadBlogList() {
+    var grid  = document.getElementById('blog-grid');
+    var count = document.getElementById('blog-count');
+    grid.innerHTML = '<div style="grid-column:1/-1;padding:3rem 0;text-align:center;color:var(--muted);font-size:.9rem">Carregando artigos...</div>';
+
+    apiPost('getConteudosDestaque', {}).then(function(r) {
+      if (r.status !== 'success' || !r.data || !r.data.length) {
+        grid.innerHTML = '<div style="grid-column:1/-1;padding:3rem 0;text-align:center;color:var(--muted);font-size:.9rem">Nenhum artigo publicado ainda. Volte em breve!</div>';
+        if (count) count.textContent = '0 artigos publicados';
+        return;
+      }
+      var n = r.data.length;
+      if (count) count.textContent = n + ' artigo' + (n!==1?'s':'') + ' publicado' + (n!==1?'s':'');
+      grid.innerHTML = r.data.map(renderCard).join('');
+    });
+  }
+
+  function renderCard(p) {
+    var c     = catStyle(p.categoria);
+    var thumb = p.imagem_url
+      ? '<img src="'+escHtml(p.imagem_url)+'" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy">'
+      : catIcon(c.s);
+    return [
+      '<article class="blog-card" onclick="openPost(\''+escHtml(p.slug)+'\')">',
+      '<div class="blog-thumb" style="background:'+c.bg+'">'+thumb+'</div>',
+      '<div class="blog-body">',
+      '<div class="blog-meta">',
+      p.categoria ? '<span class="blog-cat">'+escHtml(p.categoria)+'</span>·' : '',
+      '<time>'+fmtDate(p.publicado_em)+'</time>',
+      '</div>',
+      '<h2 class="blog-h3">'+escHtml(p.titulo)+'</h2>',
+      '<p class="blog-exc">'+escHtml(p.meta_description||'')+'</p>',
+      '<div class="blog-foot">',
+      '<div class="blog-author"><div class="av">IP</div><span>'+escHtml(p.autor||'Itamar Pereira')+'</span></div>',
+      '<span class="blog-more">Ler →</span>',
+      '</div></div></article>'
+    ].join('');
+  }
+
+  // ── Post overlay ──────────────────────────────────────────────────────
+  var postOverlay = document.getElementById('post-overlay');
+
+  // Substituir conteúdo estático do overlay por container dinâmico
+  (function initOverlay() {
+    var btn = postOverlay.querySelector('.post-back');
+    var dyn = document.createElement('div');
+    dyn.id = 'post-content';
+    postOverlay.innerHTML = '';
+    postOverlay.appendChild(btn);
+    postOverlay.appendChild(dyn);
+  })();
+
+  function updateMeta(p) {
+    var base = 'https://conexaots.com';
+    var url  = base + '/blog#' + p.slug;
+    document.title = p.titulo + ' — Conexão Tecnologia e Serviços';
+    document.querySelector('meta[name="description"]').setAttribute('content', p.meta_description || '');
+    document.querySelector('meta[property="og:title"]').setAttribute('content', p.titulo);
+    document.querySelector('meta[property="og:description"]').setAttribute('content', p.meta_description || '');
+    document.querySelector('meta[property="og:url"]').setAttribute('content', url);
+    document.querySelector('link[rel="canonical"]').setAttribute('href', url);
+    if (p.imagem_url) {
+      var img = p.imagem_url.indexOf('http') === 0 ? p.imagem_url : base + p.imagem_url;
+      document.querySelector('meta[property="og:image"]').setAttribute('content', img);
+    }
+    // Schema BlogPosting
+    var old = document.getElementById('schema-post');
+    if (old) old.remove();
+    var schema = {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      'headline': p.titulo,
+      'description': p.meta_description || '',
+      'image': p.imagem_url ? (p.imagem_url.indexOf('http') === 0 ? p.imagem_url : base + p.imagem_url) : '',
+      'datePublished': p.publicado_em || '',
+      'author': {'@type': 'Person', 'name': p.autor || 'Itamar Pereira'},
+      'publisher': {'@id': base + '/#organization'},
+      'url': url
+    };
+    var s = document.createElement('script');
+    s.type = 'application/ld+json';
+    s.id   = 'schema-post';
+    s.text = JSON.stringify(schema);
+    document.head.appendChild(s);
+  }
+
+  function resetMeta() {
+    document.title = 'Blog — Conexão Tecnologia e Serviços';
+    document.querySelector('meta[name="description"]').setAttribute('content', 'Automação, IA e tecnologia aplicadas a negócios reais. Artigos práticos sobre AI Agents, Micro SaaS, Cloud e Consultoria em TI.');
+    document.querySelector('meta[property="og:title"]').setAttribute('content', 'Blog — Conexão Tecnologia e Serviços');
+    document.querySelector('meta[property="og:description"]').setAttribute('content', 'Automação, IA e tecnologia aplicadas a negócios reais. Sem jargão, sem teoria vazia.');
+    document.querySelector('meta[property="og:url"]').setAttribute('content', 'https://conexaots.com/blog');
+    document.querySelector('link[rel="canonical"]').setAttribute('href', 'https://conexaots.com/blog');
+    var old = document.getElementById('schema-post');
+    if (old) old.remove();
+  }
+
+  window.openPost = function(slug) {
+    var content = document.getElementById('post-content');
+    content.innerHTML = '<div class="post-inner" style="display:flex;align-items:center;justify-content:center;min-height:50vh"><span style="color:var(--muted)">Carregando...</span></div>';
+    postOverlay.style.transform = 'translateX(0)';
+    postOverlay.scrollTop = 0;
+    document.body.style.overflow = 'hidden';
+    history.pushState({post:slug}, '', '/blog#'+slug);
+
+    apiPost('getConteudoPublico', {slug:slug}).then(function(r) {
+      if (r.status !== 'success' || !r.data) {
+        content.innerHTML = '<div class="post-inner"><p style="color:var(--muted);padding:3rem 0">Artigo não encontrado.</p></div>';
+        return;
+      }
+      var p  = r.data;
+      updateMeta(p);
+      var md = window.marked && p.content_blog
+        ? marked.parse(p.content_blog)
+        : '<p style="white-space:pre-wrap">'+escHtml(p.content_blog||'')+'</p>';
+
+      content.innerHTML = [
+        '<div class="post-inner">',
+        '<div style="margin-bottom:2.5rem">',
+        p.categoria ? '<div class="label">'+escHtml(p.categoria)+'</div>' : '',
+        '<h1 style="font-family:var(--fh);font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;line-height:1.18;letter-spacing:-.02em;margin-bottom:1rem;color:#fff">'+escHtml(p.titulo)+'</h1>',
+        '<div style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;font-size:.8rem;color:var(--muted);padding-bottom:1.5rem;border-bottom:1px solid var(--border)">',
+        '<div style="display:flex;align-items:center;gap:.5rem"><div class="av">IP</div><span>'+escHtml(p.autor||'Itamar Pereira')+'</span></div>',
+        p.publicado_em ? '<span>·</span><time>'+fmtDate(p.publicado_em)+'</time>' : '',
+        '</div></div>',
+        p.imagem_url ? '<img src="'+escHtml(p.imagem_url)+'" alt="'+escHtml(p.titulo)+'" style="width:100%;border-radius:var(--r);margin-bottom:2rem;max-height:420px;object-fit:cover">' : '',
+        '<div class="post-body">'+md+'</div>',
+        '<div style="margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid var(--border)">',
+        '<p style="font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:1rem">Quer tecnologia que se adapta ao seu negócio? Comece com um diagnóstico gratuito.</p>',
+        '<button class="btn btn-p" onclick="openDiagModal()">Agendar diagnóstico gratuito →</button>',
+        '</div></div>'
+      ].join('');
+    });
+  };
+
+  window.closePost = function() {
+    postOverlay.style.transform = 'translateX(100%)';
+    document.body.style.overflow = '';
+    history.pushState({}, '', '/blog');
+    resetMeta();
+  };
+
+  // Abrir artigo se URL tiver hash
+  var hash = location.hash.replace('#','');
+  if (hash) setTimeout(function(){ openPost(hash); }, 150);
+
+  // Escape fecha overlay e modal
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape'){ closePost(); closeDiagModal(); }
+  });
+
+  // Header scroll
+  var hdr = document.getElementById('hdr');
+  window.addEventListener('scroll', function(){ hdr.classList.toggle('solid', window.scrollY > 30); }, {passive:true});
+
+  // ── Modal diagnóstico ────────────────────────────────────────────────
+  var diagModal = document.getElementById('diag-modal');
+
+  window.openDiagModal = function() {
+    diagModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    setTimeout(function(){ var f = diagModal.querySelector('input,select,textarea'); if(f) f.focus(); }, 80);
+  };
+
+  window.closeDiagModal = function() {
+    diagModal.classList.remove('open');
+    document.body.style.overflow = '';
+    document.getElementById('diag-form-wrap').style.display = '';
+    document.getElementById('diag-success').style.display = 'none';
+    var btn = document.getElementById('diag-sbtn');
+    if (btn) { btn.textContent = 'Solicitar diagnóstico gratuito →'; btn.disabled = false; }
+    var fb = document.getElementById('diag-form-fb');
+    if (fb) { fb.className = ''; fb.textContent = ''; }
+  };
+
+  diagModal.addEventListener('click', function(e){ if (e.target === diagModal) closeDiagModal(); });
+
+  // Máscara telefone
+  var telEl = document.getElementById('diag-tel');
+  if (telEl) {
+    telEl.addEventListener('input', function(){
+      var v = telEl.value.replace(/\D/g,'').slice(0,11);
+      if (v.length > 10) telEl.value = '('+v.slice(0,2)+') '+v.slice(2,7)+'-'+v.slice(7);
+      else if (v.length > 6) telEl.value = '('+v.slice(0,2)+') '+v.slice(2,6)+'-'+v.slice(6);
+      else if (v.length > 2) telEl.value = '('+v.slice(0,2)+') '+v.slice(2);
+      else if (v.length > 0) telEl.value = '('+v;
+    });
+  }
+
+  window.submitDiagnostico = function() {
+    var nome     = document.getElementById('diag-nome').value.trim(),
+        empresa  = document.getElementById('diag-empresa').value.trim(),
+        email    = document.getElementById('diag-email').value.trim(),
+        telefone = document.getElementById('diag-tel').value.trim(),
+        segmento = document.getElementById('diag-segmento').value,
+        desafio  = document.getElementById('diag-desafio').value.trim(),
+        origem   = document.getElementById('diag-origem').value,
+        fb       = document.getElementById('diag-form-fb'),
+        btn      = document.getElementById('diag-sbtn');
+
+    if (!nome || !email || !telefone) {
+      fb.className = 'err'; fb.textContent = '⚠️ Preencha: Nome, E-mail e WhatsApp.'; return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      fb.className = 'err'; fb.textContent = '⚠️ E-mail inválido.'; return;
+    }
+
+    btn.textContent = 'Enviando...'; btn.disabled = true;
+    fb.className = ''; fb.textContent = '';
+
+    apiPost('salvarDiagnostico', {nome:nome,empresa:empresa,email:email,telefone:telefone,segmento:segmento,desafio:desafio,origem:origem})
+      .then(function(r){
+        if (r.status === 'success') {
+          document.getElementById('diag-form-wrap').style.display = 'none';
+          document.getElementById('diag-success').style.display = 'block';
+        } else {
+          fb.className = 'err';
+          fb.textContent = '⚠️ ' + (r.message || 'Erro ao enviar. Tente o WhatsApp.');
+        }
+      })
+      .finally(function(){
+        if (btn.disabled && document.getElementById('diag-form-wrap').style.display !== 'none') {
+          btn.textContent = 'Solicitar diagnóstico gratuito →'; btn.disabled = false;
+        }
+      });
+  };
+
+  loadBlogList();
+})();
+</script>
+</body>
+</html>

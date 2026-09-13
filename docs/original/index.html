@@ -1,0 +1,2528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+  <meta name="theme-color" content="#1BC9A8">
+  <meta name="description" content="Conexão Tecnologia e Serviços — AI Agents, Micro SaaS, Cloud Computing e Consultoria em TI. Transformamos desafios operacionais em soluções digitais que geram resultado real. Diagnóstico gratuito." />
+  <title>Conexão Tecnologia e Serviços | AI Agents, Micro SaaS e Automação para Empresas</title>
+  <!-- Open Graph / WhatsApp / LinkedIn -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://conexaots.com/" />
+  <meta property="og:title"       content="Conexão Tecnologia e Serviços | AI Agents e Sistemas sob Medida" />
+  <meta property="og:description" content="Tecnologia que resolve de verdade — sem promessa, sem enrolação. AI Agents, Micro SaaS, Cloud e Consultoria em TI. Diagnóstico gratuito." />
+  <meta property="og:image"       content="https://conexaots.com/og-image.jpg" />
+  <meta property="og:locale"      content="pt_BR" />
+  <meta property="og:site_name"   content="Conexão Tecnologia e Serviços" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Conexão Tecnologia e Serviços | AI Agents e Sistemas sob Medida" />
+  <meta name="twitter:description" content="Tecnologia que resolve de verdade. AI Agents, Micro SaaS, Cloud e Consultoria em TI. Diagnóstico gratuito." />
+  <meta name="twitter:image"       content="https://conexaots.com/og-image.jpg" />
+  <link rel="canonical" href="https://conexaots.com/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization","LocalBusiness"],
+        "@id": "https://conexaots.com/#organization",
+        "name": "Conexão Tecnologia e Serviços",
+        "url": "https://conexaots.com",
+        "logo": "https://conexaots.com/logo_transparente.png",
+        "image": "https://conexaots.com/og-image.jpg",
+        "description": "AI Agents, Micro SaaS, Cloud Computing e Consultoria em TI. Transformamos desafios operacionais em soluções digitais que geram resultado real.",
+        "telephone": "+55-65-98117-2676",
+        "email": "itamar@conexaots.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "BR"
+        },
+        "areaServed": {"@type":"Country","name":"Brasil"},
+        "sameAs": ["https://wa.me/5565981172676"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços de Tecnologia",
+          "itemListElement": [
+            {"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Agents","description":"Agentes de inteligência artificial personalizados para automação de processos empresariais."}},
+            {"@type":"Offer","itemOffered":{"@type":"Service","name":"Micro SaaS","description":"Sistemas sob medida desenvolvidos para resolver problemas específicos de cada negócio."}},
+            {"@type":"Offer","itemOffered":{"@type":"Service","name":"Cloud Computing","description":"Infraestrutura em nuvem segura, escalável e com suporte especializado."}},
+            {"@type":"Offer","itemOffered":{"@type":"Service","name":"Consultoria em TI","description":"Diagnóstico e roadmap tecnológico alinhado à estratégia e orçamento da empresa."}}
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://conexaots.com/#website",
+        "url": "https://conexaots.com",
+        "name": "Conexão Tecnologia e Serviços",
+        "publisher": {"@id":"https://conexaots.com/#organization"}
+      }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --teal:#1BC9A8; --coral:#E8574A; --amber:#E8A020;
+      --bg:#060608; --card:#0e0e12; --border:rgba(255,255,255,0.08);
+      --text:#e8e8ec; --muted:#7a7a8a;
+      --fh:'Bricolage Grotesque',sans-serif; --fb:'Plus Jakarta Sans',sans-serif;
+      --r:12px; --ease:.32s cubic-bezier(.4,0,.2,1);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{font-size:16px;overflow-x:hidden}
+    body{background:var(--bg);color:var(--text);font-family:var(--fb);line-height:1.65;overflow-x:hidden;min-height:100vh;max-width:100vw}
+    img{max-width:100%;display:block;height:auto}img[loading]{opacity:0;transition:opacity .3s}img.loaded{opacity:1}
+    a{color:inherit;text-decoration:none}
+    ul{list-style:none}
+    button{cursor:pointer;border:none;background:none;font-family:inherit;color:inherit}
+    .container{max-width:1180px;margin:0 auto;padding:0 clamp(1rem,4vw,1.5rem);width:100%}
+    .g-text{background:linear-gradient(90deg,var(--teal),#38d9c0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .label{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:.85rem}
+    .label::before{content:'';width:18px;height:2px;background:var(--teal)}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.72rem 1.6rem;border-radius:50px;font-family:var(--fh);font-weight:600;font-size:.88rem;transition:var(--ease);cursor:pointer}
+    .btn-p{background:linear-gradient(135deg,#14b896,var(--teal));color:#000;border:none}
+    .btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(27,201,168,.25)}
+    .btn-o{border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.75);background:rgba(255,255,255,.03)}
+    .btn-o:hover{border-color:var(--teal);color:var(--teal);background:rgba(27,201,168,.05)}
+
+    /* LUCIDE ICONS */
+    .lc{width:16px;height:16px;stroke-width:2;vertical-align:middle;display:inline-block;stroke:currentColor;fill:none}
+
+    /* HEADER */
+    #hdr{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 0;border-bottom:1px solid transparent;transition:var(--ease)}
+    #hdr.solid{background:rgba(4,4,4,.98);backdrop-filter:blur(20px);border-bottom-color:rgba(255,255,255,.14);box-shadow:0 2px 28px rgba(0,0,0,.7)}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .nav-logo{display:flex;align-items:center;gap:.8rem;background:none;border:none;cursor:pointer;padding:0}
+    .nav-logo img{height:42px;width:auto;opacity:1!important;transition:none!important}
+    .nav-brand{font-family:var(--fh);font-size:.95rem;font-weight:700;line-height:1.2;text-align:center;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.8)}
+    .nav-brand span{display:block;font-size:.6rem;font-weight:400;color:rgba(255,255,255,.6);letter-spacing:.1em;text-transform:uppercase}
+    .nav-tabs{display:flex;align-items:center;gap:.25rem}
+    .nav-tab{padding:.5rem 1rem;border-radius:8px;font-size:.85rem;color:rgba(255,255,255,.6);transition:var(--ease);position:relative}
+    .nav-tab:hover{color:#fff;background:rgba(255,255,255,.07)}
+    .nav-tab.active{color:#fff;background:rgba(255,255,255,.09)}
+    .nav-tab.active::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:20px;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--teal),var(--amber))}
+    #burger{display:none;flex-direction:column;gap:5px;padding:.3rem}
+    #burger span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:var(--ease)}
+    #mob-menu{display:none;flex-direction:column;gap:1rem;position:absolute;top:100%;left:0;right:0;background:rgba(8,8,8,.97);backdrop-filter:blur(18px);padding:1.5rem;border-bottom:1px solid var(--border)}
+    #mob-menu.open{display:flex}
+    #mob-menu button{text-align:left;font-size:.95rem;color:var(--muted);padding:.35rem 0;transition:color var(--ease)}
+    #mob-menu button.active,#mob-menu button:hover{color:var(--teal)}
+
+    /* TABS */
+    .tab-pane{display:none;animation:fadeUp .4s ease forwards}
+    .tab-pane.active{display:block}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+    /* OVERLAY SUB-PÁGINA DE SERVIÇO */
+    #svc-overlay{
+      position:fixed;inset:0;z-index:400;
+      background:var(--bg);
+      overflow-y:auto;
+      transform:translateX(100%);
+      transition:transform .4s cubic-bezier(.4,0,.2,1);
+      will-change:transform;
+    }
+    #svc-overlay.open{transform:translateX(0)}
+    .svc-overlay-inner{max-width:1180px;margin:0 auto;padding:2rem 1.5rem 5rem}
+    .svc-back{
+      display:inline-flex;align-items:center;gap:.5rem;
+      font-size:.85rem;font-weight:600;color:#fff;
+      background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);
+      border-radius:50px;padding:.5rem 1.2rem;cursor:pointer;
+      transition:var(--ease);
+    }
+    .svc-back:hover{color:var(--teal);border-color:var(--teal);background:rgba(27,201,168,.08)}
+    .ovl-sticky-bar{position:-webkit-sticky;position:sticky;top:0;z-index:10;padding:1rem 1.5rem;background:rgba(6,6,8,.95);border-bottom:1px solid rgba(255,255,255,.06)}
+    .post-overlay-inner{max-width:780px;margin:0 auto;padding:2rem 1.5rem 5rem}
+
+    /* DROPDOWN SERVIÇOS */
+    .nav-has-drop{position:relative}
+    .nav-drop{
+      position:absolute;top:calc(100% + 10px);left:50%;
+      transform:translateX(-50%) translateY(-6px);
+      background:rgba(8,8,8,.98);backdrop-filter:blur(24px);
+      border:1px solid rgba(255,255,255,.1);border-radius:14px;
+      padding:.5rem;min-width:230px;
+      opacity:0;visibility:hidden;
+      transition:opacity .2s ease,transform .2s ease,visibility .2s;
+      z-index:500;box-shadow:0 16px 48px rgba(0,0,0,.7);
+      pointer-events:none;
+    }
+    .nav-has-drop:hover .nav-drop,
+    .nav-has-drop.drop-open .nav-drop{
+      opacity:1;visibility:visible;
+      transform:translateX(-50%) translateY(0);
+      pointer-events:all;
+    }
+    .nav-drop-item{
+      display:flex;align-items:center;gap:.75rem;
+      padding:.65rem .9rem;border-radius:9px;
+      font-size:.84rem;color:rgba(255,255,255,.6);
+      transition:var(--ease);cursor:pointer;
+      width:100%;text-align:left;border:none;
+      background:none;font-family:var(--fb);
+    }
+    .nav-drop-item:hover{background:rgba(255,255,255,.07);color:#fff}
+    .nav-drop-item:hover .ddi{opacity:1}
+    .nav-drop-item .dic{
+      width:32px;height:32px;border-radius:8px;
+      display:flex;align-items:center;justify-content:center;
+      font-size:.95rem;flex-shrink:0;
+    }
+    .nav-drop-item .ddi{
+      margin-left:auto;font-size:.75rem;
+      color:var(--teal);opacity:0;transition:opacity .15s;
+    }
+    .nav-drop-sep{height:1px;background:rgba(255,255,255,.07);margin:.3rem .6rem}
+    .nav-tab-arr{font-size:.6rem;opacity:.45;margin-left:.2rem;transition:transform .2s}
+    .nav-has-drop:hover .nav-tab-arr,
+    .nav-has-drop.drop-open .nav-tab-arr{transform:rotate(180deg)}
+
+    /* HOME */
+    #tab-home{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:110px 0 70px;position:relative;overflow:hidden}
+    .orbs{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+    .orb{position:absolute;border-radius:50%;filter:blur(120px);opacity:.07;animation:orb-f 9s ease-in-out infinite}
+    .o1{width:400px;height:400px;background:var(--teal);top:-100px;left:-100px}
+    .o2{width:300px;height:300px;background:#2a4aff;bottom:-60px;right:-60px;animation-delay:-3s}
+    .o3{width:220px;height:220px;background:var(--teal);top:45%;left:48%;animation-delay:-6s}
+    @keyframes orb-f{0%,100%{transform:translateY(0)}50%{transform:translateY(-28px)}}
+    .hero-wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1}
+    .hero-badge{display:inline-flex;align-items:center;gap:.55rem;padding:.35rem .9rem;border-radius:50px;border:1px solid var(--border);background:rgba(27,201,168,.07);font-size:.75rem;font-weight:500;color:var(--teal);margin-bottom:1.4rem;max-width:100%}
+    .hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--teal);animation:blink 2s infinite;flex-shrink:0}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+    .hero-h1{font-family:var(--fh);font-size:clamp(1.9rem,5vw,2.7rem);font-weight:800;line-height:1.18;letter-spacing:-.02em;margin-bottom:1.2rem}
+    .hero-p{font-size:1rem;color:var(--muted);max-width:480px;margin-bottom:2rem}
+    .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem}
+    .hero-stats{display:flex;gap:1.5rem;padding-top:2rem;border-top:1px solid var(--border);flex-wrap:wrap}
+    .stat-n{font-family:var(--fh);font-size:1.2rem;font-weight:800;background:linear-gradient(135deg,var(--teal),var(--amber));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .stat-l{font-size:.75rem;color:var(--muted)}
+    .hero-vis{display:flex;justify-content:center;align-items:center}
+    .logo-ring{width:240px;height:240px;display:flex;align-items:center;justify-content:center;position:relative}
+    .logo-ring::before{content:'';position:absolute;inset:-18px;border-radius:50%;border:1px solid var(--border);animation:spin 22s linear infinite}
+    .logo-ring::after{content:'';position:absolute;inset:-50px;border-radius:50%;border:1px dashed rgba(27,201,168,.18);animation:spin 40s linear infinite reverse}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .logo-ring img{width:170px;position:relative;z-index:1}
+    /* BALÕES FLUTUANTES */
+    .fc-wrap{position:absolute;inset:0;pointer-events:none}
+    .fc{position:absolute;padding:.42rem .82rem;background:rgba(10,10,14,.88);border:1px solid rgba(27,201,168,.28);border-radius:50px;font-size:.71rem;white-space:nowrap;display:flex;align-items:center;gap:.4rem;backdrop-filter:blur(12px);box-shadow:0 4px 18px rgba(0,0,0,.45);animation:fc-f 6s ease-in-out infinite}
+    .fc .dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+    .fc:nth-child(1){top:-8px;left:-8px;animation-delay:0s}
+    .fc:nth-child(2){top:-8px;right:-8px;animation-delay:-1.5s}
+    .fc:nth-child(3){bottom:-8px;left:-8px;animation-delay:-3s}
+    .fc:nth-child(4){bottom:-8px;right:-8px;animation-delay:-4.5s}
+    @keyframes fc-f{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    .cs-strip{margin-top:3.5rem;padding-top:2rem;border-top:1px solid var(--border)}
+    .cs-label{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;margin-bottom:1.25rem;text-align:center}
+    .cs-row{display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;padding:0 .5rem}
+    .cs-item{font-family:var(--fh);font-size:.85rem;font-weight:700;color:var(--muted);opacity:.38;transition:opacity var(--ease)}
+    .cs-item:hover{opacity:.75}
+
+    /* SERVIÇOS */
+    #tab-servicos{padding:110px 0 80px}
+    .sec-hdr{text-align:center;max-width:660px;margin:0 auto 3.5rem}
+    .sec-h2{font-family:var(--fh);font-size:clamp(1.75rem,3vw,2.8rem);font-weight:800;line-height:1.18;letter-spacing:-.02em;margin-bottom:.85rem}
+    .sec-p{color:var(--muted);font-size:.95rem}
+    .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.25rem}
+    .svc-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.75rem;transition:var(--ease);position:relative;overflow:hidden}
+    .svc-card::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity var(--ease)}
+    .svc-card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.13)}
+    .svc-card:hover::before{opacity:1}
+    .sc-t::before{background:radial-gradient(ellipse at top left,rgba(27,201,168,.09),transparent 60%)}
+    .sc-c::before{background:radial-gradient(ellipse at top left,rgba(240,92,78,.09),transparent 60%)}
+    .sc-a::before{background:radial-gradient(ellipse at top left,rgba(255,184,0,.09),transparent 60%)}
+    .sc-b::before{background:radial-gradient(ellipse at top left,rgba(80,120,255,.09),transparent 60%)}
+    .svc-ico{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;border:1px solid}
+    .si-t{background:rgba(27,201,168,.07);border-color:rgba(27,201,168,.2);color:var(--teal)}
+    .si-c{background:rgba(232,87,74,.07);border-color:rgba(232,87,74,.2);color:var(--coral)}
+    .si-a{background:rgba(232,160,32,.07);border-color:rgba(232,160,32,.2);color:var(--amber)}
+    .si-b{background:rgba(80,120,255,.07);border-color:rgba(80,120,255,.2);color:#5078ff}
+    .svc-tag{display:inline-block;padding:.25rem .65rem;border-radius:50px;font-size:.62rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;margin-bottom:.6rem;background:rgba(27,201,168,.09);color:var(--teal)}
+    .svc-h3{font-family:var(--fh);font-size:1.1rem;font-weight:700;margin-bottom:.5rem}
+    .svc-desc{font-size:.87rem;color:var(--muted);margin-bottom:1.25rem}
+    .svc-list{display:flex;flex-direction:column;gap:.35rem}
+    .svc-list li{font-size:.83rem;color:var(--muted);display:flex;align-items:center;gap:.45rem}
+    .svc-list li::before{content:'→';color:var(--teal);font-size:.76rem}
+    .svc-lnk{display:inline-flex;align-items:center;gap:.35rem;margin-top:1.25rem;font-size:.83rem;font-weight:600;color:var(--teal);transition:gap var(--ease);background:none;border:none;cursor:pointer;padding:0;font-family:var(--fb)}
+    .svc-lnk:hover{gap:.65rem}
+
+    /* SEÇÃO DETALHADA — AGENTES DE IA */
+    .ai-detail{margin-top:5rem;padding-top:4rem;border-top:1px solid var(--border)}
+    .ai-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;margin-bottom:3.5rem}
+    .ai-video-wrap{border-radius:var(--r);overflow:hidden;border:1px solid var(--border);position:relative;background:#000}
+    .ai-video-wrap video{width:100%;display:block;border-radius:var(--r)}
+    .ai-video-label{position:absolute;top:.75rem;left:.75rem;background:rgba(27,201,168,.15);border:1px solid rgba(27,201,168,.3);color:var(--teal);font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .7rem;border-radius:50px;backdrop-filter:blur(8px)}
+    .ai-text-block h2{font-family:var(--fh);font-size:clamp(1.35rem,2.2vw,2rem);font-weight:800;line-height:1.22;letter-spacing:-.02em;margin-bottom:.75rem;color:#fff}
+    .ai-text-block .ai-lead{font-size:1rem;color:rgba(255,255,255,.85);margin-bottom:1.5rem;line-height:1.7}
+    .ai-text-block p{font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:1rem}
+    .ai-features{display:flex;flex-direction:column;gap:1.25rem;margin:2rem 0}
+    .ai-feat{display:flex;gap:1rem;align-items:flex-start}
+    .ai-feat-ico{width:44px;height:44px;border-radius:10px;background:rgba(27,201,168,.08);border:1px solid rgba(27,201,168,.18);color:var(--teal);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:.1rem}
+    .ai-feat-body h4{font-family:var(--fh);font-size:.9rem;font-weight:700;margin-bottom:.25rem;color:#fff}
+    .ai-feat-body p{font-size:.83rem;color:rgba(255,255,255,.68);margin:0;line-height:1.6}
+    .ai-highlight{background:linear-gradient(135deg,rgba(27,201,168,.1),rgba(255,184,0,.07));border:1px solid rgba(27,201,168,.25);border-radius:var(--r);padding:1.75rem;margin-top:2rem}
+    .ai-highlight h3{font-family:var(--fh);font-size:1.05rem;font-weight:700;margin-bottom:.75rem;color:var(--teal)}
+    .ai-highlight p{font-size:.87rem;color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:.75rem}
+    .ai-highlight p:last-child{margin-bottom:0}
+    .ai-cta-row{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.5rem}
+    @media(max-width:900px){.ai-detail-grid{grid-template-columns:1fr}}
+    .proc-wrap{margin-top:5rem;padding-top:4rem;border-top:1px solid var(--border)}
+    .proc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1.25rem;margin-top:2.5rem}
+    .proc-step{text-align:center;padding:1.75rem 1.25rem;border:1px solid var(--border);border-radius:var(--r);background:var(--card);position:relative;overflow:hidden}
+    .proc-n{font-family:var(--fh);font-size:2.8rem;font-weight:800;opacity:.06;position:absolute;top:.4rem;right:.9rem;line-height:1}
+    .proc-ico{font-size:1.8rem;margin-bottom:.75rem}
+    .proc-h3{font-family:var(--fh);font-size:.95rem;font-weight:700;margin-bottom:.4rem}
+    .proc-p{font-size:.82rem;color:var(--muted)}
+
+    /* BLOG */
+    #tab-blog{padding:110px 0 80px}
+    .blog-back-bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:3rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border);flex-wrap:wrap}
+    .blog-back-btn{display:inline-flex;align-items:center;gap:.5rem;font-size:.82rem;color:var(--muted);padding:.42rem .85rem;border-radius:7px;border:1px solid var(--border);background:var(--card);transition:var(--ease);cursor:pointer}
+    .blog-back-btn:hover{color:#fff;border-color:rgba(255,255,255,.2)}
+    .blog-back-btn svg{width:14px;height:14px}
+    .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.25rem}
+    .blog-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:var(--ease);display:flex;flex-direction:column}
+    .blog-card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.13)}
+    .blog-thumb{width:100%;height:170px;background:linear-gradient(135deg,#181818,#222);display:flex;align-items:center;justify-content:center;font-size:2.2rem;flex-shrink:0}
+    .blog-body{padding:1.35rem;flex:1;display:flex;flex-direction:column}
+    .blog-meta{display:flex;align-items:center;gap:.6rem;font-size:.72rem;color:var(--muted);margin-bottom:.65rem}
+    .blog-cat{color:var(--teal);font-weight:600}
+    .blog-h3{font-family:var(--fh);font-size:1rem;font-weight:700;line-height:1.3;margin-bottom:.5rem}
+    .blog-exc{font-size:.83rem;color:var(--muted);margin-bottom:1rem;flex:1}
+    .blog-foot{display:flex;align-items:center;justify-content:space-between;padding-top:.85rem;border-top:1px solid var(--border)}
+    .blog-author{display:flex;align-items:center;gap:.5rem;font-size:.77rem;color:var(--muted)}
+    .av{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--amber));display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;color:#000}
+    .blog-more{font-size:.78rem;font-weight:600;color:var(--teal);display:inline-flex;align-items:center;gap:.3rem;transition:gap var(--ease)}
+    .blog-more:hover{gap:.55rem}
+
+    /* CONTATO */
+    #tab-contato{padding:110px 0 80px}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start}
+    .ci-p{color:var(--muted);margin-bottom:1.5rem;font-size:.93rem;line-height:1.7}
+    .channels{display:flex;flex-direction:column;gap:.7rem;margin-top:1.25rem}
+    .ch-item{display:flex;align-items:center;gap:.85rem;padding:.85rem 1rem;border-radius:var(--r);border:1px solid var(--border);background:var(--card);transition:var(--ease);text-decoration:none}
+    .ch-item:hover{border-color:var(--teal);transform:translateX(3px)}
+    .ch-ico{width:36px;height:36px;border-radius:8px;background:rgba(27,201,168,.1);color:var(--teal);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .ch-title{font-size:.78rem;font-weight:600;margin-bottom:.1rem}
+    .ch-val{font-size:.81rem;color:var(--muted)}
+    /* Botão de diagnóstico destacado */
+    .diag-cta{
+      display:flex;align-items:center;gap:.85rem;
+      padding:1.1rem 1.25rem;border-radius:var(--r);
+      background:linear-gradient(135deg,rgba(27,201,168,.1),rgba(80,120,255,.07));
+      border:1px solid rgba(27,201,168,.25);
+      cursor:pointer;transition:var(--ease);width:100%;text-align:left;margin-bottom:1.5rem;
+    }
+    .diag-cta:hover{border-color:rgba(27,201,168,.5);transform:translateX(3px)}
+    .diag-cta-ico{width:40px;height:40px;border-radius:9px;background:rgba(27,201,168,.15);border:1px solid rgba(27,201,168,.25);display:flex;align-items:center;justify-content:center;color:var(--teal);flex-shrink:0}
+    .diag-cta-title{font-family:var(--fh);font-weight:700;font-size:.92rem;color:#fff;margin-bottom:.15rem}
+    .diag-cta-sub{font-size:.78rem;color:rgba(255,255,255,.5)}
+    .diag-cta-arr{margin-left:auto;color:var(--teal);font-size:.85rem;flex-shrink:0}
+    /* Formulário */
+    .c-form{display:flex;flex-direction:column;gap:.9rem}
+    .f-row{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+    .f-grp{display:flex;flex-direction:column;gap:.35rem}
+    .f-grp label{font-size:.77rem;font-weight:600;color:var(--muted)}
+    .f-grp input,.f-grp select,.f-grp textarea{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:.7rem .95rem;color:var(--text);font-family:var(--fb);font-size:.88rem;transition:border-color var(--ease);outline:none;width:100%;resize:vertical}
+    .f-grp input:focus,.f-grp select:focus,.f-grp textarea:focus{border-color:var(--teal)}
+    .f-grp select option{background:#1a1a1a}
+    #form-fb{padding:.7rem .95rem;border-radius:10px;font-size:.83rem;display:none;margin-top:.25rem}
+    #form-fb.ok{background:rgba(27,201,168,.11);color:var(--teal);display:block}
+    #form-fb.err{background:rgba(240,92,78,.11);color:var(--coral);display:block}
+
+    /* MODAL DIAGNÓSTICO */
+    #diag-modal{
+      position:fixed;inset:0;z-index:600;
+      display:flex;align-items:center;justify-content:center;
+      background:rgba(0,0,0,.75);backdrop-filter:blur(8px);
+      opacity:0;pointer-events:none;transition:opacity .3s;padding:1.5rem;
+    }
+    #diag-modal.open{opacity:1;pointer-events:all}
+    .diag-modal-box{
+      width:100%;max-width:520px;
+      background:var(--card);border:1px solid rgba(27,201,168,.2);
+      border-radius:16px;padding:2rem;
+      transform:translateY(16px);transition:transform .3s;
+      max-height:90vh;overflow-y:auto;
+    }
+    #diag-modal.open .diag-modal-box{transform:none}
+    .diag-modal-hdr{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:1.5rem}
+    .diag-modal-title{font-family:var(--fh);font-size:1.15rem;font-weight:800;color:#fff}
+    .diag-modal-sub{font-size:.82rem;color:var(--muted);margin-top:.25rem}
+    .diag-modal-close{width:30px;height:30px;border-radius:7px;background:rgba(255,255,255,.06);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:1rem;flex-shrink:0;cursor:pointer;transition:var(--ease)}
+    .diag-modal-close:hover{color:#fff;border-color:rgba(255,255,255,.2)}
+    #diag-form-fb{padding:.65rem .9rem;border-radius:8px;font-size:.82rem;display:none;margin-top:.5rem}
+    #diag-form-fb.ok{background:rgba(27,201,168,.11);color:var(--teal);display:block}
+    #diag-form-fb.err{background:rgba(240,92,78,.11);color:var(--coral);display:block}
+    #diag-success{display:none;text-align:center;padding:1.5rem 0}
+    #diag-success .succ-ico{font-size:2.5rem;margin-bottom:.75rem}
+    #diag-success h3{font-family:var(--fh);font-size:1.1rem;font-weight:800;color:#fff;margin-bottom:.5rem}
+    #diag-success p{font-size:.87rem;color:var(--muted);line-height:1.65}
+
+    /* FOOTER */
+    footer{border-top:1px solid var(--border);padding:2.5rem 0 1.5rem}
+    .ft-grid{display:grid;grid-template-columns:2fr 3fr;gap:2rem;margin-bottom:2rem}
+    .ft-cols-row{display:flex;gap:2.5rem;flex-wrap:wrap}
+    .ft-brand p{font-size:.82rem;color:var(--muted);max-width:240px;margin-top:.55rem;line-height:1.6}
+    .ft-social{display:flex;gap:.6rem;margin-top:.9rem}
+    .soc{width:32px;height:32px;border-radius:7px;border:1px solid var(--border);background:var(--card);display:flex;align-items:center;justify-content:center;font-size:.75rem;transition:var(--ease)}
+    .soc:hover{border-color:var(--teal);color:var(--teal)}
+    .ft-col h4{font-family:var(--fh);font-size:.8rem;font-weight:700;margin-bottom:.75rem;color:rgba(255,255,255,.9)}
+    .ft-col ul li{margin-bottom:.35rem}
+    .ft-col ul a,.ft-col ul button{font-size:.8rem;color:var(--muted);transition:color var(--ease);padding:0;background:none;border:none;cursor:pointer;display:block;text-align:left}
+    .ft-col ul a:hover,.ft-col ul button:hover{color:var(--teal)}
+    .ft-bot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem;padding-top:1.25rem;border-top:1px solid var(--border);font-size:.75rem;color:var(--muted)}
+
+    /* WHATSAPP */
+    .wa-float{position:fixed;bottom:calc(1.75rem + env(safe-area-inset-bottom));right:1.75rem;z-index:300;display:flex;align-items:center;gap:.65rem}
+    .wa-tip{background:var(--card);border:1px solid var(--border);border-radius:9px;padding:.5rem .85rem;font-size:.77rem;color:var(--muted);white-space:nowrap;opacity:0;transform:translateX(8px);transition:var(--ease);pointer-events:none}
+    .wa-float:hover .wa-tip{opacity:1;transform:none}
+    .wa-btn{width:54px;height:54px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,.38);transition:var(--ease);flex-shrink:0}
+    .wa-btn:hover{transform:scale(1.08);box-shadow:0 6px 26px rgba(37,211,102,.48)}
+    .wa-btn svg{width:26px;height:26px;fill:#fff}
+    @media(max-width:600px){
+      .wa-float{bottom:calc(1rem + env(safe-area-inset-bottom));right:1rem}
+      .wa-btn{width:46px;height:46px}
+      .wa-btn svg{width:22px;height:22px}
+      .wa-tip{display:none}
+    }
+
+    /* RESPONSIVE */
+    /* PROC DETAIL TAGS */
+    .proc-detail{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+    .proc-tag{font-size:.7rem;font-weight:600;padding:.25rem .65rem;border-radius:50px;background:rgba(27,201,168,.08);border:1px solid rgba(27,201,168,.18);color:var(--teal)}
+    /* SOBRE GRID RESPONSIVE */
+    @media(max-width:900px){
+      .sobre-grid{grid-template-columns:1fr !important;gap:2.5rem !important}
+    }
+    @media(max-width:1100px){
+      .stack-grid{grid-template-columns:repeat(5,1fr) !important}
+    }
+    @media(max-width:900px){
+      .porq-grid{grid-template-columns:1fr 1fr !important}
+      .formas-grid{grid-template-columns:1fr !important}
+      .stack-grid{grid-template-columns:repeat(4,1fr) !important}
+    }
+    @media(max-width:560px){
+      .porq-grid{grid-template-columns:1fr !important}
+      .stack-grid{grid-template-columns:repeat(3,1fr) !important}
+    }
+    /* STACK TOOLTIP */
+    .stack-card{position:relative;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;display:flex;flex-direction:column;align-items:center;gap:.5rem;transition:border-color .25s,transform .2s;cursor:default}
+    .stack-card:hover{transform:translateY(-2px)}
+    .stack-tip{position:fixed;width:210px;background:#141824;border:1px solid rgba(27,201,168,.28);border-radius:11px;padding:.9rem 1rem;pointer-events:none;opacity:0;transition:opacity .18s,transform .18s;z-index:9999;transform:translateY(6px);box-shadow:0 12px 32px rgba(0,0,0,.55)}
+    .stack-tip.visible{opacity:1;transform:translateY(0)}
+    .stack-tip-name{font-size:.75rem;font-weight:800;margin-bottom:.35rem}
+    .stack-tip-desc{font-size:.72rem;color:rgba(255,255,255,.55);line-height:1.55;margin-bottom:.5rem}
+    .stack-tip-apps-label{font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);font-weight:700;margin-bottom:.3rem}
+    .stack-tip-apps{font-size:.72rem;color:rgba(255,255,255,.5);line-height:1.55}
+    @media(max-width:900px){
+      .nav-tabs,#hdr .btn-p{display:none}
+      #burger{display:flex}
+      .hero-wrap{grid-template-columns:1fr;text-align:center;gap:2rem}
+      .hero-p{margin:0 auto 2rem}
+      .hero-btns{justify-content:center;flex-wrap:wrap}
+      .hero-stats{justify-content:center;gap:1.5rem}
+      .hero-vis{margin-top:0;display:flex;justify-content:center}
+      .contact-grid{grid-template-columns:1fr}
+      .ft-grid{grid-template-columns:1fr 1fr;gap:1.5rem}
+      .ai-detail-grid{grid-template-columns:1fr}
+      .svc-overlay-inner{padding:5rem 1rem 3rem}
+    }
+    @media(max-width:600px){
+      .container{padding:0 1rem}
+      .f-row{grid-template-columns:1fr}
+      footer{padding:1.75rem 0 1rem}
+      .ft-grid{grid-template-columns:1fr;gap:0}
+      .ft-brand{padding-bottom:1.25rem;margin-bottom:1.25rem;border-bottom:1px solid var(--border)}
+      .ft-brand p{max-width:100%}
+      .ft-cols-row{display:flex;gap:2rem;flex-wrap:wrap;padding-bottom:1.25rem;margin-bottom:1.25rem;border-bottom:1px solid var(--border)}
+      .ft-col{min-width:120px}
+      .ft-col h4{margin-bottom:.5rem}
+      .ft-col ul li{margin-bottom:.25rem}
+      .ft-bot{flex-direction:column;align-items:flex-start;gap:.4rem;font-size:.72rem;padding-top:1rem}
+      .logo-ring{width:180px;height:180px}
+      .logo-ring img{width:130px}
+      .hero-h1{font-size:clamp(1.6rem,7vw,2rem);line-height:1.2;letter-spacing:-.01em}
+      .sec-h2{font-size:1.4rem;line-height:1.22}
+      .hero-p{font-size:.9rem}
+      .hero-stats{gap:1rem;flex-wrap:wrap;justify-content:center}
+      .stat-n{font-size:1rem}
+      .stat-l{font-size:.7rem}
+      .hero-btns{width:100%}
+      .hero-btns .btn{flex:1;min-width:0;justify-content:center;padding:.7rem 1rem;font-size:.82rem}
+      .svc-grid{grid-template-columns:1fr}
+      .blog-grid{grid-template-columns:1fr}
+      .blog-back-bar{flex-direction:column;align-items:flex-start;gap:.6rem}
+      .cs-row{gap:.75rem;flex-wrap:wrap}
+      .cs-item{font-size:.76rem}
+      .fc{font-size:.65rem;padding:.35rem .65rem}
+      .hero-vis{overflow:visible;width:100%;max-width:260px;margin:0 auto}
+      #post-overlay > div{padding:5rem 1rem 3rem}
+      .svc-overlay-inner{padding:5rem 1rem 3rem}
+      .diag-modal-box{padding:1.5rem}
+    }
+  </style>
+</head>
+<body>
+
+<header id="hdr" role="banner">
+  <div class="container">
+    <nav class="nav" aria-label="Navegação principal">
+      <button class="nav-logo" data-tab="home" aria-label="Home">
+        <img src="logo_transparente.png" alt="Conexão Tecnologia e Serviços"
+             onerror="this.style.display='none'"/>
+        <div class="nav-brand">CONEXÃO<span>Tecnologia e Serviços</span></div>
+      </button>
+      <div class="nav-tabs" role="tablist">
+        <button class="nav-tab active" data-tab="home" role="tab" aria-selected="true">Home</button>
+
+        <div class="nav-has-drop" id="nav-svc-drop">
+          <button class="nav-tab" data-tab="servicos" role="tab" aria-selected="false">
+            Serviços <i data-lucide="chevron-down" class="lc nav-tab-arr" style="width:12px;height:12px"></i>
+          </button>
+          <div class="nav-drop" role="menu">
+            <button class="nav-drop-item" data-open-svc="ai-agents" role="menuitem">
+              <span class="dic" style="background:rgba(27,201,168,.12)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M12 11V7"/><circle cx="12" cy="5" r="2"/><path d="M8 15h.01M16 15h.01"/></svg></span>
+              AI Agents
+              <i data-lucide="arrow-right" class="lc ddi"></i>
+            </button>
+            <button class="nav-drop-item" data-open-svc="micro-saas" role="menuitem">
+              <span class="dic" style="background:rgba(240,92,78,.12)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></span>
+              Micro SaaS
+              <i data-lucide="arrow-right" class="lc ddi"></i>
+            </button>
+            <button class="nav-drop-item" data-open-svc="cloud" role="menuitem">
+              <span class="dic" style="background:rgba(255,184,0,.12)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg></span>
+              Cloud Computing
+              <i data-lucide="arrow-right" class="lc ddi"></i>
+            </button>
+            <div class="nav-drop-sep"></div>
+            <button class="nav-drop-item" data-open-svc="consultoria" role="menuitem">
+              <span class="dic" style="background:rgba(80,120,255,.12)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></span>
+              Consultoria em TI
+              <i data-lucide="arrow-right" class="lc ddi"></i>
+            </button>
+          </div>
+        </div>
+
+        <a href="/blog" class="nav-tab" role="tab" aria-selected="false">Blog</a>
+        <button class="nav-tab" data-tab="contato" role="tab" aria-selected="false">Contato</button>
+      </div>
+      <a href="https://wa.me/5565981172676?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Conex%C3%A3o%20e%20gostaria%20de%20conhecer%20as%20solu%C3%A7%C3%B5es."
+         class="btn btn-p" target="_blank" rel="noopener">Falar conosco</a>
+      <button id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div id="mob-menu" role="navigation">
+      <button data-tab="home" class="active">Home</button>
+      <button data-tab="servicos">Serviços (ver todos)</button>
+      <button data-open-svc="ai-agents" style="padding-left:1.1rem;font-size:.84rem;color:var(--teal)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M12 11V7"/><circle cx="12" cy="5" r="2"/><path d="M8 15h.01M16 15h.01"/></svg> AI Agents</button>
+      <button data-open-svc="micro-saas" style="padding-left:1.1rem;font-size:.84rem"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg> Micro SaaS</button>
+      <button data-open-svc="cloud" style="padding-left:1.1rem;font-size:.84rem"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg> Cloud Computing</button>
+      <button data-open-svc="consultoria" style="padding-left:1.1rem;font-size:.84rem"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg> Consultoria em TI</button>
+      <a href="/blog" class="nav-tab" style="display:block;padding:.6rem 1rem">Blog</a>
+      <button data-tab="contato">Contato</button>
+      <a href="https://wa.me/5565981172676" class="btn btn-p" style="width:fit-content" target="_blank" rel="noopener">Falar conosco</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ABA HOME -->
+<section id="tab-home" class="tab-pane active" role="tabpanel">
+  <div class="orbs" aria-hidden="true">
+    <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+  </div>
+  <div class="container">
+    <div class="hero-wrap">
+      <div>
+        <div class="hero-badge">Soluções reais para empresas orientadas a resultado</div>
+        <h1 class="hero-h1">Tecnologia que <span class="g-text">resolve de verdade</span> — sem promessa, sem enrolação</h1>
+        <p class="hero-p">AI Agents, sistemas sob medida e cloud para empresas que precisam de resultado, não de apresentação bonita. Atendimento direto, sem intermediários.</p>
+        <div class="hero-btns">
+          <button class="btn btn-p" data-open-diag>Diagnóstico gratuito →</button>
+          <button class="btn btn-o" onclick="document.getElementById('solucoes').scrollIntoView({behavior:'smooth'})">Ver soluções</button>
+        </div>
+        <div class="hero-stats">
+          <div style="cursor:pointer" data-open-post="tecnologia-estrategica" title="Ler artigo"><div class="stat-n" style="text-decoration:underline;text-decoration-color:rgba(27,201,168,.35);text-underline-offset:4px">Estratégico</div><div class="stat-l">Tecnologia alinhada ao seu negócio →</div></div>
+          <div style="cursor:pointer" data-open-post="tecnologia-assertiva" title="Ler artigo"><div class="stat-n" style="text-decoration:underline;text-decoration-color:rgba(27,201,168,.35);text-underline-offset:4px">Assertivo</div><div class="stat-l">Solução certa, sem desperdício →</div></div>
+          <div style="cursor:pointer" data-open-post="tecnologia-personalizada" title="Ler artigo"><div class="stat-n" style="text-decoration:underline;text-decoration-color:rgba(27,201,168,.35);text-underline-offset:4px">Personalizado</div><div class="stat-l">Desenvolvido para a sua realidade →</div></div>
+        </div>
+      </div>
+      <div class="hero-vis">
+        <div class="logo-ring" style="position:relative">
+          <img src="logo_transparente.png" alt="Conexão — ícone" />
+          <div class="fc-wrap" aria-hidden="true">
+            <div class="fc"><div class="dot" style="background:var(--teal)"></div>Agentes de IA</div>
+            <div class="fc"><div class="dot" style="background:var(--amber)"></div>Cloud Computing</div>
+            <div class="fc"><div class="dot" style="background:var(--coral)"></div>Micro SaaS</div>
+            <div class="fc"><div class="dot" style="background:#5078ff"></div>Consultoria em TI</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cs-strip">
+      <p class="cs-label">Setores que já atendemos</p>
+      <div class="cs-row">
+        <div class="cs-item">Agronegócio</div>
+        <div class="cs-item">Construção Civil</div>
+        <div class="cs-item">Escritórios Jurídicos</div>
+        <div class="cs-item">Barbearias e Salões</div>
+        <div class="cs-item">Comércio e Varejo</div>
+      </div>
+    </div>
+
+    <!-- DIAGNÓSTICO GRATUITO -->
+    <div style="margin-top:2rem;background:linear-gradient(135deg,rgba(27,201,168,.08),rgba(80,120,255,.06));border:1px solid rgba(27,201,168,.2);border-radius:var(--r);padding:1.75rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap">
+      <div>
+        <h3 style="font-family:var(--fh);font-size:1.15rem;font-weight:800;color:#fff;margin-bottom:.35rem">Diagnóstico Tecnológico Gratuito — 30 minutos</h3>
+        <p style="font-size:.87rem;color:rgba(255,255,255,.6);max-width:520px;line-height:1.6">Mapeamos os gargalos da sua operação e mostramos quais tecnologias geram mais impacto. Sem compromisso, sem enrolação.</p>
+      </div>
+      <button class="btn btn-p" data-open-diag style="flex-shrink:0;font-size:.9rem;padding:.75rem 1.75rem">Agendar agora →</button>
+    </div>
+  </div><!-- /container hero -->
+
+  <!-- POR QUE NOS ESCOLHER -->
+  <section style="padding:3.5rem 0;border-top:1px solid var(--border)">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3rem">
+        <div class="label">Diferenciais</div>
+        <h2 style="font-family:var(--fh);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;line-height:1.2;letter-spacing:-.02em;color:#fff;margin-top:.75rem">Por que nos <span class="g-text">escolher</span></h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem" class="porq-grid">
+
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.75rem 1.5rem">
+          <div style="font-family:var(--fh);font-size:2.2rem;font-weight:900;color:rgba(27,201,168,.18);letter-spacing:-.04em;margin-bottom:.75rem">01</div>
+          <div style="font-size:.95rem;font-weight:700;color:#fff;margin-bottom:.5rem">Atendimento direto</div>
+          <div style="font-size:.82rem;color:var(--muted);line-height:1.65">Você fala diretamente com quem vai desenvolver. Sem intermediários, sem jogo de telefone.</div>
+        </div>
+
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.75rem 1.5rem">
+          <div style="font-family:var(--fh);font-size:2.2rem;font-weight:900;color:rgba(27,201,168,.18);letter-spacing:-.04em;margin-bottom:.75rem">02</div>
+          <div style="font-size:.95rem;font-weight:700;color:#fff;margin-bottom:.5rem">Entrega rápida</div>
+          <div style="font-size:.82rem;color:var(--muted);line-height:1.65">Primeiras versões funcionais em dias, não meses. Você vê resultado antes de qualquer compromisso maior.</div>
+        </div>
+
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.75rem 1.5rem">
+          <div style="font-family:var(--fh);font-size:2.2rem;font-weight:900;color:rgba(27,201,168,.18);letter-spacing:-.04em;margin-bottom:.75rem">03</div>
+          <div style="font-size:.95rem;font-weight:700;color:#fff;margin-bottom:.5rem">Tecnologia certa</div>
+          <div style="font-size:.82rem;color:var(--muted);line-height:1.65">Não vendemos ferramenta. Mapeamos o problema e escolhemos a solução que faz sentido para o seu negócio.</div>
+        </div>
+
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.75rem 1.5rem">
+          <div style="font-family:var(--fh);font-size:2.2rem;font-weight:900;color:rgba(27,201,168,.18);letter-spacing:-.04em;margin-bottom:.75rem">04</div>
+          <div style="font-size:.95rem;font-weight:700;color:#fff;margin-bottom:.5rem">Stack moderna</div>
+          <div style="font-size:.82rem;color:var(--muted);line-height:1.65">Trabalhamos com as melhores ferramentas do mercado — IA, automação, APIs robustas — sem dependência de sistemas legados.</div>
+        </div>
+
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.75rem 1.5rem">
+          <div style="font-family:var(--fh);font-size:2.2rem;font-weight:900;color:rgba(27,201,168,.18);letter-spacing:-.04em;margin-bottom:.75rem">05</div>
+          <div style="font-size:.95rem;font-weight:700;color:#fff;margin-bottom:.5rem">Suporte pós-entrega</div>
+          <div style="font-size:.82rem;color:var(--muted);line-height:1.65">O projeto não termina na entrega. Ficamos disponíveis para ajustes, evoluções e suporte contínuo.</div>
+        </div>
+
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.75rem 1.5rem">
+          <div style="font-family:var(--fh);font-size:2.2rem;font-weight:900;color:rgba(27,201,168,.18);letter-spacing:-.04em;margin-bottom:.75rem">06</div>
+          <div style="font-size:.95rem;font-weight:700;color:#fff;margin-bottom:.5rem">Resultado mensurável</div>
+          <div style="font-size:.82rem;color:var(--muted);line-height:1.65">Definimos métricas de sucesso antes de começar. Você sabe o que esperar e quando esperar.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE + PARCEIROS -->
+  <section style="padding:3.5rem 0;border-top:1px solid var(--border);background:linear-gradient(180deg,rgba(27,201,168,.025) 0%,transparent 100%)">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center" class="sobre-grid">
+        <div>
+          <div class="label">Sobre a Conexão</div>
+          <h2 style="font-family:var(--fh);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;line-height:1.2;letter-spacing:-.02em;margin-bottom:1.25rem;color:#fff">
+            Tecnologia de resultado,<br><span class="g-text">sem enrolação</span>
+          </h2>
+          <p style="color:var(--muted);font-size:.97rem;line-height:1.75;margin-bottom:1rem">
+            Somos uma empresa de tecnologia especializada em transformar desafios operacionais em soluções digitais que realmente funcionam no dia a dia das empresas — do agronegócio à advocacia, da construção civil ao comércio.
+          </p>
+          <p style="color:var(--muted);font-size:.97rem;line-height:1.75;margin-bottom:2rem">
+            Trabalhamos com atenção ao detalhe, comunicação direta e foco total em resultado. Nosso compromisso é simples: tecnologia que serve ao negócio — não o contrário.
+          </p>
+          <div style="display:flex;gap:2.5rem;flex-wrap:wrap">
+            <div>
+              <div style="font-family:var(--fh);font-size:1.5rem;font-weight:800;color:var(--teal)">100% remoto</div>
+              <div style="font-size:.78rem;color:var(--muted);margin-top:.2rem">Atendemos todo o Brasil</div>
+            </div>
+            <div>
+              <div style="font-family:var(--fh);font-size:1.5rem;font-weight:800;color:var(--teal)">4 serviços</div>
+              <div style="font-size:.78rem;color:var(--muted);margin-top:.2rem">Especializados</div>
+            </div>
+            <div>
+              <div style="font-family:var(--fh);font-size:1.5rem;font-weight:800;color:var(--teal)">Direto</div>
+              <div style="font-size:.78rem;color:var(--muted);margin-top:.2rem">Sem intermediários</div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:1rem">
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:1rem">
+            <div style="width:38px;height:38px;border-radius:9px;background:rgba(27,201,168,.1);border:1px solid rgba(27,201,168,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--teal)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <div>
+              <div style="font-size:.88rem;font-weight:600;color:#fff;margin-bottom:.3rem">Diagnóstico antes de qualquer proposta</div>
+              <div style="font-size:.8rem;color:var(--muted);line-height:1.6">Nunca propomos solução sem entender o problema. Começamos sempre ouvindo.</div>
+            </div>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:1rem">
+            <div style="width:38px;height:38px;border-radius:9px;background:rgba(232,160,32,.1);border:1px solid rgba(232,160,32,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--amber)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <div style="font-size:.88rem;font-weight:600;color:#fff;margin-bottom:.3rem">Atendimento direto, sem terceiros</div>
+              <div style="font-size:.8rem;color:var(--muted);line-height:1.6">Você fala diretamente com quem desenvolve. Sem jogo de telefone, sem retrabalho.</div>
+            </div>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:1rem">
+            <div style="width:38px;height:38px;border-radius:9px;background:rgba(232,87,74,.1);border:1px solid rgba(232,87,74,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--coral)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+            </div>
+            <div>
+              <div style="font-size:.88rem;font-weight:600;color:#fff;margin-bottom:.3rem">Resultado mensurável</div>
+              <div style="font-size:.8rem;color:var(--muted);line-height:1.6">Definimos métricas de sucesso antes de começar. Você sabe o que esperar e quando.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STACK TECNOLÓGICA -->
+      <div style="margin-top:3rem;padding-top:2.5rem;border-top:1px solid var(--border)">
+        <div style="text-align:center;margin-bottom:1.75rem">
+          <div class="label">Tecnologias</div>
+          <h3 style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:#fff;margin-top:.5rem;letter-spacing:-.01em">Stack que utilizamos nos projetos</h3>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:.75rem" class="stack-grid" id="stackGrid">
+
+          <!-- Claude: marca "A" da Anthropic -->
+          <div class="stack-card" data-color="rgba(204,120,92,.4)"
+               data-tip-name="Claude" data-tip-color="#CC785C"
+               data-tip-desc="LLM da Anthropic. Usado para criar agentes de IA conversacionais, raciocínio estruturado e automação de tarefas cognitivas."
+               data-tip-apps="Agentes de atendimento · Geração de conteúdo · Decisão automatizada · Pipelines de IA">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M12 3L21 21H3L12 3Z" stroke="#CC785C" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M8.5 17L12 10L15.5 17" stroke="#CC785C" stroke-width="1.2" stroke-linejoin="round"/>
+            </svg>
+            <span style="font-size:.76rem;font-weight:700;color:#CC785C">Claude</span>
+            <span style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.4">Agentes de IA</span>
+          </div>
+
+          <!-- OpenAI: bloom de 6 raios + círculo central -->
+          <div class="stack-card" data-color="rgba(220,220,220,.2)"
+               data-tip-name="OpenAI" data-tip-color="#e5e5e5"
+               data-tip-desc="Família GPT de LLMs. Completions, embeddings, análise de documentos e integração com sistemas via API REST."
+               data-tip-apps="Processamento de texto · Embeddings · Análise de documentos · Fine-tuning">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="2.3" stroke="#e5e5e5" stroke-width="1.2"/>
+              <line x1="12" y1="2" x2="12" y2="9.7" stroke="#e5e5e5" stroke-width="1.4" stroke-linecap="round"/>
+              <line x1="12" y1="14.3" x2="12" y2="22" stroke="#e5e5e5" stroke-width="1.4" stroke-linecap="round"/>
+              <line x1="3.7" y1="7" x2="10.3" y2="10.8" stroke="#e5e5e5" stroke-width="1.4" stroke-linecap="round"/>
+              <line x1="13.7" y1="13.2" x2="20.3" y2="17" stroke="#e5e5e5" stroke-width="1.4" stroke-linecap="round"/>
+              <line x1="20.3" y1="7" x2="13.7" y2="10.8" stroke="#e5e5e5" stroke-width="1.4" stroke-linecap="round"/>
+              <line x1="10.3" y1="13.2" x2="3.7" y2="17" stroke="#e5e5e5" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+            <span style="font-size:.76rem;font-weight:700;color:#e5e5e5">OpenAI</span>
+            <span style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.4">LLMs GPT</span>
+          </div>
+
+          <!-- React: átomo com 3 órbitas (logo oficial) -->
+          <div class="stack-card" data-color="rgba(97,218,251,.35)"
+               data-tip-name="React" data-tip-color="#61DAFB"
+               data-tip-desc="Biblioteca JavaScript para interfaces web declarativas. Base para SPAs, dashboards e portais com componentes reutilizáveis."
+               data-tip-apps="Dashboards · Portais web · SPAs · Interfaces de sistema interno">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="2.2" fill="#61DAFB"/>
+              <ellipse cx="12" cy="12" rx="10" ry="3.8" stroke="#61DAFB" stroke-width="1.3"/>
+              <ellipse cx="12" cy="12" rx="10" ry="3.8" stroke="#61DAFB" stroke-width="1.3" transform="rotate(60 12 12)"/>
+              <ellipse cx="12" cy="12" rx="10" ry="3.8" stroke="#61DAFB" stroke-width="1.3" transform="rotate(120 12 12)"/>
+            </svg>
+            <span style="font-size:.76rem;font-weight:700;color:#61DAFB">React</span>
+            <span style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.4">Frontend</span>
+          </div>
+
+          <!-- Node.js: hexágono (badge oficial) -->
+          <div class="stack-card" data-color="rgba(51,153,51,.4)"
+               data-tip-name="Node.js" data-tip-color="#339933"
+               data-tip-desc="Runtime JavaScript no servidor. Ideal para APIs RESTful, microsserviços e backends de alta concorrência."
+               data-tip-apps="APIs REST · Microsserviços · Integrações em tempo real · Backend de apps móveis">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2.5L20.8 7.25V16.75L12 21.5L3.2 16.75V7.25L12 2.5Z" stroke="#339933" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M9 15.5V9.5L11.5 13L14 9.5V15.5" stroke="#339933" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span style="font-size:.76rem;font-weight:700;color:#339933">Node.js</span>
+            <span style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.4">Backend JS</span>
+          </div>
+
+          <!-- Android: robô bugdroid (cabeça + antenas + olhos) -->
+          <div class="stack-card" data-color="rgba(61,220,132,.4)"
+               data-tip-name="Android" data-tip-color="#3DDC84"
+               data-tip-desc="Desenvolvimento nativo e híbrido para Android. Apps internos, força de campo e soluções mobile para operações empresariais."
+               data-tip-apps="Apps de campo · PDV mobile · Controle de estoque · Força de vendas">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <line x1="9" y1="8.5" x2="7" y2="5.5" stroke="#3DDC84" stroke-width="1.4" stroke-linecap="round"/>
+              <line x1="15" y1="8.5" x2="17" y2="5.5" stroke="#3DDC84" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M5.5 13A6.5 6.5 0 0 1 18.5 13V18.5A1.5 1.5 0 0 1 17 20H7A1.5 1.5 0 0 1 5.5 18.5V13Z" stroke="#3DDC84" stroke-width="1.4"/>
+              <circle cx="9.5" cy="13" r="1.1" fill="#3DDC84"/>
+              <circle cx="14.5" cy="13" r="1.1" fill="#3DDC84"/>
+            </svg>
+            <span style="font-size:.76rem;font-weight:700;color:#3DDC84">Android</span>
+            <span style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.4">Mobile</span>
+          </div>
+
+          <!-- iOS: maçã com folha (Apple logo simplificado) -->
+          <div class="stack-card" data-color="rgba(180,180,185,.3)"
+               data-tip-name="iOS" data-tip-color="#c0c0c0"
+               data-tip-desc="Desenvolvimento para iPhone e iPad. Apps empresariais integrados a sistemas existentes com experiência nativa Apple."
+               data-tip-apps="Apps empresariais · Integração com ERP · Soluções B2B · Força de campo iOS">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M14.5 3C13.8 4 13.5 5 14.5 6C15.5 5 16 4 14.5 3Z" fill="#c0c0c0"/>
+              <path d="M16.5 6.5C15.3 6 14.2 6 13 6.8C11.8 6 10.7 5.8 9.3 6.5C7.5 7.5 6.2 9.5 6.2 12C6.2 16 8.5 20.5 11 20.5C11.8 20.5 12.5 20 13 19.5C13.5 20 14.2 20.5 15 20.5C17.5 20.5 19.8 16 19.8 12C19.8 9.5 18.5 7.5 16.5 6.5Z" stroke="#c0c0c0" stroke-width="1.4" fill="none" stroke-linejoin="round"/>
+            </svg>
+            <span style="font-size:.76rem;font-weight:700;color:#c0c0c0">iOS</span>
+            <span style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.4">Mobile Apple</span>
+          </div>
+
+          <!-- n8n: dois nós conectados com seta (conceito de workflow) -->
+          <div class="stack-card" data-color="rgba(231,66,102,.4)"
+               data-tip-name="n8n" data-tip-color="#E74266"
+               data-tip-desc="Plataforma open-source de automação de workflows. Conecta APIs, bancos e sistemas sem código complexo."
+               data-tip-apps="Automação de processos · Integração de sistemas · Webhooks · Fluxos de dados">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <circle cx="5.5" cy="12" r="3" stroke="#E74266" stroke-width="1.4"/>
+              <circle cx="18.5" cy="12" r="3" stroke="#E74266" stroke-width="1.4"/>
+              <line x1="8.5" y1="12" x2="15.5" y2="12" stroke="#E74266" stroke-width="1.4"/>
+              <polyline points="13,9.5 15.5,12 13,14.5" stroke="#E74266" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <span style="font-size:.76rem;font-weight:700;color:#E74266">n8n</span>
+            <span style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.4">Automação</span>
+          </div>
+
+          <!-- WhatsApp: bolha de chat com telefone -->
+          <div class="stack-card" data-color="rgba(37,211,102,.4)"
+               data-tip-name="WhatsApp API" data-tip-color="#25D366"
+               data-tip-desc="API oficial Meta para envio e recebimento de mensagens em escala. Base para chatbots e atendimento automatizado."
+               data-tip-apps="Chatbots · Atendimento automatizado · Notificações · Confirmação de pedidos">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="#25D366" stroke-width="1.5"/>
+              <path d="M9 9c0 3.3 2.7 6 6 6" stroke="#25D366" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M15 14.5l1.5.5-.5-1.5" stroke="#25D366" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span style="font-size:.76rem;font-weight:700;color:#25D366">WhatsApp API</span>
+            <span style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.4">Mensageria</span>
+          </div>
+
+          <!-- PHP: elipse com letras PHP -->
+          <div class="stack-card" data-color="rgba(136,146,191,.4)"
+               data-tip-name="PHP" data-tip-color="#8892BF"
+               data-tip-desc="Linguagem de backend madura para APIs e sistemas web. Rápido de desenvolver, ampla compatibilidade com hosting compartilhado."
+               data-tip-apps="APIs REST · Sistemas web · Integrações · Painéis administrativos">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <ellipse cx="12" cy="12" rx="10" ry="6" stroke="#8892BF" stroke-width="1.4"/>
+              <path d="M7.5 14.5V9.5H9.5C10.6 9.5 11.2 10 11.2 11C11.2 12 10.6 12.5 9.5 12.5H7.5" stroke="#8892BF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13 14.5V9.5H15C16.1 9.5 16.7 10 16.7 11C16.7 12 16.1 12.5 15 12.5H13" stroke="#8892BF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span style="font-size:.76rem;font-weight:700;color:#8892BF">PHP</span>
+            <span style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.4">Backend</span>
+          </div>
+
+          <!-- MySQL: cilindro laranja -->
+          <div class="stack-card" data-color="rgba(228,142,0,.4)"
+               data-tip-name="MySQL" data-tip-color="#E48E00"
+               data-tip-desc="Banco relacional amplamente adotado. Ideal para sistemas transacionais com estrutura de dados bem definida."
+               data-tip-apps="ERPs · CRMs · Sistemas de gestão · Aplicações transacionais">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <ellipse cx="12" cy="6" rx="8.5" ry="2.8" stroke="#E48E00" stroke-width="1.4"/>
+              <path d="M3.5 6v12c0 1.55 3.8 2.8 8.5 2.8s8.5-1.25 8.5-2.8V6" stroke="#E48E00" stroke-width="1.4"/>
+              <path d="M3.5 12c0 1.55 3.8 2.8 8.5 2.8s8.5-1.25 8.5-2.8" stroke="#E48E00" stroke-width="1.2"/>
+            </svg>
+            <span style="font-size:.76rem;font-weight:700;color:#E48E00">MySQL</span>
+            <span style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.4">Banco relacional</span>
+          </div>
+
+          <!-- PostgreSQL: cilindro azul com detalhe -->
+          <div class="stack-card" data-color="rgba(51,103,145,.4)"
+               data-tip-name="PostgreSQL" data-tip-color="#336791"
+               data-tip-desc="Banco relacional avançado com suporte a JSON, full-text search e consultas complexas. Preferido em projetos de maior porte."
+               data-tip-apps="Projetos complexos · Busca avançada · Dados semiestruturados · Alta performance">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <ellipse cx="12" cy="6" rx="8.5" ry="2.8" stroke="#336791" stroke-width="1.4"/>
+              <path d="M3.5 6v12c0 1.55 3.8 2.8 8.5 2.8s8.5-1.25 8.5-2.8V6" stroke="#336791" stroke-width="1.4"/>
+              <path d="M3.5 12c0 1.55 3.8 2.8 8.5 2.8s8.5-1.25 8.5-2.8" stroke="#336791" stroke-width="1.2"/>
+              <path d="M15.5 9.5c0 2-1.5 3.5-3.5 3.5S8.5 11.5 8.5 9.5" stroke="#336791" stroke-width="1.1" stroke-linecap="round"/>
+            </svg>
+            <span style="font-size:.76rem;font-weight:700;color:#336791">PostgreSQL</span>
+            <span style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.4">Banco avançado</span>
+          </div>
+
+          <!-- Google Cloud: nuvem com "G" colorido -->
+          <div class="stack-card" data-color="rgba(66,133,244,.4)"
+               data-tip-name="Google Cloud" data-tip-color="#4285F4"
+               data-tip-desc="Infraestrutura de nuvem: Cloud Run, Storage, Functions e BigQuery. Hospedagem escalável com alta disponibilidade."
+               data-tip-apps="Hosting · Cloud Functions · Storage · BigQuery · Cloud Run">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M6.5 19H5a4 4 0 1 1 3.27-6.29A5.5 5.5 0 1 1 17.5 15h-1" stroke="#4285F4" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M15 17.5A3.5 3.5 0 0 0 12 14a3.5 3.5 0 0 0-3 1.7" stroke="#EA4335" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M12 14v8" stroke="#FBBC04" stroke-width="1.4" stroke-linecap="round"/>
+              <circle cx="12" cy="22" r="1" fill="#34A853"/>
+            </svg>
+            <span style="font-size:.76rem;font-weight:700;color:#4285F4">Google Cloud</span>
+            <span style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.4">Infraestrutura</span>
+          </div>
+
+          <!-- Meta: lemniscata ∞ (logo oficial Meta) -->
+          <div class="stack-card" data-color="rgba(24,119,242,.4)"
+               data-tip-name="Meta API" data-tip-color="#1877F2"
+               data-tip-desc="APIs do Facebook e Instagram para publicação, mensageria e dados de audiência. Integrado a sistemas de marketing e automação."
+               data-tip-apps="Instagram API · WhatsApp Business · Gerenciamento de anúncios · CRM social">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12C5 10 6.1 8 8 8C10 8 11 10 12 12C13 14 14 16 16 16C17.9 16 19 14 19 12C19 10 17.9 8 16 8C14 8 13 10 12 12C11 14 10 16 8 16C6.1 16 5 14 5 12Z" stroke="#1877F2" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+            </svg>
+            <span style="font-size:.76rem;font-weight:700;color:#1877F2">Meta API</span>
+            <span style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.4">Social & Ads</span>
+          </div>
+
+          <!-- Gemini: estrela de 4 pontas (logo oficial Gemini) -->
+          <div class="stack-card" data-color="rgba(66,133,244,.4)"
+               data-tip-name="Gemini" data-tip-color="#4285F4"
+               data-tip-desc="LLM do Google integrado via Vertex AI. Geração de texto, análise de dados e automação de processos com IA do ecossistema Google."
+               data-tip-apps="Automação com IA · Análise de dados · Integração Google Workspace · Vertex AI">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2C11.2 7.8 8.8 10.8 2 12C8.8 13.2 11.2 16.2 12 22C12.8 16.2 15.2 13.2 22 12C15.2 10.8 12.8 7.8 12 2Z" fill="#4285F4"/>
+            </svg>
+            <span style="font-size:.76rem;font-weight:700;color:#4285F4">Gemini</span>
+            <span style="font-size:.66rem;color:var(--muted);text-align:center;line-height:1.4">LLM Google</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FORMAS DE TRABALHAR CONOSCO -->
+  <section style="padding:3.5rem 0;border-top:1px solid var(--border)">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3rem">
+        <div class="label">Modelos de engajamento</div>
+        <h2 style="font-family:var(--fh);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;line-height:1.2;letter-spacing:-.02em;color:#fff;margin-top:.75rem">Formas de trabalhar <span class="g-text">conosco</span></h2>
+        <p style="color:var(--muted);font-size:.92rem;margin-top:.75rem;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.65">Cada empresa tem um momento diferente. Escolha o modelo que melhor se encaixa na sua necessidade.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem" class="formas-grid">
+
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:2rem 1.75rem;display:flex;flex-direction:column;gap:1rem">
+          <div style="width:42px;height:42px;border-radius:10px;background:rgba(27,201,168,.1);border:1px solid rgba(27,201,168,.2);display:flex;align-items:center;justify-content:center;color:var(--teal)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div>
+            <div style="font-family:var(--fh);font-size:1.05rem;font-weight:800;color:#fff;margin-bottom:.4rem">Projeto Pontual</div>
+            <div style="font-size:.82rem;color:var(--muted);line-height:1.65">Escopo definido, prazo claro e entrega objetiva. Ideal para quem precisa resolver um problema específico sem vínculo contínuo.</div>
+          </div>
+          <div style="margin-top:auto;padding-top:1rem;border-top:1px solid var(--border)">
+            <div style="font-size:.75rem;color:var(--teal);font-weight:600;text-transform:uppercase;letter-spacing:.08em">Quando usar</div>
+            <div style="font-size:.8rem;color:var(--muted);margin-top:.35rem;line-height:1.6">Automação pontual, integração de sistemas, MVP, landing page ou ferramenta interna.</div>
+          </div>
+        </div>
+
+        <div style="background:var(--card);border:1px solid rgba(27,201,168,.3);border-radius:var(--r);padding:2rem 1.75rem;display:flex;flex-direction:column;gap:1rem;position:relative;overflow:hidden">
+          <div style="position:absolute;top:1rem;right:1rem;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;background:rgba(27,201,168,.15);border:1px solid rgba(27,201,168,.3);color:var(--teal);padding:.2rem .55rem;border-radius:99px">Popular</div>
+          <div style="width:42px;height:42px;border-radius:10px;background:rgba(27,201,168,.1);border:1px solid rgba(27,201,168,.2);display:flex;align-items:center;justify-content:center;color:var(--teal)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div>
+            <div style="font-family:var(--fh);font-size:1.05rem;font-weight:800;color:#fff;margin-bottom:.4rem">Consultoria Estratégica</div>
+            <div style="font-size:.82rem;color:var(--muted);line-height:1.65">Diagnóstico profundo da operação, mapeamento de oportunidades e roadmap de tecnologia personalizado para o seu negócio.</div>
+          </div>
+          <div style="margin-top:auto;padding-top:1rem;border-top:1px solid var(--border)">
+            <div style="font-size:.75rem;color:var(--teal);font-weight:600;text-transform:uppercase;letter-spacing:.08em">Quando usar</div>
+            <div style="font-size:.8rem;color:var(--muted);margin-top:.35rem;line-height:1.6">Empresa que quer crescer com tecnologia mas não sabe por onde começar ou o que priorizar.</div>
+          </div>
+        </div>
+
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:2rem 1.75rem;display:flex;flex-direction:column;gap:1rem">
+          <div style="width:42px;height:42px;border-radius:10px;background:rgba(232,160,32,.1);border:1px solid rgba(232,160,32,.2);display:flex;align-items:center;justify-content:center;color:var(--amber)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <div style="font-family:var(--fh);font-size:1.05rem;font-weight:800;color:#fff;margin-bottom:.4rem">Parceiro Técnico</div>
+            <div style="font-size:.82rem;color:var(--muted);line-height:1.65">Atuamos como time de tecnologia da sua empresa — disponíveis de forma contínua para desenvolver, manter e evoluir seus sistemas.</div>
+          </div>
+          <div style="margin-top:auto;padding-top:1rem;border-top:1px solid var(--border)">
+            <div style="font-size:.75rem;color:var(--amber);font-weight:600;text-transform:uppercase;letter-spacing:.08em">Quando usar</div>
+            <div style="font-size:.8rem;color:var(--muted);margin-top:.35rem;line-height:1.6">Empresa em crescimento que precisa de tecnologia confiável sem o custo de um time interno.</div>
+          </div>
+        </div>
+
+      </div>
+      <div style="text-align:center;margin-top:2.5rem">
+        <button class="btn btn-p" data-open-diag style="font-size:.9rem;padding:.75rem 2rem">Agendar diagnóstico gratuito →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSSAS SOLUÇÕES -->
+  <section id="solucoes" style="padding:3.5rem 0;border-top:1px solid var(--border)">
+    <div class="container">
+      <div class="sec-hdr">
+        <div class="label">O que fazemos</div>
+        <h2 class="sec-h2">Nossas <span class="g-text">Soluções</span></h2>
+        <p class="sec-p">Clique em um serviço para conhecer todos os detalhes.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc-card sc-t" style="cursor:pointer" data-open-svc="ai-agents">
+          <div class="svc-ico si-t"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M12 11V7"/><circle cx="12" cy="5" r="2"/><path d="M8 15h.01M16 15h.01"/></svg></div>
+          <span class="svc-tag">Novo</span>
+          <h3 class="svc-h3">AI Agents</h3>
+          <p class="svc-desc">Automatize processos e tome decisões com inteligência. Agentes de IA personalizados que trabalham 24/7.</p>
+          <ul class="svc-list">
+            <li>Atendimento automatizado via WhatsApp</li>
+            <li>Qualificação e nutrição de leads</li>
+            <li>Integração com ERPs e CRMs</li>
+            <li>RAG sobre documentos internos</li>
+          </ul>
+          <span class="svc-lnk">Ver detalhes →</span>
+        </article>
+        <article class="svc-card sc-c" style="cursor:pointer" data-open-svc="micro-saas">
+          <div class="svc-ico si-c"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></div>
+          <span class="svc-tag" style="background:rgba(240,92,78,.09);color:var(--coral)">Popular</span>
+          <h3 class="svc-h3">Micro SaaS</h3>
+          <p class="svc-desc">Transforme uma dor de mercado em receita recorrente. Produtos digitais enxutos e escaláveis.</p>
+          <ul class="svc-list">
+            <li>MVP em tempo reduzido</li>
+            <li>Arquitetura multi-tenant</li>
+            <li>Assinaturas e billing integrados</li>
+            <li>Dashboard de métricas em tempo real</li>
+          </ul>
+          <span class="svc-lnk" style="color:var(--coral)">Ver detalhes →</span>
+        </article>
+        <article class="svc-card sc-a" style="cursor:pointer" data-open-svc="cloud">
+          <div class="svc-ico si-a"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg></div>
+          <span class="svc-tag" style="background:rgba(255,184,0,.09);color:var(--amber)">Essencial</span>
+          <h3 class="svc-h3">Cloud Computing</h3>
+          <p class="svc-desc">Infraestrutura robusta, segura e com custo otimizado. Migre para a nuvem com quem entende.</p>
+          <ul class="svc-list">
+            <li>Migração para AWS / GCP / Azure</li>
+            <li>Containers, Kubernetes e CI/CD</li>
+            <li>Monitoramento e alertas 24/7</li>
+            <li>Backup, DR e compliance</li>
+          </ul>
+          <span class="svc-lnk" style="color:var(--amber)">Ver detalhes →</span>
+        </article>
+        <article class="svc-card sc-b" style="cursor:pointer" data-open-svc="consultoria">
+          <div class="svc-ico si-b"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></div>
+          <span class="svc-tag" style="background:rgba(80,120,255,.09);color:#5078ff">Estratégico</span>
+          <h3 class="svc-h3">Consultoria em TI para Gestão</h3>
+          <p class="svc-desc">Alinhe tecnologia com estratégia. Apoiamos gestores a decidirem melhor com dados.</p>
+          <ul class="svc-list">
+            <li>Diagnóstico e roadmap tecnológico</li>
+            <li>Seleção e implantação de sistemas</li>
+            <li>Gestão de projetos e squads</li>
+            <li>KPIs e dashboards gerenciais</li>
+          </ul>
+          <span class="svc-lnk" style="color:#5078ff">Ver detalhes →</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<!-- ABA SERVIÇOS -->
+<section id="tab-servicos" class="tab-pane" role="tabpanel">
+  <div class="container" style="padding-top:110px;padding-bottom:5rem">
+    <div class="sec-hdr">
+      <div class="label">O que fazemos</div>
+      <h2 class="sec-h2">Nossas <span class="g-text">Soluções</span></h2>
+      <p class="sec-p">Clique em um serviço para conhecer todos os detalhes.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card sc-t" style="cursor:pointer" data-open-svc="ai-agents">
+        <div class="svc-ico si-t"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M12 11V7"/><circle cx="12" cy="5" r="2"/><path d="M8 15h.01M16 15h.01"/></svg></div>
+        <span class="svc-tag">Novo</span>
+        <h3 class="svc-h3">AI Agents</h3>
+        <p class="svc-desc">Automatize processos e tome decisões com inteligência. Agentes de IA personalizados que trabalham 24/7.</p>
+        <ul class="svc-list">
+          <li>Atendimento automatizado via WhatsApp</li>
+          <li>Qualificação e nutrição de leads</li>
+          <li>Integração com ERPs e CRMs</li>
+          <li>RAG sobre documentos internos</li>
+        </ul>
+        <span class="svc-lnk">Ver detalhes →</span>
+      </article>
+      <article class="svc-card sc-c" style="cursor:pointer" data-open-svc="micro-saas">
+        <div class="svc-ico si-c"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></div>
+        <span class="svc-tag" style="background:rgba(240,92,78,.09);color:var(--coral)">Popular</span>
+        <h3 class="svc-h3">Micro SaaS</h3>
+        <p class="svc-desc">Transforme uma dor de mercado em receita recorrente. Produtos digitais enxutos e escaláveis.</p>
+        <ul class="svc-list">
+          <li>MVP em tempo reduzido</li>
+          <li>Arquitetura multi-tenant</li>
+          <li>Assinaturas e billing integrados</li>
+          <li>Dashboard de métricas em tempo real</li>
+        </ul>
+        <span class="svc-lnk" style="color:var(--coral)">Ver detalhes →</span>
+      </article>
+      <article class="svc-card sc-a" style="cursor:pointer" data-open-svc="cloud">
+        <div class="svc-ico si-a"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg></div>
+        <span class="svc-tag" style="background:rgba(255,184,0,.09);color:var(--amber)">Essencial</span>
+        <h3 class="svc-h3">Cloud Computing</h3>
+        <p class="svc-desc">Infraestrutura robusta, segura e com custo otimizado. Migre para a nuvem com quem entende.</p>
+        <ul class="svc-list">
+          <li>Migração para AWS / GCP / Azure</li>
+          <li>Containers, Kubernetes e CI/CD</li>
+          <li>Monitoramento e alertas 24/7</li>
+          <li>Backup, DR e compliance</li>
+        </ul>
+        <span class="svc-lnk" style="color:var(--amber)">Ver detalhes →</span>
+      </article>
+      <article class="svc-card sc-b" style="cursor:pointer" data-open-svc="consultoria">
+        <div class="svc-ico si-b"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></div>
+        <span class="svc-tag" style="background:rgba(80,120,255,.09);color:#5078ff">Estratégico</span>
+        <h3 class="svc-h3">Consultoria em TI para Gestão</h3>
+        <p class="svc-desc">Alinhe tecnologia com estratégia. Apoiamos gestores a decidirem melhor com dados.</p>
+        <ul class="svc-list">
+          <li>Diagnóstico e roadmap tecnológico</li>
+          <li>Seleção e implantação de sistemas</li>
+          <li>Gestão de projetos e squads</li>
+          <li>KPIs e dashboards gerenciais</li>
+        </ul>
+        <span class="svc-lnk" style="color:#5078ff">Ver detalhes →</span>
+      </article>
+    </div>
+
+    <!-- PROCESSO -->
+    <div class="proc-wrap">
+      <div class="sec-hdr" style="margin-bottom:0">
+        <div class="label">Como trabalhamos</div>
+        <h2 class="sec-h2">Do problema à solução em <span class="g-text">4 passos</span></h2>
+      </div>
+      <div class="proc-grid">
+        <div class="proc-step">
+          <div class="proc-n">01</div>
+          <div class="proc-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+          <h3 class="proc-h3">Diagnóstico</h3>
+          <p class="proc-p">Sessão gratuita de 30 minutos: mapeamos seus processos, gargalos e objetivos antes de propor qualquer solução.</p>
+          <div class="proc-detail">
+            <div class="proc-tag">30 min</div>
+            <div class="proc-tag">Você recebe: análise do cenário atual</div>
+          </div>
+        </div>
+        <div class="proc-step">
+          <div class="proc-n">02</div>
+          <div class="proc-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+          <h3 class="proc-h3">Estratégia</h3>
+          <p class="proc-p">Desenhamos a arquitetura ideal, o roadmap de implementação e a proposta alinhada ao seu orçamento e prazo real.</p>
+          <div class="proc-detail">
+            <div class="proc-tag">3–5 dias</div>
+            <div class="proc-tag">Você recebe: proposta detalhada</div>
+          </div>
+        </div>
+        <div class="proc-step">
+          <div class="proc-n">03</div>
+          <div class="proc-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <h3 class="proc-h3">Desenvolvimento</h3>
+          <p class="proc-p">Ciclos ágeis de 2 semanas com entregas incrementais. Você acompanha o progresso em tempo real e valida cada etapa.</p>
+          <div class="proc-detail">
+            <div class="proc-tag">Sprints de 2 sem</div>
+            <div class="proc-tag">Você recebe: entregas validáveis</div>
+          </div>
+        </div>
+        <div class="proc-step">
+          <div class="proc-n">04</div>
+          <div class="proc-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
+          <h3 class="proc-h3">Suporte Contínuo</h3>
+          <p class="proc-p">Monitoramos, mantemos e evoluímos a solução após o lançamento. Canal direto no WhatsApp para suporte sem fila.</p>
+          <div class="proc-detail">
+            <div class="proc-tag">Contínuo</div>
+            <div class="proc-tag">Você recebe: SLA de resposta em 4h</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABA BLOG -->
+<section id="tab-blog" class="tab-pane" role="tabpanel">
+  <div class="container">
+    <!-- Barra de navegação do blog -->
+    <div class="blog-back-bar">
+      <button class="blog-back-btn" data-tab="home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Voltar ao início
+      </button>
+      <div style="font-size:.78rem;color:var(--muted)">3 artigos publicados</div>
+    </div>
+    <div class="sec-hdr" style="margin-top:0">
+      <div class="label">Conteúdo e Insights</div>
+      <h2 class="sec-h2">Nosso <span class="g-text">Blog</span></h2>
+      <p class="sec-p">Artigos práticos sobre automação, IA e tecnologia aplicadas a negócios reais.</p>
+    </div>
+    <div class="blog-grid" id="blog-list" style="margin-top:2.5rem">
+      <!-- POST 1 — PUBLICADO -->
+      <article class="blog-card" style="cursor:pointer" data-open-post="tecnologia-estrategica">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(27,201,168,.15),rgba(80,120,255,.1))">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(27,201,168,.8)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta"><span class="blog-cat">Consultoria em TI</span>·<time datetime="2025-03-01">01 Mar 2025</time>·<span>8 min</span></div>
+          <h3 class="blog-h3">Tecnologia Estratégica: quando a TI deixa de ser suporte e passa a impulsionar o negócio</h3>
+          <p class="blog-exc">Empresas que alinham tecnologia à estratégia tomam decisões melhores, operam com mais eficiência e saem na frente da concorrência.</p>
+          <div class="blog-foot">
+            <div class="blog-author"><div class="av">IP</div><span>Itamar Pereira</span></div>
+            <span class="blog-more">Ler <i data-lucide="arrow-right" class="lc"></i></span>
+          </div>
+        </div>
+      </article>
+      <!-- POST 2 — PUBLICADO -->
+      <article class="blog-card" style="cursor:pointer" data-open-post="tecnologia-assertiva">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(232,87,74,.15),rgba(232,160,32,.1))">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(232,87,74,.8)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta"><span class="blog-cat">Micro SaaS</span>·<time datetime="2025-03-08">08 Mar 2025</time>·<span>7 min</span></div>
+          <h3 class="blog-h3">Tecnologia Assertiva: a solução certa para o problema certo</h3>
+          <p class="blog-exc">Empresas modernas estão abandonando sistemas gigantescos e adotando soluções focadas que resolvem problemas específicos com eficiência real.</p>
+          <div class="blog-foot">
+            <div class="blog-author"><div class="av">IP</div><span>Itamar Pereira</span></div>
+            <span class="blog-more">Ler <i data-lucide="arrow-right" class="lc"></i></span>
+          </div>
+        </div>
+      </article>
+      <!-- POST 3 — PUBLICADO -->
+      <article class="blog-card" style="cursor:pointer" data-open-post="tecnologia-personalizada">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(80,120,255,.15),rgba(27,201,168,.1))">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(80,120,255,.8)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta"><span class="blog-cat">AI Agents</span>·<time datetime="2025-03-15">15 Mar 2025</time>·<span>7 min</span></div>
+          <h3 class="blog-h3">Tecnologia Personalizada: soluções desenvolvidas para a realidade da sua empresa</h3>
+          <p class="blog-exc">Sistemas genéricos resolvem problemas genéricos. Quando a operação tem características próprias, a tecnologia precisa se adaptar ao negócio — não o contrário.</p>
+          <div class="blog-foot">
+            <div class="blog-author"><div class="av">IP</div><span>Itamar Pereira</span></div>
+            <span class="blog-more">Ler <i data-lucide="arrow-right" class="lc"></i></span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABA CONTATO -->
+<section id="tab-contato" class="tab-pane" role="tabpanel">
+  <div class="container">
+    <div class="sec-hdr">
+      <div class="label">Vamos conversar</div>
+      <h2 class="sec-h2">Pronto para transformar seu negócio com <span class="g-text">tecnologia?</span></h2>
+    </div>
+    <div class="contact-grid">
+      <!-- COLUNA ESQUERDA -->
+      <div>
+        <p class="ci-p">Fale diretamente com nosso especialista. Atendemos empresas em todo o Brasil, 100% remoto. Sem intermediários, sem enrolação.</p>
+
+        <!-- CTA Diagnóstico -->
+        <button class="diag-cta" onclick="openDiagModal()">
+          <div class="diag-cta-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div>
+            <div class="diag-cta-title">Diagnóstico gratuito — 30 minutos</div>
+            <div class="diag-cta-sub">Mapeamos seu desafio e mostramos a solução certa. Sem compromisso.</div>
+          </div>
+          <i data-lucide="arrow-right" class="lc diag-cta-arr"></i>
+        </button>
+
+        <!-- Canais -->
+        <div class="channels">
+          <a href="https://wa.me/5565981172676?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20Conex%C3%A3o." class="ch-item" target="_blank" rel="noopener">
+            <div class="ch-ico">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div><div class="ch-title">WhatsApp</div><div class="ch-val">+55 (65) 98117-2676</div></div>
+          </a>
+          <a href="#" class="ch-item" id="email-link" data-u="itamar" data-d="conexaots.com">
+            <div class="ch-ico">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div><div class="ch-title">E-mail</div><div class="ch-val" id="email-val">itamar&#64;conexaots.com</div></div>
+          </a>
+          <div class="ch-item" style="cursor:default">
+            <div class="ch-ico">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div><div class="ch-title">Localização</div><div class="ch-val">Rondonópolis, MT — Brasil</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUNA DIREITA — FORMULÁRIO -->
+      <form class="c-form" id="contact-form" novalidate>
+        <div class="f-row">
+          <div class="f-grp"><label for="nome">Nome *</label><input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name"/></div>
+          <div class="f-grp"><label for="empresa">Empresa</label><input type="text" id="empresa" name="empresa" placeholder="Sua empresa" autocomplete="organization"/></div>
+        </div>
+        <div class="f-row">
+          <div class="f-grp"><label for="email">E-mail *</label><input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email"/></div>
+          <div class="f-grp"><label for="fone">WhatsApp</label><input type="tel" id="fone" name="fone" placeholder="(65) 9 0000-0000" autocomplete="tel"/></div>
+        </div>
+        <div class="f-grp">
+          <label for="servico">Serviço de interesse</label>
+          <select id="servico" name="servico">
+            <option value="">Selecione...</option>
+            <option>AI Agents</option><option>Micro SaaS</option>
+            <option>Cloud Computing</option><option>Consultoria em TI</option><option>Outro</option>
+          </select>
+        </div>
+        <div class="f-grp">
+          <label for="msg">Mensagem *</label>
+          <textarea id="msg" name="msg" rows="4" placeholder="Descreva brevemente seu desafio, processo ou projeto. Vamos entender antes de propor qualquer solução..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-p" id="sbtn" style="justify-content:center;width:100%">Enviar mensagem →</button>
+        <div id="form-fb" role="alert" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL DIAGNÓSTICO GRATUITO -->
+<div id="diag-modal" role="dialog" aria-modal="true" aria-label="Solicitar diagnóstico gratuito">
+  <div class="diag-modal-box">
+    <div class="diag-modal-hdr">
+      <div>
+        <div class="diag-modal-title">Diagnóstico Gratuito — 30 minutos</div>
+        <div class="diag-modal-sub">Preencha e entraremos em contato para agendar sua sessão</div>
+      </div>
+      <button class="diag-modal-close" onclick="closeDiagModal()" aria-label="Fechar"><i data-lucide="x" class="lc"></i></button>
+    </div>
+
+    <!-- Formulário -->
+    <div id="diag-form-wrap">
+      <div class="f-row" style="margin-bottom:.9rem">
+        <div class="f-grp"><label>Nome *</label><input type="text" id="diag-nome" placeholder="Seu nome" autocomplete="name"/></div>
+        <div class="f-grp"><label>Empresa</label><input type="text" id="diag-empresa" placeholder="Sua empresa" autocomplete="organization"/></div>
+      </div>
+      <div class="f-row" style="margin-bottom:.9rem">
+        <div class="f-grp"><label>E-mail *</label><input type="email" id="diag-email" placeholder="seu@email.com" autocomplete="email"/></div>
+        <div class="f-grp"><label>WhatsApp *</label><input type="tel" id="diag-tel" placeholder="(65) 9 0000-0000" autocomplete="tel"/></div>
+      </div>
+      <div class="f-grp" style="margin-bottom:.9rem">
+        <label>Segmento da empresa</label>
+        <select id="diag-segmento">
+          <option value="">Selecione...</option>
+          <option>Agronegócio</option>
+          <option>Construção Civil</option>
+          <option>Escritório Jurídico</option>
+          <option>Barbearia ou Salão</option>
+          <option>Comércio e Varejo</option>
+          <option>Indústria</option>
+          <option>Prestação de Serviços</option>
+          <option>Outro</option>
+        </select>
+      </div>
+      <div class="f-grp" style="margin-bottom:.9rem">
+        <label>Qual é o principal desafio da sua operação hoje?</label>
+        <textarea id="diag-desafio" rows="3" placeholder="Ex: processos manuais, falta de controle, dificuldade para atender clientes..."></textarea>
+      </div>
+      <div class="f-grp" style="margin-bottom:1.25rem">
+        <label>Como nos encontrou?</label>
+        <select id="diag-origem">
+          <option value="">Selecione...</option>
+          <option value="Google">Google / Pesquisa online</option>
+          <option value="WhatsApp">WhatsApp</option>
+          <option value="Indicação">Indicação de alguém</option>
+          <option value="Instagram">Instagram</option>
+          <option value="LinkedIn">LinkedIn</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </div>
+      <button class="btn btn-p" id="diag-sbtn" onclick="submitDiagnostico()" style="justify-content:center;width:100%;font-size:.92rem">Solicitar diagnóstico gratuito →</button>
+      <div id="diag-form-fb" role="alert" aria-live="polite"></div>
+    </div>
+
+    <!-- Sucesso -->
+    <div id="diag-success">
+      <div class="succ-ico">✅</div>
+      <h3>Diagnóstico solicitado com sucesso!</h3>
+      <p style="margin-bottom:1.25rem">Recebemos sua solicitação. Veja o que acontece agora:</p>
+      <div style="text-align:left;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:1.5rem">
+        <div style="display:flex;align-items:flex-start;gap:.85rem;padding:.9rem 1rem;border-bottom:1px solid var(--border)">
+          <div style="width:24px;height:24px;border-radius:50%;background:rgba(27,201,168,.15);border:1px solid rgba(27,201,168,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.72rem;font-weight:700;color:var(--teal)">1</div>
+          <div><div style="font-size:.85rem;font-weight:600;color:#fff;margin-bottom:.2rem">Análise da solicitação</div><div style="font-size:.78rem;color:var(--muted)">Revisamos seu desafio e preparamos perguntas para a sessão.</div></div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:.85rem;padding:.9rem 1rem;border-bottom:1px solid var(--border)">
+          <div style="width:24px;height:24px;border-radius:50%;background:rgba(27,201,168,.15);border:1px solid rgba(27,201,168,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.72rem;font-weight:700;color:var(--teal)">2</div>
+          <div><div style="font-size:.85rem;font-weight:600;color:#fff;margin-bottom:.2rem">Contato em até 24h</div><div style="font-size:.78rem;color:var(--muted)">Entramos em contato pelo WhatsApp para agendar a sessão de 30 minutos.</div></div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:.85rem;padding:.9rem 1rem">
+          <div style="width:24px;height:24px;border-radius:50%;background:rgba(27,201,168,.15);border:1px solid rgba(27,201,168,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.72rem;font-weight:700;color:var(--teal)">3</div>
+          <div><div style="font-size:.85rem;font-weight:600;color:#fff;margin-bottom:.2rem">Diagnóstico gratuito</div><div style="font-size:.78rem;color:var(--muted)">Sessão de 30 min: mapeamos seus gargalos e apresentamos as soluções certas.</div></div>
+        </div>
+      </div>
+      <p style="font-size:.82rem;color:var(--muted);margin-bottom:1.25rem">Prefere agilizar? Nos chame agora pelo WhatsApp.</p>
+      <a href="https://wa.me/5565981172676?text=Ol%C3%A1!%20Acabei%20de%20solicitar%20um%20diagn%C3%B3stico%20gratuito%20pelo%20site." target="_blank" rel="noopener" class="btn btn-p" style="display:inline-flex">Chamar no WhatsApp →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     OVERLAY — TELA DE DETALHE DO SERVIÇO
+     Desliza da direita, cobre tudo, botão ← Voltar
+     ═══════════════════════════════════════════ -->
+<div id="svc-overlay" role="dialog" aria-modal="true" aria-labelledby="svc-overlay-title" aria-label="Detalhe do serviço">
+  <div class="ovl-sticky-bar">
+    <button class="svc-back" id="svc-back-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg> Voltar ao site</button>
+  </div>
+  <div class="svc-overlay-inner">
+
+    <!-- ── AI AGENTS ── -->
+    <div id="ovl-ai-agents" class="svc-ovl-content" style="display:none">
+      <div class="sec-hdr">
+        <div class="label">AI Agents</div>
+        <h2 class="sec-h2">Agentes de IA <span class="g-text">Personalizados</span> para Gestão Empresarial</h2>
+        <p class="sec-p">Automatize processos, acelere decisões e transforme dados em resultados com inteligência artificial adaptada ao seu negócio.</p>
+      </div>
+      <div class="ai-detail-grid">
+        <div class="ai-video-wrap" style="min-height:280px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem">
+          <div style="width:64px;height:64px;border-radius:50%;background:rgba(27,201,168,.12);border:1px solid rgba(27,201,168,.25);display:flex;align-items:center;justify-content:center;color:var(--teal)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M12 11V7"/><circle cx="12" cy="5" r="2"/><path d="M8 15h.01M16 15h.01"/></svg>
+          </div>
+          <span style="font-size:.78rem;color:var(--muted);text-align:center">Demonstração em vídeo em breve</span>
+        </div>
+        <div class="ai-text-block">
+          <h2>Inteligência Artificial que se adapta à realidade da sua empresa</h2>
+          <p class="ai-lead">Hoje, empresas geram mais dados e executam mais tarefas do que nunca. Porém, muitas decisões ainda dependem de processos manuais, relatórios demorados e informações dispersas — resultando em atrasos, erros operacionais e oportunidades perdidas.</p>
+          <p>Na Conexão, não trabalhamos com soluções genéricas. Desenvolvemos Agentes de IA personalizados, treinados para entender os processos, os dados e a dinâmica do seu negócio.</p>
+        </div>
+      </div>
+      <div class="ai-features">
+        <div class="ai-feat">
+          <div class="ai-feat-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="ai-feat-body"><h4>Automação de processos operacionais</h4><p>Tarefas repetitivas deixam de depender de intervenção humana, reduzindo erros e liberando sua equipe para atividades estratégicas.</p></div>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <div class="ai-feat-body"><h4>Análise de dados e apoio à decisão</h4><p>O agente interpreta informações, identifica padrões e apresenta insights para decisões mais rápidas e seguras.</p></div>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="ai-feat-body"><h4>Atendimento e relacionamento com clientes</h4><p>Agentes de IA respondem clientes e acompanham solicitações com rapidez e consistência, 24h por dia.</p></div>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          </div>
+          <div class="ai-feat-body"><h4>Monitoramento inteligente da operação</h4><p>Alertas automáticos e acompanhamento de indicadores antes que problemas afetem o negócio.</p></div>
+        </div>
+      </div>
+      <div class="ai-highlight">
+        <h3>O grande diferencial: personalização real</h3>
+        <p>Cada empresa tem processos e desafios únicos. Nossos Agentes de IA são desenvolvidos sob medida, aprendendo com os dados e com a rotina da própria empresa. A IA passa a atuar como parte integrada da gestão — não apenas como ferramenta externa.</p>
+        <p>O resultado: operação mais organizada, decisões mais rápidas e uma empresa preparada para um mercado cada vez mais digital.</p>
+      </div>
+      <div class="ai-cta-row">
+        <button class="btn btn-p" data-tab="contato">Quero meu Agente de IA →</button>
+        <button class="btn btn-o" data-tab="contato">Agendar uma conversa</button>
+      </div>
+    </div>
+
+    <!-- ── MICRO SAAS ── -->
+    <div id="ovl-micro-saas" class="svc-ovl-content" style="display:none">
+      <div class="sec-hdr">
+        <div class="label">Micro SaaS</div>
+        <h2 class="sec-h2">Pequenas soluções digitais que resolvem <span class="g-text">grandes desafios das empresas</span></h2>
+        <p class="sec-p">Softwares especializados, simples e eficientes, criados para resolver problemas específicos da gestão empresarial.</p>
+      </div>
+
+      <div class="ai-detail-grid">
+        <!-- IMAGEM / VÍDEO -->
+        <div class="ai-video-wrap">
+          <!-- Substitua por vídeo quando disponível:
+               <video src="video_microsaas.mp4" autoplay loop muted playsinline></video> -->
+          <img src="imagem_microsaas.png" alt="Micro SaaS em operação" style="width:100%;display:block;border-radius:var(--r)" />
+        </div>
+
+        <!-- TEXTO INTRO -->
+        <div class="ai-text-block">
+          <h2>É exatamente nesse espaço que os Micro SaaS vêm revolucionando a forma como empresas adotam tecnologia</h2>
+          <p class="ai-lead">Muitas empresas utilizam sistemas grandes e complexos para tentar resolver todos os desafios da operação. Porém, na prática, boa parte dos problemas do dia a dia está em processos específicos que poderiam ser resolvidos com ferramentas mais simples, rápidas e inteligentes.</p>
+          <p>Um Micro SaaS é um software focado em resolver um problema muito específico da operação, de forma direta e eficiente. Em vez de plataformas gigantescas com centenas de funcionalidades, ele atua em pontos estratégicos da gestão, gerando resultados rápidos.</p>
+          <p>Na Conexão Tecnologia e Serviços, desenvolvemos Micro SaaS personalizados, adaptados à realidade de cada segmento e de cada empresa.</p>
+        </div>
+      </div>
+
+      <!-- EXEMPLOS PRÁTICOS -->
+      <div style="margin:2.5rem 0">
+        <div class="label">Exemplos práticos</div>
+        <h3 style="font-family:var(--fh);font-size:1.15rem;font-weight:700;margin-bottom:.5rem;color:#fff">Como um Micro SaaS pode transformar diferentes tipos de negócios</h3>
+        <p style="font-size:.9rem;color:rgba(255,255,255,.6);margin-bottom:1.75rem">Para entender melhor o impacto desse conceito, veja alguns exemplos práticos.</p>
+        <div class="ai-features">
+
+          <div class="ai-feat">
+            <div class="ai-feat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <div class="ai-feat-body">
+              <h4>Supermercados – controle inteligente de reposição de produtos</h4>
+              <p>Imagine um sistema que analisa automaticamente o histórico de vendas, identifica os produtos que estão saindo mais rápido e alerta a equipe antes que falte mercadoria na gôndola. Um Micro SaaS pode monitorar estoque, prever reposição e até sugerir pedidos ao fornecedor, reduzindo perdas e aumentando vendas.</p>
+            </div>
+          </div>
+
+          <div class="ai-feat">
+            <div class="ai-feat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div class="ai-feat-body">
+              <h4>Clínicas e consultórios – redução de faltas em consultas</h4>
+              <p>Um Micro SaaS pode acompanhar a agenda, enviar lembretes automáticos personalizados para pacientes, confirmar presença e reorganizar horários quando ocorre um cancelamento. O resultado é uma agenda mais eficiente e menos horários perdidos.</p>
+            </div>
+          </div>
+
+          <div class="ai-feat">
+            <div class="ai-feat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <div class="ai-feat-body">
+              <h4>Salões de beleza – relacionamento inteligente com clientes</h4>
+              <p>O sistema pode analisar o histórico de serviços e lembrar automaticamente quando um cliente costuma retornar para um corte, coloração ou tratamento. A ferramenta envia mensagens personalizadas oferecendo agendamento ou promoções, aumentando a fidelização.</p>
+            </div>
+          </div>
+
+          <div class="ai-feat">
+            <div class="ai-feat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <div class="ai-feat-body">
+              <h4>Indústrias – monitoramento de processos operacionais</h4>
+              <p>Um Micro SaaS pode acompanhar indicadores de produção, identificar atrasos em etapas específicas e gerar alertas para a gestão antes que o problema afete a entrega ao cliente.</p>
+            </div>
+          </div>
+
+          <div class="ai-feat">
+            <div class="ai-feat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <div class="ai-feat-body">
+              <h4>Empresas comerciais – acompanhamento de oportunidades de venda</h4>
+              <p>Um sistema simples pode monitorar propostas enviadas, identificar clientes que ainda não responderam e sugerir ações de follow-up para a equipe comercial.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DESTAQUE -->
+      <div class="ai-highlight">
+        <h3>Por que o modelo Micro SaaS está crescendo no mundo inteiro</h3>
+        <p>A grande força desse modelo está na combinação de simplicidade e eficiência. Em vez de investir apenas em grandes sistemas, empresas estão adotando ferramentas menores que resolvem problemas específicos com rapidez. Isso permite implementar melhorias constantes na operação sem grandes projetos de tecnologia.</p>
+        <p><strong style="color:rgba(255,255,255,.9)">Entre os principais benefícios estão:</strong> implementação rápida · baixo custo de desenvolvimento e manutenção · alta adaptação ao processo da empresa · possibilidade de evoluir o sistema conforme novas necessidades surgem.</p>
+        <p>Com essa abordagem, a tecnologia passa a funcionar como um conjunto de soluções inteligentes que melhoram continuamente a gestão do negócio.</p>
+      </div>
+
+      <!-- FECHAMENTO -->
+      <div style="margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid var(--border)">
+        <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:700;margin-bottom:.75rem;color:#fff">Tecnologia pensada para a realidade da sua empresa</h3>
+        <p style="font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:.75rem">Na Conexão Tecnologia e Serviços, cada projeto de Micro SaaS nasce a partir da análise dos processos da empresa. O objetivo é identificar gargalos operacionais e criar soluções digitais específicas que gerem impacto real na produtividade e na tomada de decisão.</p>
+        <p style="font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.75">Assim, a tecnologia deixa de ser complexa e passa a ser uma ferramenta prática para crescimento e eficiência empresarial.</p>
+      </div>
+
+      <div class="ai-cta-row">
+        <button class="btn btn-p" data-tab="contato">Quero meu Micro SaaS →</button>
+        <button class="btn btn-o" data-tab="contato">Agendar uma conversa</button>
+      </div>
+    </div>
+
+    <!-- ── CLOUD ── -->
+    <div id="ovl-cloud" class="svc-ovl-content" style="display:none">
+      <div class="sec-hdr">
+        <div class="label">Cloud Computing</div>
+        <h2 class="sec-h2">Infraestrutura moderna para <span class="g-text">crescimento e eficiência</span></h2>
+        <p class="sec-p">Leve seus sistemas, dados e operações para a nuvem com segurança, escalabilidade e alta performance.</p>
+      </div>
+
+      <div class="ai-detail-grid">
+        <!-- PLACEHOLDER VÍDEO -->
+        <div class="ai-video-wrap" style="min-height:280px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem">
+          <div style="width:64px;height:64px;border-radius:50%;background:rgba(232,160,32,.1);border:1px solid rgba(232,160,32,.25);display:flex;align-items:center;justify-content:center;color:var(--amber)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg>
+          </div>
+          <span style="font-size:.78rem;color:var(--muted);text-align:center">Demonstração em vídeo em breve</span>
+        </div>
+
+        <!-- TEXTO INTRO -->
+        <div class="ai-text-block">
+          <h2>A nuvem não é apenas uma mudança tecnológica — ela redefine a forma como sua empresa opera</h2>
+          <p class="ai-lead">Muitas empresas ainda operam com servidores locais, infraestrutura limitada e altos custos de manutenção. Equipamentos precisam ser atualizados, backups exigem atenção constante e qualquer falha pode interromper operações importantes.</p>
+          <p>Enquanto isso, organizações que adotam Cloud Computing estão transformando sua forma de operar, ganhando mais segurança, flexibilidade e capacidade de crescimento.</p>
+          <p>É nesse cenário que projetos de infraestrutura em nuvem se tornam uma estratégia essencial para empresas que querem operar com mais eficiência e preparação para o futuro.</p>
+        </div>
+      </div>
+
+      <!-- EXEMPLOS PRÁTICOS -->
+      <div style="margin:2.5rem 0">
+        <div class="label">Exemplos práticos</div>
+        <h3 style="font-family:var(--fh);font-size:1.15rem;font-weight:700;margin-bottom:.5rem;color:#fff">Como a computação em nuvem pode transformar diferentes tipos de negócios</h3>
+        <p style="font-size:.9rem;color:rgba(255,255,255,.6);margin-bottom:1.75rem">A nuvem redefine a forma como sistemas, dados e equipes trabalham no dia a dia. Veja alguns exemplos práticos.</p>
+        <div class="ai-features">
+
+          <div class="ai-feat">
+            <div class="ai-feat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <div class="ai-feat-body">
+              <h4>Supermercados – operação contínua e segura</h4>
+              <p>Com Cloud Computing, o ERP e os dados da empresa ficam hospedados em infraestrutura robusta e redundante, reduzindo riscos de paralisação e garantindo acesso rápido às informações de gestão, frente de caixa e controle de estoque.</p>
+            </div>
+          </div>
+
+          <div class="ai-feat">
+            <div class="ai-feat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div class="ai-feat-body">
+              <h4>Clínicas e hospitais – acesso seguro a informações médicas</h4>
+              <p>Prontuários eletrônicos, agendas e sistemas administrativos podem ser acessados com segurança por profissionais autorizados, mesmo em diferentes unidades ou locais de atendimento.</p>
+            </div>
+          </div>
+
+          <div class="ai-feat">
+            <div class="ai-feat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            </div>
+            <div class="ai-feat-body">
+              <h4>Indústrias – integração de dados operacionais</h4>
+              <p>Empresas industriais podem centralizar dados de produção, estoque e logística na nuvem, permitindo monitoramento em tempo real e melhor coordenação entre setores.</p>
+            </div>
+          </div>
+
+          <div class="ai-feat">
+            <div class="ai-feat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <div class="ai-feat-body">
+              <h4>Empresas comerciais – mobilidade para equipes de vendas</h4>
+              <p>Equipes comerciais passam a acessar sistemas e relatórios de qualquer lugar, utilizando notebooks, tablets ou smartphones, sem depender da estrutura física da empresa.</p>
+            </div>
+          </div>
+
+          <div class="ai-feat">
+            <div class="ai-feat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div class="ai-feat-body">
+              <h4>Empresas em crescimento – escalabilidade sem grandes investimentos</h4>
+              <p>À medida que a empresa cresce, a infraestrutura em nuvem pode expandir rapidamente sem necessidade de comprar novos servidores ou equipamentos.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DESTAQUE -->
+      <div class="ai-highlight">
+        <h3>Por que a Cloud Computing se tornou padrão para empresas modernas</h3>
+        <p>A computação em nuvem se consolidou como um dos pilares da transformação digital porque oferece vantagens claras para a gestão empresarial.</p>
+        <p><strong style="color:rgba(255,255,255,.9)">Principais benefícios:</strong> redução de custos com infraestrutura física · alta disponibilidade e redundância · backup automatizado e segurança de dados · escalabilidade para acompanhar o crescimento · acesso remoto seguro aos sistemas corporativos.</p>
+        <p>Com a nuvem, a tecnologia deixa de ser uma preocupação operacional e passa a ser uma base sólida para inovação e crescimento.</p>
+      </div>
+
+      <!-- FECHAMENTO -->
+      <div style="margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid var(--border)">
+        <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:700;margin-bottom:.75rem;color:#fff">Projetos de nuvem planejados para a realidade da sua empresa</h3>
+        <p style="font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:.75rem">Na Conexão Tecnologia e Serviços, os projetos de Cloud Computing são desenvolvidos de forma estratégica. Avaliamos a infraestrutura atual, os sistemas utilizados e as necessidades de crescimento da empresa para construir uma arquitetura de nuvem segura, eficiente e preparada para o futuro.</p>
+        <p style="font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.75">O objetivo não é apenas migrar servidores, mas criar uma base tecnológica confiável que sustente a evolução da gestão empresarial.</p>
+      </div>
+
+      <div class="ai-cta-row">
+        <button class="btn btn-p" data-tab="contato">Quero ir para a nuvem →</button>
+        <button class="btn btn-o" data-tab="contato">Agendar uma conversa</button>
+      </div>
+    </div>
+
+    <!-- ── CONSULTORIA ── -->
+    <div id="ovl-consultoria" class="svc-ovl-content" style="display:none">
+      <div class="sec-hdr">
+        <div class="label">Consultoria em TI</div>
+        <h2 class="sec-h2">Escolha as tecnologias certas e prepare sua empresa para uma gestão orientada por <span class="g-text">dados e inteligência</span></h2>
+        <p class="sec-p">Consultoria especializada na escolha de ERP, integração de sistemas e adoção de ferramentas modernas de gestão.</p>
+      </div>
+
+      <div class="ai-detail-grid">
+        <!-- PLACEHOLDER VÍDEO -->
+        <div class="ai-video-wrap" style="min-height:280px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem">
+          <div style="width:64px;height:64px;border-radius:50%;background:rgba(80,120,255,.1);border:1px solid rgba(80,120,255,.25);display:flex;align-items:center;justify-content:center;color:#5078ff">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+          </div>
+          <span style="font-size:.78rem;color:var(--muted);text-align:center">Demonstração em vídeo em breve</span>
+        </div>
+
+        <!-- TEXTO INTRO -->
+        <div class="ai-text-block">
+          <h2>O desafio não está em adquirir tecnologia, mas em escolher as soluções certas para o seu negócio</h2>
+          <p class="ai-lead">Muitas empresas investem em tecnologia esperando mais controle, eficiência e crescimento. Porém, na prática, uma escolha errada de sistema ou uma implementação mal planejada pode gerar processos mais complexos, retrabalho e desperdício de recursos.</p>
+          <p>É exatamente nesse ponto que a Consultoria em TI para gestão empresarial se torna essencial. Na Conexão Tecnologia e Serviços, ajudamos empresas a tomar decisões estratégicas sobre tecnologia — especialmente na escolha de ERP e na adoção de ferramentas modernas de gestão, análise de dados e inteligência artificial.</p>
+        </div>
+      </div>
+
+      <!-- EXEMPLOS PRÁTICOS -->
+      <div style="margin:2.5rem 0">
+        <div class="label">Exemplos práticos</div>
+        <h3 style="font-family:var(--fh);font-size:1.15rem;font-weight:700;margin-bottom:.5rem;color:#fff">Como a consultoria em TI pode transformar a gestão da empresa</h3>
+        <p style="font-size:.9rem;color:rgba(255,255,255,.6);margin-bottom:1.75rem">Uma decisão tecnológica bem orientada pode impactar diretamente produtividade, controle financeiro, eficiência operacional e capacidade de crescimento.</p>
+        <div class="ai-features">
+
+          <div class="ai-feat">
+            <div class="ai-feat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <div class="ai-feat-body">
+              <h4>Supermercados – escolha de um ERP preparado para varejo</h4>
+              <p>A consultoria ajuda a avaliar as opções de ERP do mercado e selecionar a solução mais adequada para integrar frente de caixa, controle de estoque, compras e gestão financeira conforme o volume de operações e estratégia da empresa.</p>
+            </div>
+          </div>
+
+          <div class="ai-feat">
+            <div class="ai-feat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            </div>
+            <div class="ai-feat-body">
+              <h4>Indústrias – integração entre produção, estoque e gestão financeira</h4>
+              <p>A escolha correta do ERP conecta produção, compras, logística e custos, permitindo maior controle da operação e melhor análise da rentabilidade de cada produto.</p>
+            </div>
+          </div>
+
+          <div class="ai-feat">
+            <div class="ai-feat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <div class="ai-feat-body">
+              <h4>Distribuidores e atacadistas – eficiência na gestão comercial e logística</h4>
+              <p>Identificamos soluções que integrem vendas, pedidos, estoque e entregas, garantindo mais agilidade na operação e melhor controle da cadeia comercial.</p>
+            </div>
+          </div>
+
+          <div class="ai-feat">
+            <div class="ai-feat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="ai-feat-body">
+              <h4>Empresas em crescimento – estrutura tecnológica preparada para expansão</h4>
+              <p>Negócios que estão se profissionalizando precisam migrar de controles informais para plataformas de gestão mais robustas e integradas. A consultoria orienta essa transição com segurança.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DESTAQUE -->
+      <div class="ai-highlight">
+        <h3>Tecnologia pensada para gerar inteligência na gestão</h3>
+        <p>Além da escolha do ERP, a consultoria também orienta empresas na adoção de outras tecnologias que ampliam a capacidade de gestão.</p>
+        <p><strong style="color:rgba(255,255,255,.9)">Entre elas:</strong> plataformas de Business Intelligence (BI) para análise de dados · infraestrutura em Cloud Computing para segurança e escalabilidade · Micro SaaS especializados para desafios específicos · Agentes de Inteligência Artificial que automatizam processos e auxiliam na tomada de decisão.</p>
+        <p>Com a combinação correta dessas tecnologias, a empresa passa a operar com mais informação, mais controle e decisões mais rápidas.</p>
+      </div>
+
+      <!-- FECHAMENTO -->
+      <div style="margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid var(--border)">
+        <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:700;margin-bottom:.75rem;color:#fff">Decisões tecnológicas mais seguras e estratégicas</h3>
+        <p style="font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:.75rem">Escolher um ERP ou uma plataforma tecnológica é uma decisão que pode impactar a empresa por muitos anos. Por isso, contar com uma visão externa especializada ajuda a evitar erros comuns e identificar oportunidades que muitas vezes passam despercebidas.</p>
+        <p style="font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.75">Na Conexão Tecnologia e Serviços, nossa consultoria analisa processos, necessidades e objetivos do negócio para orientar escolhas tecnológicas que realmente façam sentido para a empresa. O resultado é uma gestão mais estruturada, preparada para crescer em um mercado cada vez mais orientado por dados e inovação.</p>
+      </div>
+
+      <div class="ai-cta-row">
+        <button class="btn btn-p" data-tab="contato">Quero uma consultoria →</button>
+        <button class="btn btn-o" data-tab="contato">Agendar uma conversa</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     OVERLAY — ARTIGO DE BLOG
+     ═══════════════════════════════════════════ -->
+<div id="post-overlay" role="dialog" aria-modal="true" aria-labelledby="post-overlay-title" aria-label="Artigo do blog"
+     style="position:fixed;inset:0;z-index:400;background:var(--bg);overflow-y:auto;transform:translateX(100%);transition:transform .4s cubic-bezier(.4,0,.2,1);will-change:transform">
+  <div class="ovl-sticky-bar">
+    <button id="btn-back-post" class="svc-back" data-post-back>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      Voltar ao site
+    </button>
+  </div>
+  <div class="post-overlay-inner">
+
+    <!-- ── ARTIGO: TECNOLOGIA PERSONALIZADA ── -->
+    <div id="post-tecnologia-personalizada" style="display:none">
+
+      <div class="sec-hdr" style="text-align:left;max-width:none;margin-bottom:2.5rem">
+        <div class="label">AI Agents</div>
+        <h1 style="font-family:var(--fh);font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;line-height:1.18;letter-spacing:-.02em;margin-bottom:1rem;color:#fff">Tecnologia Personalizada: soluções desenvolvidas para a realidade da sua empresa</h1>
+        <div style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;font-size:.8rem;color:var(--muted);padding-bottom:1.5rem;border-bottom:1px solid var(--border)">
+          <div style="display:flex;align-items:center;gap:.5rem"><div class="av">CT</div><span>Equipe Conexão</span></div>
+          <span>·</span><time datetime="2025-03-15">15 de março de 2025</time>
+          <span>·</span><span>7 min de leitura</span>
+        </div>
+      </div>
+
+      <div style="font-size:.95rem;color:rgba(255,255,255,.78);line-height:1.85">
+
+        <p style="font-size:1.08rem;color:rgba(255,255,255,.9);margin-bottom:1.75rem;line-height:1.75">Cada empresa possui processos próprios, desafios específicos e uma forma única de operar. Mesmo quando atuam no mesmo setor, dois negócios raramente funcionam exatamente da mesma maneira.</p>
+
+        <p style="margin-bottom:1.5rem">Apesar disso, muitas organizações acabam adotando sistemas genéricos que tentam atender a todos os tipos de empresa ao mesmo tempo. O resultado costuma ser conhecido: processos que precisam se adaptar ao software, equipes que criam controles paralelos em planilhas e uma sensação constante de que o sistema <em>"não encaixa"</em> na operação.</p>
+
+        <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">O limite das soluções genéricas</h2>
+
+        <p style="margin-bottom:1rem">Sistemas prontos têm um papel importante no mercado. Mas quando a empresa cresce ou possui características específicas, essas soluções começam a apresentar limitações claras:</p>
+
+        <ul style="margin-bottom:1.5rem;display:flex;flex-direction:column;gap:.5rem;padding-left:1.25rem">
+          <li>Processos que não se encaixam no sistema</li>
+          <li>Necessidade constante de planilhas complementares</li>
+          <li>Dificuldade para extrair informações importantes</li>
+          <li>Falta de integração entre ferramentas</li>
+        </ul>
+
+        <p style="margin-bottom:1.5rem">Quando isso acontece, a tecnologia deixa de ajudar e passa a exigir adaptações constantes da empresa. A personalização surge justamente para resolver esse problema.</p>
+
+        <div class="ai-highlight" style="margin:2rem 0">
+          <h3>Um exemplo prático: o escritório jurídico e o controle de prazos</h3>
+          <p>Um escritório de advocacia utiliza um sistema jurídico padrão do mercado para cadastrar processos e clientes. Porém, o sistema não reflete a forma como o escritório organiza internamente seus casos — cada advogado tem critérios próprios de prioridade, e os alertas de prazo genéricos geram mais ruído do que clareza.</p>
+          <p>Uma solução personalizada resolve exatamente isso: painel de prazos filtrado por advogado responsável, alertas configurados de acordo com a complexidade de cada tipo de processo e relatório semanal automático para os sócios com os casos mais críticos. <strong style="color:rgba(255,255,255,.9)">O sistema passa a funcionar como o escritório trabalha — não como o fornecedor imaginou que ele deveria trabalhar.</strong></p>
+        </div>
+
+        <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">Aplicações em diferentes segmentos</h2>
+
+        <div style="display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2rem">
+          <div class="ai-feat">
+            <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+            <div class="ai-feat-body"><h4>Comércio e varejo</h4><p>Soluções que acompanham o comportamento de compra, organizam promoções e melhoram o controle de estoque de forma integrada.</p></div>
+          </div>
+          <div class="ai-feat">
+            <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+            <div class="ai-feat-body"><h4>Indústrias</h4><p>Sistemas adaptados aos processos produtivos reais, integrando produção, logística e custos sem forçar a operação a se moldar ao software.</p></div>
+          </div>
+          <div class="ai-feat">
+            <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <div class="ai-feat-body"><h4>Prestadores de serviços</h4><p>Ferramentas específicas para gestão de atendimento, organização de agendas e acompanhamento de resultados operacionais.</p></div>
+          </div>
+          <div class="ai-feat">
+            <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+            <div class="ai-feat-body"><h4>Empresas em crescimento</h4><p>Sistemas que evoluem junto com o negócio, acompanhando novas demandas sem exigir troca completa de plataforma.</p></div>
+          </div>
+        </div>
+
+        <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">Tecnologias que tornam a personalização possível</h2>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:2rem">
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem">
+            <div style="font-family:var(--fh);font-weight:700;color:var(--teal);font-size:.9rem;margin-bottom:.4rem">Micro SaaS</div>
+            <p style="font-size:.83rem;margin:0">Aplicações desenvolvidas sob medida para desafios específicos da operação.</p>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem">
+            <div style="font-family:var(--fh);font-weight:700;color:var(--amber);font-size:.9rem;margin-bottom:.4rem">Cloud Computing</div>
+            <p style="font-size:.83rem;margin:0">Infraestrutura para criar e escalar soluções com rapidez e sem grandes investimentos.</p>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem">
+            <div style="font-family:var(--fh);font-weight:700;color:#5078ff;font-size:.9rem;margin-bottom:.4rem">ERP Flexíveis</div>
+            <p style="font-size:.83rem;margin:0">Sistemas de gestão com configuração avançada e integração com outras ferramentas.</p>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem">
+            <div style="font-family:var(--fh);font-weight:700;color:var(--coral);font-size:.9rem;margin-bottom:.4rem">AI Agents</div>
+            <p style="font-size:.83rem;margin:0">Ferramentas que aprendem com os dados da empresa e automatizam processos de forma inteligente.</p>
+          </div>
+        </div>
+
+        <div style="background:linear-gradient(135deg,rgba(27,201,168,.1),rgba(80,120,255,.07));border:1px solid rgba(27,201,168,.25);border-radius:var(--r);padding:2rem;margin-top:2.5rem">
+          <h3 style="font-family:var(--fh);font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:.6rem">Quer tecnologia que se adapta ao seu negócio?</h3>
+          <p style="font-size:.9rem;color:rgba(255,255,255,.65);margin-bottom:1.5rem;line-height:1.7">Na Conexão, desenvolvemos soluções a partir da sua operação — não do que está na prateleira. Começamos com um diagnóstico gratuito de 30 minutos para entender a sua realidade antes de propor qualquer coisa.</p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap">
+            <button class="btn btn-p" data-open-diag>Agendar diagnóstico gratuito →</button>
+            <button class="btn btn-o" data-open-svc="ai-agents">Ver AI Agents</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── ARTIGO: TECNOLOGIA ASSERTIVA ── -->
+    <div id="post-tecnologia-assertiva" style="display:none">
+
+      <div class="sec-hdr" style="text-align:left;max-width:none;margin-bottom:2.5rem">
+        <div class="label">Micro SaaS</div>
+        <h1 style="font-family:var(--fh);font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;line-height:1.18;letter-spacing:-.02em;margin-bottom:1rem;color:#fff">Tecnologia Assertiva: a solução certa para o problema certo</h1>
+        <div style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;font-size:.8rem;color:var(--muted);padding-bottom:1.5rem;border-bottom:1px solid var(--border)">
+          <div style="display:flex;align-items:center;gap:.5rem"><div class="av">CT</div><span>Equipe Conexão</span></div>
+          <span>·</span><time datetime="2025-03-08">08 de março de 2025</time>
+          <span>·</span><span>7 min de leitura</span>
+        </div>
+      </div>
+
+      <div style="font-size:.95rem;color:rgba(255,255,255,.78);line-height:1.85">
+
+        <p style="font-size:1.08rem;color:rgba(255,255,255,.9);margin-bottom:1.75rem;line-height:1.75">Em muitas empresas, investir em tecnologia ainda significa comprar sistemas grandes, complexos e cheios de funcionalidades que raramente são utilizadas. O resultado costuma ser conhecido: alto custo, baixa utilização e pouca melhoria real na operação.</p>
+
+        <p style="margin-bottom:1.5rem">Mas existe uma abordagem muito mais eficiente: ser assertivo. Significa escolher a solução certa para o problema certo — sem desperdício de recursos, tempo ou esforço. Em vez de ferramentas excessivamente complexas, empresas modernas estão adotando tecnologias mais focadas, objetivas e alinhadas às necessidades reais do negócio.</p>
+
+        <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">O problema do excesso de tecnologia</h2>
+
+        <p style="margin-bottom:1rem">Durante muitos anos, o mercado de software corporativo seguiu uma lógica simples: quanto mais funcionalidades, melhor. Na prática, isso criou plataformas gigantescas que tentam resolver tudo ao mesmo tempo — e acabam não resolvendo nada direito.</p>
+
+        <ul style="margin-bottom:1.5rem;display:flex;flex-direction:column;gap:.5rem;padding-left:1.25rem">
+          <li>Muitas empresas usam apenas uma fração das funcionalidades disponíveis</li>
+          <li>Processos ficam mais complexos do que deveriam</li>
+          <li>Equipes têm dificuldade para aprender e utilizar os sistemas</li>
+          <li>O custo de implantação e manutenção se torna elevado</li>
+        </ul>
+
+        <p style="margin-bottom:1.5rem">Quando a tecnologia deixa de simplificar o trabalho e passa a complicá-lo, algo claramente está fora de lugar.</p>
+
+        <!-- DESTAQUE -->
+        <div class="ai-highlight" style="margin:2rem 0">
+          <h3>Um exemplo prático: o supermercado e as perdas por vencimento</h3>
+          <p>Uma abordagem tradicional diante de perdas frequentes por vencimento de produtos sugeriria trocar todo o sistema de gestão. Mas muitas vezes o problema está apenas na falta de visibilidade sobre produtos próximos ao vencimento.</p>
+          <p>Uma solução assertiva resolve exatamente isso: monitora datas de validade, gera alertas automáticos para a equipe e sugere promoções para itens próximos do vencimento. <strong style="color:rgba(255,255,255,.9)">Sem grandes mudanças na infraestrutura, com impacto direto no lucro.</strong></p>
+        </div>
+
+        <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">Aplicações em diferentes setores</h2>
+
+        <div style="display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2rem">
+          <div class="ai-feat">
+            <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+            <div class="ai-feat-body"><h4>Comércio</h4><p>Soluções que acompanham o ciclo de vendas, identificam clientes que precisam de follow-up e organizam o processo comercial com simplicidade.</p></div>
+          </div>
+          <div class="ai-feat">
+            <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+            <div class="ai-feat-body"><h4>Indústrias</h4><p>Sistemas focados que monitoram etapas específicas da produção, identificando gargalos que afetam prazos e produtividade.</p></div>
+          </div>
+          <div class="ai-feat">
+            <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <div class="ai-feat-body"><h4>Prestadores de serviço</h4><p>Soluções simples para organizar agendas, reduzir faltas de clientes e melhorar o relacionamento sem complicar a operação.</p></div>
+          </div>
+          <div class="ai-feat">
+            <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div class="ai-feat-body"><h4>Empresas em crescimento</h4><p>Tecnologias específicas para controle financeiro, análise de dados ou acompanhamento de indicadores — adotadas de forma gradual e sem grandes riscos.</p></div>
+          </div>
+        </div>
+
+        <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">As tecnologias que tornam isso possível</h2>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:2rem">
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem">
+            <div style="font-family:var(--fh);font-weight:700;color:var(--teal);font-size:.9rem;margin-bottom:.4rem">Micro SaaS</div>
+            <p style="font-size:.83rem;margin:0">Aplicações leves desenvolvidas para resolver problemas pontuais com rapidez e eficiência.</p>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem">
+            <div style="font-family:var(--fh);font-weight:700;color:var(--amber);font-size:.9rem;margin-bottom:.4rem">Cloud Computing</div>
+            <p style="font-size:.83rem;margin:0">Implantação rápida sem grandes investimentos em infraestrutura física.</p>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem">
+            <div style="font-family:var(--fh);font-weight:700;color:#5078ff;font-size:.9rem;margin-bottom:.4rem">ERP Especializados</div>
+            <p style="font-size:.83rem;margin:0">Sistemas focados em segmentos específicos, sem funcionalidades desnecessárias.</p>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem">
+            <div style="font-family:var(--fh);font-weight:700;color:var(--coral);font-size:.9rem;margin-bottom:.4rem">AI Agents</div>
+            <p style="font-size:.83rem;margin:0">Automação de processos e geração de insights operacionais com precisão.</p>
+          </div>
+        </div>
+
+        <!-- CTA FINAL -->
+        <div style="background:linear-gradient(135deg,rgba(27,201,168,.1),rgba(80,120,255,.07));border:1px solid rgba(27,201,168,.25);border-radius:var(--r);padding:2rem;margin-top:2.5rem">
+          <h3 style="font-family:var(--fh);font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:.6rem">Quer descobrir quais soluções geram impacto real no seu negócio?</h3>
+          <p style="font-size:.9rem;color:rgba(255,255,255,.65);margin-bottom:1.5rem;line-height:1.7">Na Conexão, identificamos os gargalos reais da sua operação e indicamos a tecnologia certa — sem vender sistema que você não precisa. Começamos com um diagnóstico gratuito de 30 minutos.</p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap">
+            <button class="btn btn-p" data-open-diag>Agendar diagnóstico gratuito →</button>
+            <button class="btn btn-o" data-open-svc="micro-saas">Ver Micro SaaS</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="post-tecnologia-estrategica">
+
+      <div class="sec-hdr" style="text-align:left;max-width:none;margin-bottom:2.5rem">
+        <div class="label">Consultoria em TI</div>
+        <h1 style="font-family:var(--fh);font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;line-height:1.18;letter-spacing:-.02em;margin-bottom:1rem;color:#fff">Tecnologia Estratégica: quando a TI deixa de ser suporte e passa a impulsionar o negócio</h1>
+        <div style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;font-size:.8rem;color:var(--muted);padding-bottom:1.5rem;border-bottom:1px solid var(--border)">
+          <div style="display:flex;align-items:center;gap:.5rem"><div class="av">CT</div><span>Equipe Conexão</span></div>
+          <span>·</span><time datetime="2025-03-01">01 de março de 2025</time>
+          <span>·</span><span>8 min de leitura</span>
+        </div>
+      </div>
+
+      <div style="font-size:.95rem;color:rgba(255,255,255,.78);line-height:1.85">
+
+        <p style="font-size:1.08rem;color:rgba(255,255,255,.9);margin-bottom:1.75rem;line-height:1.75">Em muitas empresas, a tecnologia ainda é vista apenas como suporte operacional — algo necessário para manter sistemas funcionando, computadores conectados e dados armazenados. No cenário empresarial atual, essa visão está mudando rapidamente.</p>
+
+        <p style="margin-bottom:1.5rem">Empresas que utilizam tecnologia de forma estratégica conseguem tomar decisões melhores, operar com mais eficiência e se adaptar com mais rapidez às mudanças do mercado. A pergunta que muitos gestores começam a fazer não é mais <em>"qual sistema precisamos comprar?"</em>, mas sim: <em>"como a tecnologia pode fortalecer nossa estratégia de negócio?"</em></p>
+
+        <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">O que significa tecnologia alinhada ao negócio</h2>
+
+        <p style="margin-bottom:1.25rem">Tecnologia estratégica não é simplesmente adquirir softwares modernos ou adotar as últimas tendências digitais. O verdadeiro valor está em alinhá-la aos objetivos da empresa.</p>
+
+        <p style="margin-bottom:.75rem">Isso significa que cada investimento em tecnologia precisa responder a perguntas como:</p>
+        <ul style="margin-bottom:1.5rem;display:flex;flex-direction:column;gap:.5rem;padding-left:1.25rem">
+          <li>Esse sistema melhora nossa eficiência operacional?</li>
+          <li>Ele nos ajuda a entender melhor nossos clientes?</li>
+          <li>Facilita a tomada de decisão da gestão?</li>
+          <li>Contribui para o crescimento da empresa?</li>
+        </ul>
+
+        <p style="margin-bottom:1.5rem">Quando a tecnologia é escolhida com esse foco, ela deixa de ser um custo e passa a ser um <strong style="color:#fff">ativo estratégico</strong> da empresa.</p>
+
+        <!-- DESTAQUE -->
+        <div class="ai-highlight" style="margin:2rem 0">
+          <h3>Um exemplo prático: o caso de um supermercado</h3>
+          <p>Imagine um supermercado com grande volume de vendas, mas com problemas frequentes de ruptura de estoque. Sem estratégia tecnológica, o gestor depende de relatórios manuais e da experiência da equipe para compras.</p>
+          <p>Agora imagine o mesmo negócio com tecnologia alinhada à gestão: um ERP integrado controlando vendas e estoque, um painel de BI mostrando os produtos de maior giro, alertas automáticos de reposição e dados históricos prevendo demandas sazonais. Nesse cenário, a tecnologia não apenas registra informações — <strong style="color:rgba(255,255,255,.9)">ela orienta decisões.</strong></p>
+        </div>
+
+        <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">O impacto em diferentes tipos de empresas</h2>
+
+        <div style="display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2rem">
+          <div class="ai-feat">
+            <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+            <div class="ai-feat-body"><h4>Indústrias</h4><p>Sistemas integrados para acompanhar produção, custos e estoque em tempo real — identificando gargalos e melhorando o planejamento produtivo.</p></div>
+          </div>
+          <div class="ai-feat">
+            <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+            <div class="ai-feat-body"><h4>Empresas comerciais</h4><p>Plataformas que acompanham oportunidades, propostas e relacionamento com clientes, tornando o processo comercial mais organizado e previsível.</p></div>
+          </div>
+          <div class="ai-feat">
+            <div class="ai-feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <div class="ai-feat-body"><h4>Prestadores de serviços</h4><p>Integração de agenda, atendimento, faturamento e análise de desempenho — aumentando o controle e melhorando a experiência do cliente.</p></div>
+          </div>
+        </div>
+
+        <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">As tecnologias que estão acelerando essa transformação</h2>
+
+        <p style="margin-bottom:1.5rem">Nos últimos anos, algumas soluções têm se destacado por gerar impacto real na gestão empresarial:</p>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:2rem">
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem">
+            <div style="font-family:var(--fh);font-weight:700;color:var(--teal);font-size:.9rem;margin-bottom:.4rem">ERP Modernos</div>
+            <p style="font-size:.83rem;margin:0">Integram todas as áreas da empresa com visão completa das operações.</p>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem">
+            <div style="font-family:var(--fh);font-weight:700;color:var(--amber);font-size:.9rem;margin-bottom:.4rem">Cloud Computing</div>
+            <p style="font-size:.83rem;margin:0">Infraestrutura com segurança, disponibilidade e escalabilidade para crescer.</p>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem">
+            <div style="font-family:var(--fh);font-weight:700;color:var(--coral);font-size:.9rem;margin-bottom:.4rem">Micro SaaS</div>
+            <p style="font-size:.83rem;margin:0">Aplicações específicas que resolvem problemas pontuais com rapidez e eficiência.</p>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem">
+            <div style="font-family:var(--fh);font-weight:700;color:#5078ff;font-size:.9rem;margin-bottom:.4rem">AI Agents</div>
+            <p style="font-size:.83rem;margin:0">Automatizam processos, analisam dados e apoiam gestores na tomada de decisão.</p>
+          </div>
+        </div>
+
+        <h2 style="font-family:var(--fh);font-size:1.25rem;font-weight:700;color:#fff;margin:2.5rem 0 .85rem">O risco de investir em tecnologia sem estratégia</h2>
+
+        <p style="margin-bottom:1.25rem">Muitas empresas investem em tecnologia e ficam frustradas. O motivo quase sempre é o mesmo: a decisão foi tomada sem análise adequada. Isso resulta em sistemas que não atendem ao negócio, dificuldade de integração entre plataformas, baixa adoção pelos colaboradores e investimentos altos com pouco retorno.</p>
+
+        <p style="margin-bottom:2rem">Por isso, antes de adotar qualquer solução tecnológica, é fundamental entender como ela se encaixa na <strong style="color:#fff">estratégia da empresa</strong> — não apenas nas especificações técnicas.</p>
+
+        <!-- CTA FINAL -->
+        <div style="background:linear-gradient(135deg,rgba(27,201,168,.1),rgba(80,120,255,.07));border:1px solid rgba(27,201,168,.25);border-radius:var(--r);padding:2rem;margin-top:2.5rem">
+          <h3 style="font-family:var(--fh);font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:.6rem">Pronto para alinhar tecnologia à estratégia da sua empresa?</h3>
+          <p style="font-size:.9rem;color:rgba(255,255,255,.65);margin-bottom:1.5rem;line-height:1.7">Na Conexão, começamos sempre com um diagnóstico gratuito de 30 minutos: mapeamos os gargalos da sua operação e mostramos quais tecnologias geram mais impacto para o seu negócio. Sem compromisso, sem enrolação.</p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap">
+            <button class="btn btn-p" data-open-diag>Agendar diagnóstico gratuito →</button>
+            <button class="btn btn-o" data-open-svc="consultoria">Ver Consultoria em TI</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <button class="nav-logo" data-tab="home" style="padding:0">
+          <img src="logo_transparente.png" alt="Conexão" style="height:34px;width:auto"/>
+          <div class="nav-brand">CONEXÃO<span>Tecnologia e Serviços</span></div>
+        </button>
+        <p>Tecnologia com propósito — construindo soluções inteligentes que geram impacto real nos negócios.</p>
+        <div class="ft-social">
+          <a href="https://wa.me/5565981172676" class="soc" target="_blank" rel="noopener" aria-label="WhatsApp"><i data-lucide="message-circle" class="lc"></i></a>
+        </div>
+      </div>
+      <div class="ft-cols-row">
+        <div class="ft-col">
+          <h4>Serviços</h4>
+          <ul>
+            <li><button data-tab="servicos">AI Agents</button></li>
+            <li><button data-tab="servicos">Micro SaaS</button></li>
+            <li><button data-tab="servicos">Cloud Computing</button></li>
+            <li><button data-tab="servicos">Consultoria em TI</button></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><button data-tab="servicos">Como trabalhamos</button></li>
+            <li><button data-tab="blog">Blog</button></li>
+            <li><button data-tab="contato">Contato</button></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="https://wa.me/5565981172676" target="_blank" rel="noopener">+55 (65) 98117-2676</a></li>
+            <li><a href="#" id="footer-email-link" data-u="itamar" data-d="conexaots.com"><span id="footer-email-val">itamar&#64;conexaots.com</span></a></li>
+            <li>Brasil — Atendimento 100% remoto</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2025 Conexão Tecnologia e Serviços. Todos os direitos reservados.</span>
+      <span style="display:flex;gap:1.25rem;align-items:center">
+        <a href="/privacidade.html" style="color:var(--muted);font-size:.72rem;transition:color var(--ease)" onmouseenter="this.style.color='var(--teal)'" onmouseleave="this.style.color='var(--muted)'">Política de Privacidade</a>
+        <a href="/privacidade.html#lgpd" style="color:var(--muted);font-size:.72rem;transition:color var(--ease)" onmouseenter="this.style.color='var(--teal)'" onmouseleave="this.style.color='var(--muted)'">LGPD</a>
+      </span>
+      <span>Feito com tecnologia e propósito <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></span>
+    </div>
+  </div>
+</footer>
+
+<div class="wa-float" aria-label="WhatsApp">
+  <div class="wa-tip" aria-hidden="true">Diagnóstico gratuito! 🚀</div>
+  <a href="https://wa.me/5565981172676?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Conex%C3%A3o%20e%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20gratuito."
+     class="wa-btn" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+
+<!-- STACK TOOLTIP -->
+<script>
+(function(){
+  var tip = document.createElement('div');
+  tip.className = 'stack-tip';
+  tip.innerHTML = '<div class="stack-tip-name"></div><div class="stack-tip-desc"></div><div class="stack-tip-apps-label">Aplicações</div><div class="stack-tip-apps"></div>';
+  document.body.appendChild(tip);
+
+  var GAP = 12, active = null, raf = null;
+
+  function position(card){
+    var r = card.getBoundingClientRect();
+    var tw = tip.offsetWidth, th = tip.offsetHeight;
+    var left = r.left + r.width/2 - tw/2;
+    var top  = r.top - th - GAP;
+    // flip below if too close to top
+    if(top < 8){ top = r.bottom + GAP; }
+    // clamp horizontally
+    left = Math.max(8, Math.min(left, window.innerWidth - tw - 8));
+    tip.style.left = left + 'px';
+    tip.style.top  = top  + 'px';
+  }
+
+  document.querySelectorAll('.stack-card').forEach(function(card){
+    card.addEventListener('mouseenter', function(){
+      active = card;
+      tip.querySelector('.stack-tip-name').textContent  = card.dataset.tipName  || '';
+      tip.querySelector('.stack-tip-name').style.color  = card.dataset.tipColor || '#fff';
+      tip.querySelector('.stack-tip-desc').textContent  = card.dataset.tipDesc  || '';
+      tip.querySelector('.stack-tip-apps').textContent  = card.dataset.tipApps  || '';
+      tip.style.borderColor = card.dataset.color ? card.dataset.color.replace('rgba','rgba').replace(/[\d.]+\)$/,'0.28)') : 'rgba(27,201,168,.28)';
+      position(card);
+      tip.classList.add('visible');
+      card.style.borderColor = card.dataset.color || 'rgba(27,201,168,.4)';
+    });
+    card.addEventListener('mouseleave', function(){
+      tip.classList.remove('visible');
+      active = null;
+      card.style.borderColor = 'var(--border)';
+    });
+  });
+
+  window.addEventListener('scroll', function(){
+    if(active){ position(active); }
+  }, {passive:true});
+})();
+</script>
+
+<script>
+(function(){
+  'use strict';
+
+  var overlay = document.getElementById('svc-overlay');
+  var navDrop = document.getElementById('nav-svc-drop');
+
+  // C1: botão Voltar do overlay de serviço
+  document.getElementById('svc-back-btn').addEventListener('click', function(){ closeOverlay(); });
+
+  function openOverlay(id){
+    document.querySelectorAll('.svc-ovl-content').forEach(function(el){el.style.display='none'});
+    var content = document.getElementById('ovl-'+id);
+    if(!content) return;
+    content.style.display='block';
+    overlay.classList.add('open');
+    overlay.scrollTop=0;
+    document.body.style.overflow='hidden';
+    document.getElementById('mob-menu').classList.remove('open');
+    document.getElementById('burger').setAttribute('aria-expanded','false');
+    if(navDrop) navDrop.classList.remove('drop-open');
+    // garante que o vídeo do painel ativo está tocando
+    var v = content.querySelector('video');
+    if(v){ v.loop=true; v.muted=true; v.play().catch(function(){}); }
+  }
+
+  function closeOverlay(){
+    overlay.classList.remove('open');
+    document.body.style.overflow='';
+    // vídeos continuam em loop — não pausar
+  }
+
+  var postOverlay = document.getElementById('post-overlay');
+
+  function openPost(id){
+    // garante que a aba blog está ativa antes de abrir o artigo
+    document.querySelectorAll('.tab-pane').forEach(function(p){p.classList.remove('active')});
+    var blogPane = document.getElementById('tab-blog');
+    if(blogPane) blogPane.classList.add('active');
+    document.querySelectorAll('.nav-tab').forEach(function(b){
+      b.classList.toggle('active', b.dataset && b.dataset.tab==='blog');
+    });
+
+    document.querySelectorAll('#post-overlay > div > [id^="post-"]').forEach(function(el){el.style.display='none'});
+    var content = document.getElementById('post-'+id);
+    if(!content) return;
+    content.style.display='block';
+    postOverlay.style.transform='translateX(0)';
+    postOverlay.scrollTop=0;
+    document.body.style.overflow='hidden';
+  }
+
+  function closePost(){
+    postOverlay.style.transform='translateX(100%)';
+    document.body.style.overflow='';
+  }
+
+  // Tecla Escape fecha todos os overlays e modal (listener único e completo)
+
+  function go(id){
+    if(!id) return;
+    closeOverlay();
+    document.querySelectorAll('.tab-pane').forEach(function(p){p.classList.remove('active')});
+    var pane=document.getElementById('tab-'+id);
+    if(pane){
+      pane.classList.add('active');
+      // rAF garante que o browser renderizou o pane antes de scrollar
+      requestAnimationFrame(function(){
+        window.scrollTo({top:0,behavior:'smooth'});
+      });
+    }
+    document.querySelectorAll('.nav-tab').forEach(function(b){
+      var a=b.dataset.tab===id;
+      b.classList.toggle('active',a);
+      b.setAttribute('aria-selected',String(a));
+    });
+    document.querySelectorAll('#mob-menu button[data-tab]').forEach(function(b){
+      b.classList.toggle('active', b.dataset.tab===id);
+    });
+    document.getElementById('mob-menu').classList.remove('open');
+    document.getElementById('burger').setAttribute('aria-expanded','false');
+    if(navDrop) navDrop.classList.remove('drop-open');
+  }
+  window.go = go;
+
+  document.addEventListener('click',function(e){
+    // Botão voltar do artigo
+    if(e.target.closest('[data-post-back]')){ closePost(); go('blog'); return; }
+    // Abrir artigo
+    var postEl=e.target.closest('[data-open-post]');
+    if(postEl){ openPost(postEl.dataset.openPost); return; }
+    // Abrir overlay de serviço
+    var svcEl=e.target.closest('[data-open-svc]');
+    if(svcEl){ openOverlay(svcEl.dataset.openSvc); return; }
+    // Navegação por aba
+    var tabEl=e.target.closest('[data-tab]');
+    if(tabEl){ e.preventDefault(); closePost(); go(tabEl.dataset.tab); return; }
+    if(navDrop && !navDrop.contains(e.target)){
+      navDrop.classList.remove('drop-open');
+    }
+  });
+
+  if(navDrop){
+    navDrop.querySelector('.nav-tab').addEventListener('click',function(e){
+      e.stopPropagation();
+      navDrop.classList.toggle('drop-open');
+    });
+  }
+
+  var hdr=document.getElementById('hdr');
+  window.addEventListener('scroll',function(){hdr.classList.toggle('solid',window.scrollY>30);},{passive:true});
+
+  document.getElementById('burger').addEventListener('click',function(){
+    var m=document.getElementById('mob-menu'),o=m.classList.toggle('open');
+    this.setAttribute('aria-expanded',String(o));
+  });
+
+  // ── API helper ───────────────────────────────────────
+  var API_URL = 'api.php';
+  function apiPost(action, data) {
+    return fetch(API_URL + '?action=' + action, {
+      method: 'POST',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    }).then(function(r){ return r.json(); }).catch(function(){ return { status: 'error' }; });
+  }
+
+  // ── Métricas ──────────────────────────────────────────
+  function trackEvent(evento, extra) {
+    apiPost('registrarEvento', Object.assign({ evento: evento, pagina: location.pathname, referrer: document.referrer }, extra || {}));
+  }
+  // Pageview
+  trackEvent('pageview');
+  // Cliques em CTAs principais
+  document.querySelectorAll('.btn-p, .wa-btn').forEach(function(el){
+    el.addEventListener('click', function(){
+      trackEvent('cta_click', { pagina: el.textContent.trim().slice(0,60) });
+    });
+  });
+
+  // ── Validação em tempo real (blur) ──────────────────
+  function validateField(el, testFn, msg) {
+    el.addEventListener('blur', function(){
+      var val = el.value.trim();
+      if(val && !testFn(val)){
+        el.style.borderColor = 'rgba(232,87,74,.6)';
+        var hint = el.parentNode.querySelector('.field-hint');
+        if(!hint){ hint = document.createElement('div'); hint.className='field-hint'; hint.style.cssText='font-size:.72rem;color:var(--coral);margin-top:.35rem'; el.parentNode.appendChild(hint); }
+        hint.textContent = msg;
+      } else {
+        el.style.borderColor = '';
+        var hint = el.parentNode.querySelector('.field-hint');
+        if(hint) hint.remove();
+      }
+    });
+  }
+  function isEmail(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+  function isPhone(v){ return v.replace(/\D/g,'').length >= 10; }
+
+  // Aplicar nos campos de contato
+  ['nome','email','msg'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(!el) return;
+    if(id==='email') validateField(el, isEmail, 'E-mail inválido');
+    else validateField(el, function(v){ return v.length >= 2; }, 'Campo obrigatório');
+  });
+  var foneEl = document.getElementById('fone');
+  if(foneEl) validateField(foneEl, isPhone, 'Informe um número válido com DDD');
+
+  // Máscara de telefone
+  function phoneMask(el){
+    el.addEventListener('input', function(){
+      var v = el.value.replace(/\D/g,'').slice(0,11);
+      if(v.length > 10) el.value = '('+v.slice(0,2)+') '+v.slice(2,7)+'-'+v.slice(7);
+      else if(v.length > 6) el.value = '('+v.slice(0,2)+') '+v.slice(2,6)+'-'+v.slice(6);
+      else if(v.length > 2) el.value = '('+v.slice(0,2)+') '+v.slice(2);
+      else if(v.length > 0) el.value = '('+v;
+    });
+  }
+  if(foneEl) phoneMask(foneEl);
+  var diagTelEl = document.getElementById('diag-tel');
+  if(diagTelEl){ phoneMask(diagTelEl); validateField(diagTelEl, isPhone, 'Informe um número válido com DDD'); }
+  var diagEmailEl = document.getElementById('diag-email');
+  if(diagEmailEl) validateField(diagEmailEl, isEmail, 'E-mail inválido');
+  var diagNomeEl = document.getElementById('diag-nome');
+  if(diagNomeEl) validateField(diagNomeEl, function(v){ return v.length >= 2; }, 'Campo obrigatório');
+
+  // ── Formulário de contato ────────────────────────────
+  var form = document.getElementById('contact-form'),
+      fb   = document.getElementById('form-fb'),
+      sbtn = document.getElementById('sbtn');
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var nome    = document.getElementById('nome').value.trim(),
+        empresa = document.getElementById('empresa').value.trim(),
+        email   = document.getElementById('email').value.trim(),
+        telefone= document.getElementById('fone').value.trim(),
+        servico = document.getElementById('servico').value,
+        msg     = document.getElementById('msg').value.trim();
+
+    if(!nome || !email || !msg){
+      fb.className = 'err';
+      fb.textContent = '⚠️ Preencha: Nome, E-mail e Mensagem.';
+      return;
+    }
+
+    sbtn.textContent = 'Enviando...';
+    sbtn.disabled = true;
+    fb.className = ''; fb.textContent = '';
+
+    apiPost('salvarContato', { nome: nome, empresa: empresa, email: email, telefone: telefone, servico: servico, mensagem: msg })
+      .then(function(r){
+        if(r.status === 'success'){
+          fb.className = 'ok';
+          fb.textContent = '✅ Mensagem enviada! Retornaremos em breve.';
+          form.reset();
+          trackEvent('contato_enviado', { servico: servico });
+        } else {
+          fb.className = 'err';
+          fb.textContent = '⚠️ ' + (r.message || 'Erro ao enviar. Tente novamente.');
+        }
+      })
+      .finally(function(){
+        sbtn.textContent = 'Enviar mensagem →';
+        sbtn.disabled = false;
+      });
+  });
+
+  // ── Modal Diagnóstico ────────────────────────────────
+  var diagModal = document.getElementById('diag-modal');
+
+  window.openDiagModal = function(){
+    diagModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    trackEvent('diag_modal_aberto');
+    setTimeout(function(){ var f=diagModal.querySelector('input,select,textarea,button'); if(f) f.focus(); }, 80);
+  };
+
+  window.closeDiagModal = function(){
+    diagModal.classList.remove('open');
+    document.body.style.overflow = '';
+    // C2: reset completo para reabrir com formulário limpo
+    document.getElementById('diag-form-wrap').style.display = '';
+    document.getElementById('diag-success').style.display   = 'none';
+    var diagBtn = document.getElementById('diag-sbtn');
+    if(diagBtn){ diagBtn.textContent = 'Solicitar diagnóstico gratuito →'; diagBtn.disabled = false; }
+    var diagFb = document.getElementById('diag-form-fb');
+    if(diagFb){ diagFb.className = ''; diagFb.textContent = ''; }
+  };
+
+  // Fechar clicando fora
+  diagModal.addEventListener('click', function(e){
+    if(e.target === diagModal) closeDiagModal();
+  });
+
+  window.submitDiagnostico = function(){
+    var nome     = document.getElementById('diag-nome').value.trim(),
+        empresa  = document.getElementById('diag-empresa').value.trim(),
+        email    = document.getElementById('diag-email').value.trim(),
+        telefone = document.getElementById('diag-tel').value.trim(),
+        segmento = document.getElementById('diag-segmento').value,
+        desafio  = document.getElementById('diag-desafio').value.trim(),
+        origem   = (document.getElementById('diag-origem') ? document.getElementById('diag-origem').value : ''),
+        diagFb   = document.getElementById('diag-form-fb'),
+        diagBtn  = document.getElementById('diag-sbtn');
+
+    if(!nome || !email || !telefone){
+      diagFb.className = 'err';
+      diagFb.textContent = '⚠️ Preencha: Nome, E-mail e WhatsApp.';
+      return;
+    }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+      diagFb.className = 'err';
+      diagFb.textContent = '⚠️ E-mail inválido.';
+      return;
+    }
+
+    diagBtn.textContent = 'Enviando...';
+    diagBtn.disabled = true;
+    diagFb.className = ''; diagFb.textContent = '';
+
+    apiPost('salvarDiagnostico', { nome: nome, empresa: empresa, email: email, telefone: telefone, segmento: segmento, desafio: desafio, origem: origem })
+      .then(function(r){
+        if(r.status === 'success'){
+          document.getElementById('diag-form-wrap').style.display = 'none';
+          document.getElementById('diag-success').style.display   = 'block';
+          trackEvent('diagnostico_solicitado', { segmento: segmento });
+        } else {
+          diagFb.className = 'err';
+          diagFb.textContent = '⚠️ ' + (r.message || 'Erro ao enviar. Tente o WhatsApp.');
+          diagBtn.textContent = 'Solicitar diagnóstico gratuito →';
+          diagBtn.disabled = false;
+        }
+      })
+      .finally(function(){
+        // C3: garante que botão nunca fica travado se API cair
+        if(diagBtn.disabled && document.getElementById('diag-form-wrap').style.display !== 'none'){
+          diagBtn.textContent = 'Solicitar diagnóstico gratuito →';
+          diagBtn.disabled = false;
+        }
+      });
+  };
+
+  // Fechar modal no Escape
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ closeOverlay(); closePost(); closeDiagModal(); }
+  });
+
+  // CTAs hero que abrem o modal de diagnóstico
+  document.querySelectorAll('[data-open-diag]').forEach(function(el){
+    el.addEventListener('click', function(){ openDiagModal(); });
+  });
+
+  // ── E-mail anti-Cloudflare ───────────────────────────
+  // Monta o mailto em runtime para o Cloudflare não ofuscar
+  ['email-link', 'footer-email-link'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(!el) return;
+    var addr = el.dataset.u + '@' + el.dataset.d;
+    el.href = 'mailto:' + addr;
+  });
+  ['email-val', 'footer-email-val'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(!el) return;
+    var parent = el.closest('[data-u]') || document.getElementById('email-link') || document.getElementById('footer-email-link');
+    if(parent) el.textContent = parent.dataset.u + '@' + parent.dataset.d;
+  });
+
+  // Expõe ao escopo global funções chamadas via onclick no HTML
+  // (openDiagModal, closeDiagModal e submitDiagnostico já são window.* por definição acima)
+  window.closePost = closePost;
+  window.openPost  = openPost;
+  window.go        = go;
+
+  var h=location.hash.replace('#','');
+  if(['home','servicos','blog','contato'].indexOf(h)>-1) go(h);
+
+  // loop constante em todos os vídeos da página
+  function initVideos(){
+    document.querySelectorAll('video').forEach(function(v){
+      v.loop = true; v.muted = true; v.playsInline = true;
+      v.play().catch(function(){});
+    });
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initVideos);
+  } else { initVideos(); }
+})();
+</script>
+</body>
+</html>

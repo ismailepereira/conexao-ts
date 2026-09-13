@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "conexao-site",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5320", "--directory", "src"],
+      "port": 5320
+    }
+  ]
+}

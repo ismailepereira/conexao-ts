@@ -1,0 +1,46 @@
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="wrap topo__in">
+    <a class="logo" href="{{base}}index.html" aria-label="Conexão Tecnologia e Serviços, início">
+      {{marca}}
+      <span><span class="logo__nome">CONEXÃO</span><span class="logo__tag">Tecnologia e Serviços</span></span>
+    </a>
+
+    <nav aria-label="Navegação principal">
+      <ul class="menu">
+        <li><a href="{{base}}index.html" {{atual:home}}>Home</a></li>
+        <li>
+          <button class="menu__drop-btn" type="button" aria-expanded="false" aria-controls="drop-servicos" {{atual-drop:servicos}}>Serviços <iconify-icon icon="solar:alt-arrow-down-linear" width="14" aria-hidden="true"></iconify-icon></button>
+          <div class="drop" id="drop-servicos">
+            <a class="cor-teal" href="{{base}}servicos/ai-agents.html"><span class="drop__ic"><iconify-icon icon="solar:cpu-bolt-linear" width="18"></iconify-icon></span><span class="drop__txt"><strong>AI Agents</strong><small>Agentes de IA personalizados</small></span></a>
+            <a class="cor-coral" href="{{base}}servicos/micro-saas.html"><span class="drop__ic"><iconify-icon icon="solar:widget-5-linear" width="18"></iconify-icon></span><span class="drop__txt"><strong>Micro SaaS</strong><small>Produtos digitais enxutos</small></span></a>
+            <a class="cor-amber" href="{{base}}servicos/cloud-computing.html"><span class="drop__ic"><iconify-icon icon="solar:cloud-storage-linear" width="18"></iconify-icon></span><span class="drop__txt"><strong>Cloud Computing</strong><small>Infraestrutura em nuvem</small></span></a>
+            <a class="cor-ink" href="{{base}}servicos/consultoria-ti.html"><span class="drop__ic"><iconify-icon icon="solar:chart-square-linear" width="18"></iconify-icon></span><span class="drop__txt"><strong>Consultoria em TI</strong><small>Tecnologia alinhada à gestão</small></span></a>
+            <div class="drop__todos"><a href="{{base}}servicos.html">Serviços (ver todos) <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></a></div>
+          </div>
+        </li>
+        <li><a href="{{base}}blog.html" {{atual:blog}}>Blog</a></li>
+        <li><a href="{{base}}contato.html" {{atual:contato}}>Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="topo__acoes">
+      <a class="btn btn-3d btn--p" data-wa href="https://wa.me/5565981172676?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Conex%C3%A3o%20e%20gostaria%20de%20conhecer%20as%20solu%C3%A7%C3%B5es." target="_blank" rel="noopener">Falar conosco</a>
+      <button class="hamburguer" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-movel"><iconify-icon icon="solar:hamburger-menu-linear" width="22"></iconify-icon></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-movel" id="menu-movel" hidden>
+  <a href="{{base}}index.html">Home</a>
+  <a href="{{base}}servicos.html">Serviços (ver todos)</a>
+  <div class="sub">
+    <a href="{{base}}servicos/ai-agents.html">AI Agents</a>
+    <a href="{{base}}servicos/micro-saas.html">Micro SaaS</a>
+    <a href="{{base}}servicos/cloud-computing.html">Cloud Computing</a>
+    <a href="{{base}}servicos/consultoria-ti.html">Consultoria em TI</a>
+  </div>
+  <a href="{{base}}blog.html">Blog</a>
+  <a href="{{base}}contato.html">Contato</a>
+  <a class="btn btn-3d" data-wa href="https://wa.me/5565981172676" target="_blank" rel="noopener">Falar conosco</a>
+</div>
