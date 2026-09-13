@@ -33,6 +33,10 @@ h1, h2, h3, h4 {
 p { margin: 0; text-wrap: pretty; }
 ul, ol { margin: 0; padding: 0; list-style: none; }
 img, svg, video { display: block; max-width: 100%; }
+
+/* Ícones: <iconify-icon> recebe o SVG local de assets/js/icones.js */
+iconify-icon { display: inline-flex; align-items: center; justify-content: center; flex: none; line-height: 0; vertical-align: middle; }
+iconify-icon svg { display: block; }
 img { height: auto; }
 button, input, select, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; }

@@ -45,9 +45,9 @@
 
   function cartao(p, i) {
     var c = cat(p.categoria);
-    var capa = p.imagem_url
-      ? '<img src="' + esc(p.imagem_url) + '" alt="" loading="lazy" decoding="async">'
-      : '<span class="post-capa__ic"><iconify-icon icon="' + c.icone + '" width="34"></iconify-icon></span>';
+    // O ícone da categoria fica sempre por baixo: se a imagem demorar ou falhar, o cartão não fica vazio
+    var capa = '<span class="post-capa__ic"><iconify-icon icon="' + c.icone + '" width="34"></iconify-icon></span>' +
+      (p.imagem_url ? '<img src="' + esc(p.imagem_url) + '" alt="" loading="lazy" decoding="async" onerror="this.remove()">' : '');
     return '<a class="cartao post-cartao ' + c.cor + (i === 0 ? ' post-cartao--primeiro' : '') + '" href="#' + esc(p.slug) + '" data-slug="' + esc(p.slug) + '">' +
       '<span class="post-capa">' + capa + '</span>' +
       '<span class="post-cartao__corpo">' +
@@ -148,7 +148,7 @@
           '<div class="post-meta post-meta--grande"><span class="autor"><span class="autor__av">' + iniciais(p.autor) + '</span>' + esc(p.autor || 'Itamar Pereira') + '</span>' +
           (p.publicado_em ? '<time>' + data(p.publicado_em, true) + '</time>' : '') + '</div>' +
         '</header>' +
-        (p.imagem_url ? '<img class="post-imagem" src="' + esc(p.imagem_url) + '" alt="' + esc(p.titulo) + '">' : '') +
+        (p.imagem_url ? '<img class="post-imagem" src="' + esc(p.imagem_url) + '" alt="' + esc(p.titulo) + '" onerror="this.remove()">' : '') +
         '<div class="prosa">' + html + '</div>' +
         '<aside class="post-cta bloco-escuro">' +
           '<p>Quer tecnologia que se adapta ao seu negócio? Comece com um diagnóstico gratuito.</p>' +

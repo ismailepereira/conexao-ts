@@ -8,8 +8,13 @@
 
   /* ---------- Cabeçalho ---------- */
   var topo = document.querySelector('.topo');
+  // Na home o cabeçalho fica transparente até sair de cima do hero escuro
+  var heroEscuro = document.documentElement.getAttribute('data-topo') === 'escuro' ? document.querySelector('.hero--escuro') : null;
+  function limiteTopo() {
+    return heroEscuro ? Math.max(12, heroEscuro.offsetHeight - (topo ? topo.offsetHeight : 68)) : 12;
+  }
   function aoRolar() {
-    if (topo) topo.classList.toggle('rolou', window.scrollY > 12);
+    if (topo) topo.classList.toggle('rolou', window.scrollY > limiteTopo());
     var wa = document.querySelector('.wa-flutua');
     if (wa) wa.classList.toggle('on', window.scrollY > 420);
   }
@@ -66,6 +71,9 @@
   /* ---------- Marca: desenho dos três traços e o mapa de conexão ---------- */
   document.querySelectorAll('.desenha').forEach(function (svg) {
     requestAnimationFrame(function () { svg.classList.add('vivo'); });
+  });
+  document.querySelectorAll('.hero--escuro').forEach(function (hero) {
+    requestAnimationFrame(function () { hero.classList.add('vivo'); });
   });
   var mapa = document.querySelector('.mapa');
   if (mapa) {

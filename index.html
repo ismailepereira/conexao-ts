@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" data-pagina="home" data-base="">
+<html lang="pt-BR" data-pagina="home" data-base="" data-topo="escuro">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="assets/css/base.css?v=20260913">
   <link rel="stylesheet" href="assets/css/components.css?v=20260913">
   <script>if(!/[?&]estatico/.test(location.search))document.documentElement.classList.add('anima');</script>
-  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2/dist/iconify-icon.min.js" defer></script>
+  <script src="assets/js/icones.js?v=20260913" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -113,15 +113,16 @@
   <main id="conteudo" class="pagina">
 
     <!-- ============================================================ HERO -->
-    <section class="hero">
+    <section class="hero hero--escuro">
+      <svg class="marca-svg hero__fundo-marca desenha" viewBox="160 110 700 880" aria-hidden="true"><path class="t-teal" pathLength="1" stroke-width="84" d="M358 340 L240 222 L240 910 L615 540"/><path class="t-coral" pathLength="1" stroke-width="84" d="M410 530 L770 170"/><path class="t-amber" pathLength="1" stroke-width="84" d="M655 725 L770 840 L770 185"/></svg>
       <div class="wrap hero__grade">
         <div>
           <p class="pilula"><span class="pilula__ponto" aria-hidden="true"></span>Soluções reais para empresas orientadas a resultado</p>
-          <h1>Tecnologia que <span class="acento quebra">resolve de verdade</span> <span class="resto">— sem promessa, sem enrolação</span></h1>
+          <h1><span class="h1-linha">Tecnologia que</span> <span class="h1-linha acento">resolve de verdade</span> <span class="h1-linha">— sem <span class="nowrap"><span class="risco risco--1">promessa</span>,</span> sem <span class="risco risco--2">enrolação</span></span></h1>
           <p class="hero__sub">AI Agents, sistemas sob medida e cloud para empresas que precisam de resultado, não de apresentação bonita. Atendimento direto, sem intermediários.</p>
           <div class="hero__acoes">
-            <button class="btn btn-3d btn--g" type="button" data-diagnostico="hero">Diagnóstico gratuito <iconify-icon icon="solar:arrow-right-linear" width="17"></iconify-icon></button>
-            <a class="btn btn-oco btn--g" href="#solucoes">Ver soluções</a>
+            <button class="btn btn-claro btn--g" type="button" data-diagnostico="hero">Diagnóstico gratuito <iconify-icon icon="solar:arrow-right-linear" width="17"></iconify-icon></button>
+            <a class="btn btn-vazado-escuro btn--g" href="#solucoes">Ver soluções</a>
           </div>
           <div class="pilares">
             <a class="pilar cor-teal" href="blog.html"><strong>Estratégico</strong><span>Tecnologia alinhada ao seu negócio <iconify-icon icon="solar:arrow-right-linear" width="13"></iconify-icon></span></a>
