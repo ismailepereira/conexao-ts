@@ -229,7 +229,7 @@ a.pilar:hover iconify-icon { transform: translateX(3px); }
 .mapa[data-ativo="ink"]   .fio-ink   { stroke: var(--ink-2); }
 
 .mapa__nota {
-  position: absolute; left: -1.25rem; bottom: -1.5rem;
+  position: absolute; left: -1.25rem; bottom: -3rem;
   padding: .75rem 1rem; border-radius: var(--r);
 }
 .mapa__nota small { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--subtle); }
@@ -264,7 +264,7 @@ a.pilar:hover iconify-icon { transform: translateX(3px); }
   .no { font-size: .72rem; padding: .4rem .65rem .4rem .5rem; }
   .no--1, .no--3 { left: 27%; }
   .no--2, .no--4 { left: 73%; }
-  .mapa__nota { left: .75rem; bottom: -1.25rem; }
+  .mapa__nota { position: relative; left: auto; bottom: auto; width: max-content; margin: .75rem 0 0 .75rem; }
 }
 
 /* ---------- Faixa corrida (setores) ---------- */
@@ -276,8 +276,8 @@ a.pilar:hover iconify-icon { transform: translateX(3px); }
 }
 .faixa__rotulo {
   position: absolute; left: 0; top: 0; bottom: 0; z-index: 2;
-  display: flex; align-items: center; padding: 0 5rem 0 var(--gut);
-  background: linear-gradient(90deg, #F8F6F0 0%, #F8F6F0 calc(100% - 4.5rem), rgba(248, 246, 240, 0) 100%);
+  display: flex; align-items: center; padding: 0 3.5rem 0 var(--gut);
+  background: linear-gradient(90deg, #F8F6F0 0%, #F8F6F0 calc(100% - 1.5rem), rgba(248, 246, 240, 0) 100%);
   font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--subtle);
 }
 .faixa__trilho { display: flex; width: max-content; animation: desliza 38s linear infinite; }
@@ -507,3 +507,129 @@ a.pilar:hover iconify-icon { transform: translateX(3px); }
 .sucesso li span { display: block; margin-top: .15rem; font-size: .86rem; }
 .sucesso__rodape { margin-top: 1.25rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; }
 .sucesso__rodape p { font-size: .88rem; font-weight: 600; color: var(--ink); }
+
+/* =============================================================
+   HERO ESCURO — a abertura usa o mundo da faixa "Vamos conversar":
+   petróleo profundo, brilho teal no alto e os traços coral e âmbar
+   do logo nos cantos. "Promessa" e "enrolação" são riscadas ao vivo.
+   ============================================================= */
+.hero--escuro {
+  position: relative; isolation: isolate; overflow: hidden;
+  margin-top: calc(var(--nav-h) * -1);
+  padding-block: calc(var(--nav-h) + clamp(3rem, 7vw, 5.5rem)) clamp(4rem, 8vw, 6.5rem);
+  min-height: min(100svh, 940px); display: flex; align-items: center;
+  color: var(--on-dark-2); background-color: var(--ink-3);
+}
+.hero--escuro::before {
+  content: ""; position: absolute; inset: 0; z-index: -2;
+  background:
+    radial-gradient(48% 55% at 74% 30%, rgba(0, 179, 162, .34), transparent 70%),
+    radial-gradient(38% 45% at 8% 100%, rgba(255, 69, 64, .20), transparent 70%),
+    radial-gradient(34% 40% at 100% 100%, rgba(255, 161, 38, .16), transparent 70%),
+    radial-gradient(120% 90% at 50% 0%, #1B4644 0%, var(--ink) 48%, var(--ink-3) 100%);
+}
+/* grade técnica do sistema, clara e sumindo para baixo */
+.hero--escuro::after {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background-size: 48px 48px;
+  background-image:
+    linear-gradient(to right, rgba(244, 242, 236, .045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(244, 242, 236, .045) 1px, transparent 1px);
+  -webkit-mask-image: radial-gradient(90% 80% at 60% 30%, #000 20%, transparent 75%);
+          mask-image: radial-gradient(90% 80% at 60% 30%, #000 20%, transparent 75%);
+}
+.hero--escuro > .wrap { width: 100%; }
+
+/* O "M" gigante do fundo, desenhado devagar */
+.hero__fundo-marca { position: absolute; z-index: -1; right: -20vw; top: 50%; height: 118%; width: auto; transform: translateY(-50%); opacity: .10; pointer-events: none; }
+.anima .hero__fundo-marca.vivo path { animation-duration: 2.2s; }
+
+.hero--escuro .pilula { background: rgba(255, 255, 255, .06); border-color: var(--line-dark); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .06); color: var(--on-dark); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.hero--escuro .pilula__ponto, .hero--escuro .pilula__ponto::after { background: var(--teal-light); }
+
+.hero--escuro .hero__grade { grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); }
+.hero--escuro h1 { color: var(--on-dark); font-size: clamp(2.5rem, 5vw, 3.9rem); line-height: 1; letter-spacing: -.045em; }
+@media (min-width: 1000px) { .hero--escuro .h1-linha.acento { white-space: nowrap; } }
+.nowrap { white-space: nowrap; }
+.hero--escuro h1 .acento { color: var(--teal-light); }
+.h1-linha { display: block; }
+.hero--escuro .hero__sub { color: var(--on-dark-2); font-size: clamp(1.02rem, 1.4vw, 1.18rem); }
+
+/* Riscos: os traços do logo passam por cima de "promessa" e "enrolação" */
+.risco { position: relative; display: inline-block; }
+.risco::after {
+  content: ""; position: absolute; left: -.05em; right: -.05em; top: 55%;
+  height: .085em; border-radius: .06em; background: var(--marca-coral);
+  transform: rotate(-3deg) scaleX(1); transform-origin: left center;
+}
+.risco--2::after { background: var(--marca-amber); transform: rotate(2deg) scaleX(1); }
+
+.anima .hero--escuro .h1-linha { opacity: 0; transform: translateY(.35em); }
+.anima .hero--escuro.vivo .h1-linha { animation: sobe .95s var(--saida) forwards; }
+.anima .hero--escuro.vivo .h1-linha:nth-child(2) { animation-delay: .12s; }
+.anima .hero--escuro.vivo .h1-linha:nth-child(3) { animation-delay: .24s; }
+@keyframes sobe { to { opacity: 1; transform: none; } }
+.anima .hero--escuro .risco::after { transform: rotate(-3deg) scaleX(0); }
+.anima .hero--escuro .risco--2::after { transform: rotate(2deg) scaleX(0); }
+.anima .hero--escuro.vivo .risco--1::after { animation: risca1 .55s cubic-bezier(.7, 0, .2, 1) 1.15s forwards; }
+.anima .hero--escuro.vivo .risco--2::after { animation: risca2 .55s cubic-bezier(.7, 0, .2, 1) 1.5s forwards; }
+@keyframes risca1 { to { transform: rotate(-3deg) scaleX(1); } }
+@keyframes risca2 { to { transform: rotate(2deg) scaleX(1); } }
+
+.hero--escuro .pilares { border-top-color: var(--line-dark); }
+.hero--escuro .pilar strong { color: var(--on-dark); }
+.hero--escuro .pilar span { color: var(--on-dark-3); }
+.hero--escuro .pilar iconify-icon { color: var(--cor-light); }
+.hero--escuro a.pilar:hover span { color: var(--on-dark); }
+
+/* Mapa de conexão em versão escura */
+.hero--escuro .mapa__cartao {
+  background: linear-gradient(180deg, rgba(255, 255, 255, .07), rgba(255, 255, 255, .02));
+  border-color: var(--line-dark);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08), 0 40px 80px -30px rgba(0, 0, 0, .7);
+  -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+}
+.hero--escuro .mapa__barra { background: rgba(255, 255, 255, .03); border-bottom-color: var(--line-dark); }
+.hero--escuro .mapa__barra i { background: rgba(244, 242, 236, .18); }
+.hero--escuro .mapa__barra span { color: var(--on-dark-3); }
+.hero--escuro .mapa__campo { background: radial-gradient(55% 55% at 50% 48%, rgba(0, 179, 162, .22), transparent 70%); }
+.hero--escuro .mapa__fios .anel { stroke: rgba(244, 242, 236, .10); }
+.hero--escuro .mapa__fios line { stroke: rgba(244, 242, 236, .22); }
+.hero--escuro .mapa__marca .marca-svg { filter: drop-shadow(0 0 28px rgba(0, 179, 162, .35)) drop-shadow(0 18px 30px rgba(0, 0, 0, .45)); }
+.hero--escuro .no { background: rgba(10, 29, 30, .78); border-color: var(--line-dark); color: var(--on-dark); box-shadow: 0 10px 24px -12px rgba(0, 0, 0, .6); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.hero--escuro .no:hover, .hero--escuro .no:focus-visible { color: #fff; border-color: color-mix(in srgb, var(--cor-light) 70%, transparent); box-shadow: 0 14px 30px -12px color-mix(in srgb, var(--cor) 60%, transparent); }
+.hero--escuro .cor-ink .no i, .hero--escuro .no.cor-ink i { background: var(--on-dark); }
+.hero--escuro .mapa[data-ativo="teal"]  .fio-teal  { stroke: var(--teal-light); }
+.hero--escuro .mapa[data-ativo="coral"] .fio-coral { stroke: var(--coral-light); }
+.hero--escuro .mapa[data-ativo="amber"] .fio-amber { stroke: var(--amber-light); }
+.hero--escuro .mapa[data-ativo="ink"]   .fio-ink   { stroke: var(--on-dark); }
+.hero--escuro .mapa__nota { background: var(--ink-2); border-color: var(--line-dark); box-shadow: 0 20px 40px -18px rgba(0, 0, 0, .6); }
+.hero--escuro .mapa__nota small { color: var(--on-dark-3); }
+.hero--escuro .mapa__nota strong { color: var(--on-dark); }
+.hero--escuro .mapa__nota strong span { color: var(--teal-light); }
+
+/* Cabeçalho transparente enquanto está sobre o hero escuro */
+[data-topo="escuro"] .topo:not(.rolou) { background: transparent; -webkit-backdrop-filter: none; backdrop-filter: none; }
+[data-topo="escuro"] .topo:not(.rolou) .logo,
+[data-topo="escuro"] .topo:not(.rolou) .logo:hover { color: var(--on-dark); }
+[data-topo="escuro"] .topo:not(.rolou) .logo__tag { color: var(--teal-light); }
+[data-topo="escuro"] .topo:not(.rolou) .menu a,
+[data-topo="escuro"] .topo:not(.rolou) .menu__drop-btn { color: var(--on-dark-2); }
+[data-topo="escuro"] .topo:not(.rolou) .menu a:hover,
+[data-topo="escuro"] .topo:not(.rolou) .menu__drop-btn:hover,
+[data-topo="escuro"] .topo:not(.rolou) .menu a[aria-current="page"] { color: var(--on-dark); background: rgba(255, 255, 255, .06); }
+[data-topo="escuro"] .topo:not(.rolou) .menu a[aria-current="page"]::after { background: var(--teal-light); }
+[data-topo="escuro"] .topo:not(.rolou) .hamburguer { background: rgba(255, 255, 255, .06); border-color: var(--line-dark); color: var(--on-dark); }
+[data-topo="escuro"] .topo:not(.rolou) .drop a { color: inherit; }
+[data-topo="escuro"] .topo:not(.rolou) .drop .drop__txt strong { color: var(--ink); }
+
+@media (max-width: 980px) {
+  .hero--escuro { min-height: 0; }
+  .hero--escuro .hero__grade { grid-template-columns: 1fr; }
+  .hero__fundo-marca { right: -30vw; height: 80%; top: 30%; opacity: .07; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .anima .hero--escuro .h1-linha { opacity: 1; transform: none; animation: none !important; }
+  .anima .hero--escuro .risco--1::after { transform: rotate(-3deg) scaleX(1); animation: none !important; }
+  .anima .hero--escuro .risco--2::after { transform: rotate(2deg) scaleX(1); animation: none !important; }
+}

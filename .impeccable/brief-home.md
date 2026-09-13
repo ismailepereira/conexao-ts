@@ -12,7 +12,7 @@ OWN-WORLD: sistema da home do Ismaile (canvas creme quente, tinta escura, cartõ
 
 STORY: entende em 5s que é uma empresa de tecnologia para PMEs que atende direto; acredita pelo método visível (4 passos, modelos de engajamento, stack); pede o diagnóstico ou abre o WhatsApp.
 
-FIRST VIEWPORT: esquerda 58%: selo "Soluções reais…", H1 em 3 linhas com "resolve de verdade" em teal, subtítulo, botão teal "Diagnóstico gratuito →" + botão oco "Ver soluções", três pilares em linha. Direita: cartão premium com a marca "M" desenhada em SVG (traços teal, coral, âmbar entrando em sequência) e os 4 serviços como linhas conectadas, cada uma com a cor do seu traço.
+FIRST VIEWPORT: hero escuro em tela cheia (pedido do Ismaile em 13/09/2026: a abertura usa o mundo da faixa "Vamos conversar"), petróleo profundo com brilho teal no alto e coral/âmbar nos cantos, grade técnica clara e o "M" gigante desenhado ao fundo; cabeçalho transparente sobre ele. Esquerda: selo translúcido, H1 grande em 3 blocos que sobem em sequência ("Tecnologia que" / "resolve de verdade" em teal claro / "— sem promessa, sem enrolação"), com "promessa" e "enrolação" riscadas ao vivo pelos traços coral e âmbar do logo; subtítulo; botão creme "Diagnóstico gratuito →" + botão vazado "Ver soluções"; três pilares. Direita: o mapa de conexão em versão escura (marca com brilho, serviços como pílulas translúcidas ligadas por fios).
 
 FORM: sistema visual fixado pelo Ismaile (home de serviços dele, 13/09/2026) com as cores do logo da Conexão; a rolagem do seed 11655fa3 (índice 7) foi sobreposta pela decisão fixada, que sempre vence. Interação assinatura: a marca se desenha em três traços e cada serviço acende o traço da sua cor ao passar o mouse/foco.
 
