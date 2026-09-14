@@ -640,3 +640,15 @@ a.pilar:hover iconify-icon { transform: translateX(3px); }
   .anima .hero--escuro .risco--1::after { transform: rotate(-3deg) scaleX(1); animation: none !important; }
   .anima .hero--escuro .risco--2::after { transform: rotate(2deg) scaleX(1); animation: none !important; }
 }
+
+/* =============================================================
+   Desenho acompanhando a rolagem (main.js controla o avanço)
+   - Cabeçalho: logo apagada ao fundo e os três traços se completam
+     em sequência conforme a página rola.
+   - Faixas escuras: a marca se desenha enquanto entra na tela.
+   Sem JavaScript ou com movimento reduzido, a marca fica inteira.
+   ============================================================= */
+.marca-progresso__base { opacity: 0; transition: opacity .35s var(--curva); }
+.marca-progresso.em-progresso .marca-progresso__base { opacity: .22; }
+.rolagem .marca-progresso__traco path,
+.rolagem:not(.marca-progresso) path { stroke-dasharray: 1; transition: stroke-dashoffset .14s linear; }

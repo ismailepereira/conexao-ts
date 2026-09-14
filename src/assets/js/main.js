@@ -86,6 +86,52 @@
     });
   }
 
+  /* ---------- Desenho da marca acompanhando a rolagem ---------- */
+  var logoTopo = document.querySelector('.topo .marca-progresso');
+  var marcasRolagem = [].slice.call(document.querySelectorAll('.fechamento .marca-svg, .conclusao .marca-svg, .diagnostico__marca'));
+
+  function limita(v) { return Math.max(0, Math.min(1, v)); }
+
+  // Os três traços se completam em sequência: teal, coral, âmbar
+  function desenhaMarca(svg, progresso) {
+    var grupo = svg.querySelector('.marca-progresso__traco') || svg;
+    var ordem = ['.t-teal', '.t-coral', '.t-amber'];
+    ordem.forEach(function (sel, i) {
+      var traco = grupo.querySelector(sel);
+      if (traco) traco.style.strokeDashoffset = String(1 - limita(progresso * 3 - i));
+    });
+  }
+
+  if (!reduz && (logoTopo || marcasRolagem.length)) {
+    marcasRolagem.forEach(function (svg) {
+      svg.querySelectorAll('path').forEach(function (p) { p.setAttribute('pathLength', '1'); });
+      svg.classList.add('rolagem');
+    });
+    if (logoTopo) logoTopo.classList.add('rolagem');
+
+    var agendado = false;
+    var atualizaDesenho = function () {
+      agendado = false;
+      var altura = window.innerHeight;
+      if (logoTopo && topo) {
+        var ativo = topo.classList.contains('rolou');
+        logoTopo.classList.toggle('em-progresso', ativo);
+        var inicio = limiteTopo();
+        var fim = document.documentElement.scrollHeight - altura;
+        desenhaMarca(logoTopo, ativo ? (fim > inicio ? (window.scrollY - inicio) / (fim - inicio) : 1) : 1);
+      }
+      marcasRolagem.forEach(function (svg) {
+        var r = svg.getBoundingClientRect();
+        desenhaMarca(svg, (altura - r.top) / (altura * 0.55 + r.height * 0.5));
+      });
+    };
+    window.addEventListener('scroll', function () {
+      if (!agendado) { agendado = true; requestAnimationFrame(atualizaDesenho); }
+    }, { passive: true });
+    window.addEventListener('resize', atualizaDesenho);
+    atualizaDesenho();
+  }
+
   /* ---------- Diálogo do diagnóstico ---------- */
   var dialogo = document.getElementById('dialogo-diagnostico');
   function abreDiagnostico(origem) {

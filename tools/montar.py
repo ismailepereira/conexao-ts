@@ -26,6 +26,7 @@ def ler_parcial(nome: str) -> str:
 
 
 def preparar(texto: str, base: str, pagina: str) -> str:
+    texto = texto.replace("{{marca-progresso}}", ler_parcial("marca-progresso"))
     texto = texto.replace("{{marca}}", ler_parcial("marca"))
     texto = texto.replace("{{base}}", base)
     texto = re.sub(
