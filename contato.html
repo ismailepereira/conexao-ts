@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" data-pagina="contato" data-base="">
+<html lang="pt-BR" data-pagina="contato" data-base="" data-topo="escuro">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,12 +19,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="assets/css/tokens.css?v=20260913c">
-  <link rel="stylesheet" href="assets/css/base.css?v=20260913c">
-  <link rel="stylesheet" href="assets/css/components.css?v=20260913c">
-  <link rel="stylesheet" href="assets/css/paginas.css?v=20260913c">
+  <link rel="stylesheet" href="assets/css/tokens.css?v=20260914b">
+  <link rel="stylesheet" href="assets/css/base.css?v=20260914b">
+  <link rel="stylesheet" href="assets/css/components.css?v=20260914b">
+  <link rel="stylesheet" href="assets/css/paginas.css?v=20260914b">
   <script>if(!/[?&]estatico/.test(location.search))document.documentElement.classList.add('anima');</script>
-  <script src="assets/js/icones.js?v=20260913c" defer></script>
+  <script src="assets/js/icones.js?v=20260914b" defer></script>
 </head>
 <body>
   <div class="grade-tecnica" aria-hidden="true"></div>
@@ -79,13 +79,18 @@
 <!-- /AUTO:cabecalho -->
 
   <main id="conteudo" class="pagina">
-    <section class="secao" style="padding-top:clamp(2.75rem,6vw,4.5rem)">
+    <section class="pag-topo pag-topo--escuro pag-topo--centro">
+      <div class="wrap">
+        <svg class="marca-svg hero__marca" viewBox="160 110 700 880" aria-hidden="true"><path class="t-teal" pathLength="1" stroke-width="84" d="M358 340 L240 222 L240 910 L615 540"/><path class="t-coral" pathLength="1" stroke-width="84" d="M410 530 L770 170"/><path class="t-amber" pathLength="1" stroke-width="84" d="M655 725 L770 840 L770 185"/></svg>
+        <p class="eyebrow">Vamos conversar</p>
+        <h1>Pronto para transformar seu negócio com <span class="acento">tecnologia?</span></h1>
+        <p class="lede">Fale diretamente com nosso especialista. Atendemos empresas em todo o Brasil, 100% remoto. Sem intermediários, sem enrolação.</p>
+      </div>
+    </section>
+
+    <section class="secao secao--menta">
       <div class="wrap contato">
         <div>
-          <p class="eyebrow">Vamos conversar</p>
-          <h1>Pronto para transformar seu negócio com <span class="acento">tecnologia?</span></h1>
-          <p class="lede">Fale diretamente com nosso especialista. Atendemos empresas em todo o Brasil, 100% remoto. Sem intermediários, sem enrolação.</p>
-
           <button class="bloco-escuro cartao-diag" type="button" data-diagnostico="contato-cartao">
             <strong>Diagnóstico gratuito — 30 minutos <iconify-icon icon="solar:arrow-right-linear" width="20"></iconify-icon></strong>
             <span>Mapeamos seu desafio e mostramos a solução certa. Sem compromisso.</span>
@@ -291,8 +296,8 @@
 </dialog>
 <!-- /AUTO:dialogo -->
 
-  <script src="assets/js/api.js?v=20260913c" defer></script>
-  <script src="assets/js/main.js?v=20260913c" defer></script>
-  <script src="assets/js/forms.js?v=20260913c" defer></script>
+  <script src="assets/js/api.js?v=20260914b" defer></script>
+  <script src="assets/js/main.js?v=20260914b" defer></script>
+  <script src="assets/js/forms.js?v=20260914b" defer></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" data-pagina="servicos-consultoria" data-base="../">
+<html lang="pt-BR" data-pagina="servicos-consultoria" data-base="../" data-topo="escuro">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,12 +19,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="../assets/css/tokens.css?v=20260913c">
-  <link rel="stylesheet" href="../assets/css/base.css?v=20260913c">
-  <link rel="stylesheet" href="../assets/css/components.css?v=20260913c">
-  <link rel="stylesheet" href="../assets/css/paginas.css?v=20260913c">
+  <link rel="stylesheet" href="../assets/css/tokens.css?v=20260914b">
+  <link rel="stylesheet" href="../assets/css/base.css?v=20260914b">
+  <link rel="stylesheet" href="../assets/css/components.css?v=20260914b">
+  <link rel="stylesheet" href="../assets/css/paginas.css?v=20260914b">
   <script>if(!/[?&]estatico/.test(location.search))document.documentElement.classList.add('anima');</script>
-  <script src="../assets/js/icones.js?v=20260913c" defer></script>
+  <script src="../assets/js/icones.js?v=20260914b" defer></script>
 </head>
 <body class="cor-ink">
   <div class="grade-tecnica" aria-hidden="true"></div>
@@ -79,13 +79,14 @@
 <!-- /AUTO:cabecalho -->
 
   <main id="conteudo" class="pagina">
-    <section class="pag-topo">
+    <section class="pag-topo pag-topo--escuro">
       <div class="wrap srv-topo">
         <div>
           <nav class="migalha" aria-label="Você está em"><a href="../servicos.html">Serviços</a><iconify-icon icon="solar:alt-arrow-right-linear" width="14"></iconify-icon><span>Consultoria em TI</span></nav>
           <p class="eyebrow">Consultoria em TI</p>
-          <h1>Escolha as tecnologias certas e prepare sua empresa para uma gestão orientada por <span class="acento" style="color:var(--teal-ink)">dados e inteligência</span></h1>
+          <h1>Escolha as tecnologias certas e prepare sua empresa para uma gestão orientada por <span class="acento">dados e inteligência</span></h1>
           <p class="lede">Consultoria especializada na escolha de ERP, integração de sistemas e adoção de ferramentas modernas de gestão.</p>
+          <div class="pag-topo__acoes"><button class="btn btn-destaque btn--g" type="button" data-diagnostico="topo-consultoria">Diagnóstico gratuito <iconify-icon icon="solar:arrow-right-linear" width="17"></iconify-icon></button></div>
         </div>
         <div class="cartao midia reveal">
           <div class="midia__barra" aria-hidden="true"><i></i><i></i><i></i><span>Consultoria em TI</span></div>
@@ -97,7 +98,7 @@
       </div>
     </section>
 
-    <section class="secao" style="padding-top:clamp(2rem,4vw,3rem)">
+    <section class="secao">
       <div class="wrap duas-col">
         <div class="duas-col__titulo reveal"><h2>O desafio não está em adquirir tecnologia, mas em escolher as soluções certas para o seu negócio</h2></div>
         <div class="texto reveal">
@@ -107,7 +108,7 @@
       </div>
     </section>
 
-    <section class="secao" style="padding-top:0">
+    <section class="secao secao--tom">
       <div class="wrap">
         <div class="cabeca-secao reveal">
           <div>
@@ -125,7 +126,7 @@
       </div>
     </section>
 
-    <section class="secao" style="padding-top:0">
+    <section class="secao">
       <div class="wrap duas-col">
         <div class="duas-col__titulo reveal"><h2>Tecnologia pensada para gerar inteligência na gestão</h2></div>
         <div class="texto reveal">
@@ -142,7 +143,7 @@
       </div>
     </section>
 
-    <section class="secao" style="padding-top:0">
+    <section class="secao secao--menta">
       <div class="wrap">
         <div class="bloco-escuro conclusao reveal">
           <svg class="marca-svg" viewBox="160 110 700 880" aria-hidden="true"><path class="t-teal" stroke-width="84" d="M358 340 L240 222 L240 910 L615 540"/><path class="t-coral" stroke-width="84" d="M410 530 L770 170"/><path class="t-amber" stroke-width="84" d="M655 725 L770 840 L770 185"/></svg>
@@ -150,7 +151,7 @@
           <p>Escolher um ERP ou uma plataforma tecnológica é uma decisão que pode impactar a empresa por muitos anos. Por isso, contar com uma visão externa especializada ajuda a evitar erros comuns e identificar oportunidades que muitas vezes passam despercebidas.</p>
           <p>Na Conexão Tecnologia e Serviços, nossa consultoria analisa processos, necessidades e objetivos do negócio para orientar escolhas tecnológicas que realmente façam sentido para a empresa. O resultado é uma gestão mais estruturada, preparada para crescer em um mercado cada vez mais orientado por dados e inovação.</p>
           <div class="conclusao__acoes">
-            <button class="btn btn-claro btn--g" type="button" data-diagnostico="consultoria">Quero uma consultoria <iconify-icon icon="solar:arrow-right-linear" width="17"></iconify-icon></button>
+            <button class="btn btn-destaque btn--g" type="button" data-diagnostico="consultoria">Quero uma consultoria <iconify-icon icon="solar:arrow-right-linear" width="17"></iconify-icon></button>
             <a class="btn btn-vazado-escuro btn--g" data-wa href="https://wa.me/5565981172676?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20Consultoria%20em%20TI." target="_blank" rel="noopener">Agendar uma conversa</a>
           </div>
         </div>
@@ -303,8 +304,8 @@
 </dialog>
 <!-- /AUTO:dialogo -->
 
-  <script src="../assets/js/api.js?v=20260913c" defer></script>
-  <script src="../assets/js/main.js?v=20260913c" defer></script>
-  <script src="../assets/js/forms.js?v=20260913c" defer></script>
+  <script src="../assets/js/api.js?v=20260914b" defer></script>
+  <script src="../assets/js/main.js?v=20260914b" defer></script>
+  <script src="../assets/js/forms.js?v=20260914b" defer></script>
 </body>
 </html>

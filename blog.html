@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" data-pagina="blog" data-base="">
+<html lang="pt-BR" data-pagina="blog" data-base="" data-topo="escuro">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,12 +19,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="assets/css/tokens.css?v=20260913c">
-  <link rel="stylesheet" href="assets/css/base.css?v=20260913c">
-  <link rel="stylesheet" href="assets/css/components.css?v=20260913c">
-  <link rel="stylesheet" href="assets/css/paginas.css?v=20260913c">
+  <link rel="stylesheet" href="assets/css/tokens.css?v=20260914b">
+  <link rel="stylesheet" href="assets/css/base.css?v=20260914b">
+  <link rel="stylesheet" href="assets/css/components.css?v=20260914b">
+  <link rel="stylesheet" href="assets/css/paginas.css?v=20260914b">
   <script>if(!/[?&]estatico/.test(location.search))document.documentElement.classList.add('anima');</script>
-  <script src="assets/js/icones.js?v=20260913c" defer></script>
+  <script src="assets/js/icones.js?v=20260914b" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/marked@14/marked.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js" defer></script>
 </head>
@@ -82,18 +82,18 @@
 
   <main id="conteudo" class="pagina">
     <div id="blog-lista">
-      <section class="pag-topo">
-        <div class="wrap blog-topo">
-          <div>
-            <p class="eyebrow">Conteúdo e Insights</p>
-            <h1>Ideias que <span class="acento">funcionam</span></h1>
-            <p class="lede">Automação, IA e tecnologia aplicadas a negócios reais.</p>
-          </div>
-          <p class="blog-contagem" id="blog-contagem" aria-live="polite"></p>
+      <section class="pag-topo pag-topo--escuro pag-topo--centro">
+        <div class="wrap">
+          <svg class="marca-svg hero__marca" viewBox="160 110 700 880" aria-hidden="true"><path class="t-teal" pathLength="1" stroke-width="84" d="M358 340 L240 222 L240 910 L615 540"/><path class="t-coral" pathLength="1" stroke-width="84" d="M410 530 L770 170"/><path class="t-amber" pathLength="1" stroke-width="84" d="M655 725 L770 840 L770 185"/></svg>
+          <p class="eyebrow">Conteúdo e Insights</p>
+          <h1>Ideias que <span class="acento">funcionam</span></h1>
+          <p class="lede">Automação, IA e tecnologia aplicadas a negócios reais.</p>
+          <p class="pilula" hidden><span class="pilula__ponto" aria-hidden="true"></span><span id="blog-contagem" aria-live="polite"></span></p>
         </div>
       </section>
-      <section class="secao" style="padding-top:0">
+      <section class="secao secao--menta">
         <div class="wrap">
+          <div class="blog-filtros" id="blog-filtros" role="group" aria-label="Filtrar por categoria" hidden></div>
           <div class="blog-grade" id="blog-grade">
             <p class="blog-aviso">Carregando artigos...</p>
           </div>
@@ -102,13 +102,18 @@
       </section>
     </div>
 
-    <article class="secao" id="blog-post" hidden style="padding-top:clamp(2rem,5vw,3.5rem)">
-      <div class="wrap">
-        <div class="post">
+    <article id="blog-post" hidden>
+      <section class="pag-topo pag-topo--escuro pag-topo--centro">
+        <div class="wrap">
           <a class="voltar" href="blog.html" data-voltar-blog><iconify-icon icon="solar:arrow-left-linear" width="16"></iconify-icon> Voltar ao Blog</a>
-          <div id="post-conteudo" style="margin-top:2rem"></div>
+          <div id="post-cabeca"></div>
         </div>
-      </div>
+      </section>
+      <section class="secao" style="padding-top:clamp(2.5rem,5vw,3.5rem)">
+        <div class="wrap">
+          <div class="post post-corpo" id="post-conteudo"></div>
+        </div>
+      </section>
     </article>
   </main>
 
@@ -257,9 +262,9 @@
 </dialog>
 <!-- /AUTO:dialogo -->
 
-  <script src="assets/js/api.js?v=20260913c" defer></script>
-  <script src="assets/js/main.js?v=20260913c" defer></script>
-  <script src="assets/js/forms.js?v=20260913c" defer></script>
-  <script src="assets/js/blog.js?v=20260913c" defer></script>
+  <script src="assets/js/api.js?v=20260914b" defer></script>
+  <script src="assets/js/main.js?v=20260914b" defer></script>
+  <script src="assets/js/forms.js?v=20260914b" defer></script>
+  <script src="assets/js/blog.js?v=20260914b" defer></script>
 </body>
 </html>
