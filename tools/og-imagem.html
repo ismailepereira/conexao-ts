@@ -1,0 +1,85 @@
+<!doctype html>
+<!--
+  Imagem de prévia de link (WhatsApp, redes): 1200x630, no visual do hero.
+  Gerar:  npx -y playwright@1.49.1 screenshot --channel chrome --viewport-size 1200,630
+          --wait-for-timeout 3000 file:///F:/Claude/clientes/conexao-ts/tools/og-imagem.html og.png
+  Depois converter para JPG em src/assets/img/og-conexao.jpg.
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@600;700;800&display=block">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative; display: flex; align-items: center; justify-content: center; text-align: center;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: #F4F2EC; background: #10292A;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(58% 72% at 50% 40%, rgba(0, 163, 145, .50), transparent 72%),
+      radial-gradient(34% 58% at 3% 100%, rgba(238, 75, 65, .28), transparent 70%),
+      radial-gradient(34% 58% at 97% 100%, rgba(245, 158, 28, .24), transparent 70%),
+      radial-gradient(120% 100% at 50% 100%, rgba(0, 0, 0, .45), transparent 60%);
+  }
+  body::after {
+    content: ""; position: absolute; inset: 0;
+    background-size: 48px 48px;
+    background-image:
+      linear-gradient(to right, rgba(244, 242, 236, .05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(244, 242, 236, .05) 1px, transparent 1px);
+    -webkit-mask-image: radial-gradient(70% 75% at 50% 42%, #000 15%, transparent 78%);
+  }
+  .conteudo { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; }
+
+  .marca { display: flex; align-items: center; gap: 14px; text-align: left; }
+  .marca svg { width: 44px; height: 56px; overflow: visible; filter: drop-shadow(0 0 18px rgba(0, 179, 162, .55)); }
+  .marca path { fill: none; stroke-width: 84; stroke-linecap: round; stroke-linejoin: round; }
+  .marca b { display: block; font-size: 22px; font-weight: 800; letter-spacing: .08em; line-height: 1; }
+  .marca small { display: block; margin-top: 6px; font-family: "JetBrains Mono", monospace; font-size: 12px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: #4FD6C3; }
+
+  h1 { margin-top: 36px; font-size: 84px; font-weight: 800; line-height: 1; letter-spacing: -.035em; }
+  h1 span { display: block; }
+  .acento { color: #4FD6C3; }
+  .apoio { margin-top: 20px; font-size: 38px; font-weight: 700; letter-spacing: -.015em; color: rgba(244, 242, 236, .82); }
+  .risco { position: relative; display: inline-block; }
+  .risco::after { content: ""; position: absolute; left: -3px; right: -3px; top: 54%; height: 5px; border-radius: 3px; background: #FF4540; transform: rotate(-3deg); }
+  .risco--2::after { background: #FFA126; transform: rotate(2deg); }
+
+  .botao {
+    margin-top: 36px; display: inline-flex; align-items: center; gap: 12px; padding: 17px 30px; border-radius: 10px;
+    font-size: 23px; font-weight: 700; color: #10292A;
+    background: linear-gradient(180deg, #FFBF57 0%, #F59E1C 55%, #E08A0B 100%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .45), 0 18px 40px -12px rgba(245, 158, 28, .75);
+  }
+  .botao svg { width: 22px; height: 22px; }
+
+  .servicos { margin-top: 30px; display: flex; align-items: center; gap: 16px; font-family: "JetBrains Mono", monospace; font-size: 15px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: rgba(244, 242, 236, .66); }
+  .servicos i { width: 7px; height: 7px; border-radius: 2px; transform: rotate(45deg); }
+</style>
+</head>
+<body>
+  <div class="conteudo">
+    <div class="marca">
+      <svg viewBox="160 110 700 880" aria-hidden="true">
+        <path stroke="#00B3A2" d="M358 340 L240 222 L240 910 L615 540"/>
+        <path stroke="#FF4540" d="M410 530 L770 170"/>
+        <path stroke="#FFA126" d="M655 725 L770 840 L770 185"/>
+      </svg>
+      <div><b>CONEXÃO</b><small>Tecnologia e Serviços</small></div>
+    </div>
+
+    <h1><span>Tecnologia que</span><span class="acento">resolve de verdade</span></h1>
+    <p class="apoio">sem <span class="risco">promessa</span>, sem <span class="risco risco--2">enrolação</span></p>
+
+    <span class="botao">Diagnóstico gratuito
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+    </span>
+
+    <p class="servicos">AI Agents <i style="background:#00B3A2"></i> Micro SaaS <i style="background:#FF4540"></i> Cloud Computing <i style="background:#FFA126"></i> Consultoria em TI</p>
+  </div>
+</body>
+</html>
