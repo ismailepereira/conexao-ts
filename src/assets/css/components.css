@@ -660,27 +660,33 @@ a.pilar:hover iconify-icon { transform: translateX(3px); }
    ícones sólidos e números em ladrilhos coloridos.
    ============================================================= */
 
-/* ---------- Faixas tingidas ---------- */
-.secao--menta, .secao--areia, .secao--tom {
+/* ---------- Faixas tingidas ----------
+   Sem linha dura: cada faixa nasce do creme, ganha o tom e volta ao
+   creme. .funde-topo / .funde-base emendam duas faixas seguidas. */
+.secao--menta, .secao--verde, .secao--areia, .secao--tom {
+  --tom: color-mix(in srgb, var(--faixa) var(--forca, 11%), var(--canvas));
   position: relative; isolation: isolate; overflow: clip;
-  border-block: 1px solid color-mix(in srgb, var(--faixa) 16%, var(--line));
   background:
-    radial-gradient(42% 60% at 0% 0%, color-mix(in srgb, var(--faixa-2) 17%, transparent), transparent 70%),
-    radial-gradient(46% 62% at 100% 100%, color-mix(in srgb, var(--faixa-3) 15%, transparent), transparent 70%),
-    linear-gradient(180deg, color-mix(in srgb, var(--faixa) 10%, var(--canvas)) 0%, color-mix(in srgb, var(--faixa) 4%, var(--canvas)) 100%);
+    radial-gradient(42% 55% at 0% 18%, color-mix(in srgb, var(--faixa-2) 17%, transparent), transparent 70%),
+    radial-gradient(46% 58% at 100% 82%, color-mix(in srgb, var(--faixa-3) 14%, transparent), transparent 70%),
+    linear-gradient(180deg, var(--topo-de, var(--canvas)) 0, var(--tom) var(--fade-topo, 150px), var(--tom) calc(100% - var(--fade-base, 150px)), var(--base-para, var(--canvas)) 100%);
 }
-.secao--menta { --faixa: var(--teal);  --faixa-2: var(--teal);  --faixa-3: var(--amber); }
-.secao--areia { --faixa: var(--amber); --faixa-2: var(--coral); --faixa-3: var(--teal); }
-.secao--tom   { --faixa: var(--cor, var(--teal)); --faixa-2: var(--cor, var(--teal)); --faixa-3: var(--amber); }
-/* Pontilhado fino que some para baixo */
-.secao--menta::before, .secao--areia::before, .secao--tom::before {
+.secao--menta { --faixa: var(--teal);  --faixa-2: var(--teal);  --faixa-3: var(--amber); --forca: 11%; }
+.secao--verde { --faixa: #0B9A80;      --faixa-2: var(--teal);  --faixa-3: var(--coral); --forca: 17%; }
+.secao--areia { --faixa: var(--amber); --faixa-2: var(--coral); --faixa-3: var(--teal);  --forca: 10%; }
+.secao--tom   { --faixa: color-mix(in srgb, var(--cor-brilho, var(--teal)) 55%, var(--teal)); --faixa-2: var(--cor-brilho, var(--teal)); --faixa-3: var(--teal); --forca: 12%; }
+.funde-topo { --fade-topo: 0px; --topo-de: var(--tom); }
+.funde-base { --fade-base: 0px; --base-para: var(--tom); }
+/* Pontilhado fino, só no miolo da faixa */
+.secao--menta::before, .secao--verde::before, .secao--areia::before, .secao--tom::before {
   content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-  background-image: radial-gradient(color-mix(in srgb, var(--faixa) 30%, transparent) 1px, transparent 1.5px);
+  background-image: radial-gradient(color-mix(in srgb, var(--faixa) 32%, transparent) 1px, transparent 1.5px);
   background-size: 22px 22px;
-  -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 55%);
-          mask-image: linear-gradient(180deg, #000 0%, transparent 55%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 22%, transparent 70%);
+          mask-image: linear-gradient(180deg, transparent 0, #000 22%, transparent 70%);
 }
 .secao--areia .acento { color: var(--coral-ink); }
+.secao--verde .acento { color: var(--teal-deep); }
 
 /* ---------- Cartões lavados na própria cor ---------- */
 .dif, .servico, .modelo, .beneficio, .exemplo, .passo .cartao {

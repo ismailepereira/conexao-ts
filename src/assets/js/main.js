@@ -8,10 +8,16 @@
 
   /* ---------- Cabeçalho ---------- */
   var topo = document.querySelector('.topo');
-  // Na home o cabeçalho fica transparente até sair de cima do hero escuro
-  var heroEscuro = document.documentElement.getAttribute('data-topo') === 'escuro' ? document.querySelector('.hero--escuro') : null;
+  // O cabeçalho fica transparente até sair de cima do topo escuro visível
+  // (no blog, lista e leitura têm cada uma o seu topo)
+  var comTopoEscuro = document.documentElement.getAttribute('data-topo') === 'escuro';
   function limiteTopo() {
-    return heroEscuro ? Math.max(12, heroEscuro.offsetHeight - (topo ? topo.offsetHeight : 68)) : 12;
+    if (!comTopoEscuro) return 12;
+    var topos = document.querySelectorAll('.hero--escuro, .pag-topo--escuro');
+    for (var i = 0; i < topos.length; i++) {
+      if (topos[i].offsetHeight > 0) return Math.max(12, topos[i].offsetHeight - (topo ? topo.offsetHeight : 68));
+    }
+    return 12;
   }
   function aoRolar() {
     if (topo) topo.classList.toggle('rolou', window.scrollY > limiteTopo());

@@ -193,3 +193,142 @@ a.canal:hover strong { color: var(--teal-ink); }
 /* Mídia "em breve" e formulário com sombra na cor */
 .midia { box-shadow: var(--luz-topo), 0 30px 60px -30px color-mix(in srgb, var(--cor, var(--teal)) 60%, rgba(16, 41, 42, .4)); }
 .form-cartao { box-shadow: var(--luz-topo), 0 30px 60px -30px rgba(0, 122, 108, .45); }
+
+/* =============================================================
+   TOPO ESCURO DAS PÁGINAS INTERNAS — o mesmo mundo do hero da home:
+   fundo petróleo, luz na cor da página, grade fina e cabeçalho
+   transparente por cima.
+   ============================================================= */
+.pag-topo--escuro {
+  position: relative; isolation: isolate; overflow: hidden;
+  margin-top: calc(var(--nav-h) * -1);
+  padding-block: calc(var(--nav-h) + clamp(3rem, 7vw, 5.5rem)) clamp(3.5rem, 7vw, 5.5rem);
+  color: var(--on-dark-2); background-color: var(--ink);
+}
+.pag-topo--escuro::before {
+  inset: 0; z-index: -2;
+  background:
+    radial-gradient(55% 70% at var(--brilho-x, 50%) 34%, color-mix(in srgb, var(--cor-brilho, var(--teal)) 44%, transparent), transparent 72%),
+    radial-gradient(36% 48% at 6% 100%, rgba(238, 75, 65, .20), transparent 70%),
+    radial-gradient(36% 48% at 94% 100%, rgba(245, 158, 28, .17), transparent 70%),
+    radial-gradient(120% 100% at 50% 100%, rgba(0, 0, 0, .45), transparent 60%),
+    var(--ink);
+}
+.pag-topo--escuro::after {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background-size: 48px 48px;
+  background-image:
+    linear-gradient(to right, rgba(244, 242, 236, .04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(244, 242, 236, .04) 1px, transparent 1px);
+  -webkit-mask-image: radial-gradient(70% 70% at 50% 40%, #000 15%, transparent 75%);
+          mask-image: radial-gradient(70% 70% at 50% 40%, #000 15%, transparent 75%);
+}
+.srv-topo { --brilho-x: 76%; }
+.pag-topo--escuro h1 { color: var(--on-dark); }
+.pag-topo--escuro .acento,
+.pag-topo--escuro .eyebrow { color: var(--cor-light, var(--teal-light)); }
+/* Consultoria (cor petróleo): no escuro o destaque usa o teal claro */
+.cor-ink .pag-topo--escuro .acento,
+.cor-ink .pag-topo--escuro .eyebrow { color: var(--teal-light); }
+.pag-topo--escuro .lede, .pag-topo--escuro .legal__data { color: var(--on-dark-2); }
+.pag-topo--escuro .legal__data strong { color: var(--on-dark); }
+.pag-topo--escuro .migalha, .pag-topo--escuro .migalha a, .pag-topo--escuro .migalha iconify-icon { color: var(--on-dark-3); }
+.pag-topo--escuro .migalha a:hover { color: var(--on-dark); }
+.pag-topo--escuro .midia { border-color: rgba(255, 255, 255, .1); box-shadow: 0 0 0 1px rgba(255, 255, 255, .04), 0 40px 80px -30px rgba(0, 0, 0, .65), 0 0 60px -20px color-mix(in srgb, var(--cor-brilho, var(--teal)) 45%, transparent); }
+.pag-topo--escuro .pilula { margin-top: 1.6rem; background: rgba(255, 255, 255, .06); border-color: var(--line-dark); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .06); color: var(--on-dark); }
+.pag-topo--escuro .pilula__ponto, .pag-topo--escuro .pilula__ponto::after { background: var(--teal-light); }
+
+/* Variante centralizada (Serviços, Blog, Contato, Privacidade) */
+.pag-topo--centro { text-align: center; }
+.pag-topo--centro > .wrap { display: flex; flex-direction: column; align-items: center; }
+.pag-topo--centro h1 { font-size: clamp(2.5rem, 6vw, 4.6rem); line-height: 1.02; letter-spacing: -.035em; max-width: 18ch; }
+.pag-topo--centro .lede { margin-inline: auto; font-size: clamp(1.02rem, 1.4vw, 1.15rem); }
+.pag-topo__acoes { margin-top: 2rem; display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
+.srv-topo .pag-topo__acoes { justify-content: flex-start; }
+
+/* Atalhos dos quatro serviços no topo de Serviços */
+.atalhos { margin-top: clamp(2.25rem, 5vw, 3rem); display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; }
+.atalho {
+  display: inline-flex; align-items: center; gap: .55rem; padding: .45rem .95rem .45rem .5rem; border-radius: 999px;
+  border: 1px solid var(--line-dark); background: rgba(255, 255, 255, .05); color: var(--on-dark);
+  font-size: .88rem; font-weight: 700;
+  transition: transform .25s var(--curva), border-color .25s var(--curva), background .25s var(--curva);
+}
+.atalho:hover { color: #fff; transform: translateY(-2px); background: rgba(255, 255, 255, .09); border-color: color-mix(in srgb, var(--cor-light) 60%, transparent); }
+.atalho__ic { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 8px; color: var(--cor-sobre); background: linear-gradient(150deg, var(--cor-alto), var(--cor-baixo)); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3); }
+
+/* Entrada do topo */
+.anima .pag-topo--escuro .eyebrow,
+.anima .pag-topo--escuro h1,
+.anima .pag-topo--escuro .migalha { animation: sobe .95s var(--saida) .12s both; }
+.anima .pag-topo--escuro .lede,
+.anima .pag-topo--escuro .legal__data,
+.anima .pag-topo--escuro .pilula,
+.anima .pag-topo--escuro .pag-topo__acoes,
+.anima .pag-topo--escuro .atalhos { animation: sobe .9s var(--saida) .35s both; }
+
+/* ---------- Blog repaginado ---------- */
+.blog-filtros { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin-bottom: clamp(2rem, 4vw, 2.75rem); }
+.filtro {
+  display: inline-flex; align-items: center; gap: .5rem; padding: .5rem 1rem; border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--cor, var(--teal)) 30%, var(--line)); background: #fff; color: var(--ink);
+  font-size: .86rem; font-weight: 700; box-shadow: var(--luz-topo), 0 4px 12px -8px rgba(16, 41, 42, .3);
+  transition: transform .2s var(--curva), box-shadow .2s var(--curva);
+}
+.filtro::before { content: ""; width: 8px; height: 8px; border-radius: 2px; transform: rotate(45deg); background: var(--cor, var(--teal)); }
+.filtro:hover { transform: translateY(-2px); }
+.filtro[aria-pressed="true"] { color: var(--cor-sobre, #fff); border-color: transparent; background: linear-gradient(150deg, var(--cor-alto, #19BCA8), var(--cor-baixo, var(--teal-ink))); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 10px 20px -10px color-mix(in srgb, var(--cor, var(--teal)) 80%, transparent); }
+.filtro[aria-pressed="true"]::before { background: currentColor; }
+
+.post-cartao {
+  --tinta: var(--cor, var(--teal));
+  border-color: color-mix(in srgb, var(--tinta) 22%, var(--line));
+  box-shadow: var(--luz-topo), 0 1px 2px rgba(16, 41, 42, .05), 0 16px 32px -20px color-mix(in srgb, var(--tinta) 55%, rgba(16, 41, 42, .35));
+}
+a.post-cartao:hover { border-color: color-mix(in srgb, var(--tinta) 48%, var(--line)); box-shadow: var(--luz-topo), 0 2px 4px rgba(16, 41, 42, .05), 0 30px 54px -24px color-mix(in srgb, var(--tinta) 70%, rgba(16, 41, 42, .4)); }
+.post-capa {
+  background:
+    radial-gradient(70% 90% at 18% 10%, color-mix(in srgb, var(--cor) 42%, transparent), transparent 70%),
+    radial-gradient(60% 80% at 100% 100%, color-mix(in srgb, var(--cor) 26%, transparent), transparent 70%),
+    linear-gradient(160deg, color-mix(in srgb, var(--cor) 16%, #fff), color-mix(in srgb, var(--cor) 7%, #F3F0E8));
+}
+.post-capa::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background-image: radial-gradient(color-mix(in srgb, var(--cor) 40%, transparent) 1px, transparent 1.5px);
+  background-size: 18px 18px;
+  -webkit-mask-image: radial-gradient(60% 70% at 50% 50%, #000, transparent 80%);
+          mask-image: radial-gradient(60% 70% at 50% 50%, #000, transparent 80%);
+}
+.post-capa__ic { position: relative; width: 72px; height: 72px; border-radius: 18px; color: var(--cor-sobre); background: linear-gradient(150deg, var(--cor-alto), var(--cor-baixo)); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .35), 0 18px 32px -12px color-mix(in srgb, var(--cor) 80%, transparent); }
+
+/* Primeiro artigo: cartão escuro em destaque */
+.post-cartao--primeiro {
+  border-color: rgba(255, 255, 255, .08);
+  background:
+    radial-gradient(70% 90% at 100% 0%, color-mix(in srgb, var(--cor-brilho, var(--teal)) 30%, transparent), transparent 62%),
+    linear-gradient(160deg, #1E4443 0%, var(--ink) 55%, var(--ink-3) 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 30px 60px -28px rgba(10, 29, 30, .6);
+}
+a.post-cartao--primeiro:hover { border-color: rgba(255, 255, 255, .16); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .12), 0 40px 70px -28px rgba(10, 29, 30, .7); }
+.post-cartao--primeiro .post-capa { border-right-color: rgba(255, 255, 255, .08); }
+.post-cartao--primeiro .post-cartao__corpo { justify-content: center; padding: clamp(1.4rem, 3vw, 2.25rem); }
+.post-cartao--primeiro .post-cartao__titulo { color: var(--on-dark); font-size: clamp(1.35rem, 2.4vw, 1.7rem); }
+.post-cartao--primeiro .post-cartao__resumo { color: var(--on-dark-2); flex: 0 1 auto; }
+.post-cartao--primeiro .post-meta { color: var(--on-dark-3); }
+.post-cartao--primeiro .post-cartao__pe { border-top-color: var(--line-dark); }
+.post-cartao--primeiro .autor { color: var(--on-dark); }
+.post-cartao--primeiro .link-seta { color: var(--cor-light); }
+.post-cartao--primeiro .selo,
+.pag-topo--escuro .selo { color: var(--cor-light, var(--teal-light)); background: rgba(255, 255, 255, .06); border-color: color-mix(in srgb, var(--cor-light, var(--teal-light)) 40%, transparent); }
+
+/* Leitura do artigo: título no topo escuro */
+.pag-topo--escuro .voltar { color: var(--on-dark-2); margin-bottom: 1.75rem; }
+.pag-topo--escuro .voltar:hover { color: var(--on-dark); }
+.pag-topo--escuro .post-cabeca { display: flex; flex-direction: column; align-items: center; }
+.pag-topo--escuro .post-cabeca h1 { font-size: clamp(2rem, 4.8vw, 3.4rem); line-height: 1.08; max-width: 24ch; }
+.pag-topo--escuro .post-meta--grande { justify-content: center; margin-top: 1.4rem; padding-bottom: 0; border-bottom: 0; color: var(--on-dark-3); }
+.pag-topo--escuro .autor { color: var(--on-dark); }
+.post-corpo .post-imagem { margin-top: 0; }
+
+/* Contato: o cartão do diagnóstico abre a coluna */
+.contato > div:first-child > .cartao-diag:first-child { margin-top: 0; }

@@ -11,6 +11,8 @@
   var contagem = document.getElementById('blog-contagem');
   var leitura = document.getElementById('blog-post');
   var corpo = document.getElementById('post-conteudo');
+  var cabeca = document.getElementById('post-cabeca');
+  var filtros = document.getElementById('blog-filtros');
   if (!grade || !leitura) return;
 
   var CAT = {
@@ -76,11 +78,39 @@
         return;
       }
       var n = cache.length;
-      if (contagem) contagem.textContent = n + ' artigo' + (n !== 1 ? 's' : '') + ' publicado' + (n !== 1 ? 's' : '');
-      mostrados = 0;
-      grade.innerHTML = '';
-      mostrarMais();
-      grade.classList.toggle('exemplo', res.exemplo);
+      if (contagem) {
+        contagem.textContent = n + ' artigo' + (n !== 1 ? 's' : '') + ' publicado' + (n !== 1 ? 's' : '');
+        if (contagem.parentNode.hidden) contagem.parentNode.hidden = false;
+      }
+      montaFiltros();
+      recomeca();
+      grade.classList.toggle('blog-grade--exemplo', res.exemplo);
+    });
+  }
+
+  /* Filtro por categoria: só aparece quando há mais de uma */
+  var filtroAtual = '';
+  function listaAtual() {
+    return filtroAtual ? cache.filter(function (p) { return p.categoria === filtroAtual; }) : cache;
+  }
+  function montaFiltros() {
+    if (!filtros) return;
+    var cats = [];
+    cache.forEach(function (p) { if (p.categoria && cats.indexOf(p.categoria) < 0) cats.push(p.categoria); });
+    if (cats.length < 2) { filtros.hidden = true; return; }
+    filtros.innerHTML = '<button type="button" class="filtro cor-ink" data-cat="" aria-pressed="true">Todos</button>' +
+      cats.map(function (c) {
+        return '<button type="button" class="filtro ' + cat(c).cor + '" data-cat="' + esc(c) + '" aria-pressed="false">' + esc(c) + '</button>';
+      }).join('');
+    filtros.hidden = false;
+  }
+  if (filtros) {
+    filtros.addEventListener('click', function (e) {
+      var b = e.target.closest('.filtro');
+      if (!b) return;
+      filtroAtual = b.getAttribute('data-cat') || '';
+      filtros.querySelectorAll('.filtro').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      recomeca();
     });
   }
 
@@ -88,13 +118,22 @@
   var POR_PAGINA = 12;
   var mostrados = 0;
   var maisBtn = document.getElementById('blog-mais');
+  function recomeca() {
+    mostrados = 0;
+    grade.innerHTML = '';
+    mostrarMais();
+  }
   function mostrarMais() {
-    var lote = cache.slice(mostrados, mostrados + POR_PAGINA);
+    var itens = listaAtual();
+    var lote = itens.slice(mostrados, mostrados + POR_PAGINA);
     grade.insertAdjacentHTML('beforeend', lote.map(function (p, i) { return cartao(p, mostrados + i); }).join(''));
     mostrados += lote.length;
-    if (maisBtn) maisBtn.hidden = mostrados >= cache.length;
+    if (maisBtn) maisBtn.hidden = mostrados >= itens.length;
   }
   if (maisBtn) maisBtn.addEventListener('click', mostrarMais);
+
+  // Troca de vista muda a altura do topo escuro: o cabeçalho recalcula
+  function avisaRolagem() { window.dispatchEvent(new Event('scroll')); }
 
   function atualizaMeta(p) {
     document.title = p.titulo + ' | Conexão Tecnologia e Serviços';
@@ -115,13 +154,16 @@
     leitura.hidden = true;
     lista.hidden = false;
     restauraMeta();
+    avisaRolagem();
   }
 
   function abrirPost(slug) {
     lista.hidden = true;
     leitura.hidden = false;
     window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+    if (cabeca) cabeca.innerHTML = '';
     corpo.innerHTML = '<p class="blog-aviso">Carregando artigo...</p>';
+    avisaRolagem();
 
     C.apiPost('getConteudoPublico', { slug: slug }).then(function (r) {
       var p = r && r.status === 'success' && r.data ? r.data : null;
@@ -141,19 +183,24 @@
       } else {
         html = '<p>' + esc(p.meta_description || '') + '</p><p class="blog-aviso">O texto completo aparece quando o site está no servidor da Conexão.</p>';
       }
-      corpo.innerHTML =
+      var cabecaHtml =
         '<header class="post-cabeca ' + c.cor + '">' +
           (p.categoria ? '<span class="selo">' + esc(p.categoria) + '</span>' : '') +
           '<h1>' + esc(p.titulo) + '</h1>' +
           '<div class="post-meta post-meta--grande"><span class="autor"><span class="autor__av">' + iniciais(p.autor) + '</span>' + esc(p.autor || 'Itamar Pereira') + '</span>' +
           (p.publicado_em ? '<time>' + data(p.publicado_em, true) + '</time>' : '') + '</div>' +
-        '</header>' +
+        '</header>';
+      var corpoHtml =
         (p.imagem_url ? '<img class="post-imagem" src="' + esc(p.imagem_url) + '" alt="' + esc(p.titulo) + '" onerror="this.remove()">' : '') +
         '<div class="prosa">' + html + '</div>' +
         '<aside class="post-cta bloco-escuro">' +
           '<p>Quer tecnologia que se adapta ao seu negócio? Comece com um diagnóstico gratuito.</p>' +
-          '<button class="btn btn-claro" type="button" data-diagnostico="blog-post">Agendar diagnóstico gratuito <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></button>' +
+          '<button class="btn btn-destaque" type="button" data-diagnostico="blog-post">Agendar diagnóstico gratuito <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></button>' +
         '</aside>';
+      // O título vai para o topo escuro; sem ele (HTML antigo), tudo fica no corpo
+      if (cabeca) { cabeca.innerHTML = cabecaHtml; corpo.innerHTML = corpoHtml; }
+      else corpo.innerHTML = cabecaHtml + corpoHtml;
+      avisaRolagem();
       if (C.trackEvent) C.trackEvent('post_view', { slug: slug });
     });
   }
