@@ -652,3 +652,144 @@ a.pilar:hover iconify-icon { transform: translateX(3px); }
 .marca-progresso.em-progresso .marca-progresso__base { opacity: .22; }
 .rolagem .marca-progresso__traco path,
 .rolagem:not(.marca-progresso) path { stroke-dasharray: 1; transition: stroke-dashoffset .14s linear; }
+
+/* =============================================================
+   COR E PROFUNDIDADE
+   As seções deixam de ser só creme: faixas tingidas com as cores
+   do logo, cartões lavados na própria cor com sombra colorida,
+   ícones sólidos e números em ladrilhos coloridos.
+   ============================================================= */
+
+/* ---------- Faixas tingidas ---------- */
+.secao--menta, .secao--areia, .secao--tom {
+  position: relative; isolation: isolate; overflow: clip;
+  border-block: 1px solid color-mix(in srgb, var(--faixa) 16%, var(--line));
+  background:
+    radial-gradient(42% 60% at 0% 0%, color-mix(in srgb, var(--faixa-2) 17%, transparent), transparent 70%),
+    radial-gradient(46% 62% at 100% 100%, color-mix(in srgb, var(--faixa-3) 15%, transparent), transparent 70%),
+    linear-gradient(180deg, color-mix(in srgb, var(--faixa) 10%, var(--canvas)) 0%, color-mix(in srgb, var(--faixa) 4%, var(--canvas)) 100%);
+}
+.secao--menta { --faixa: var(--teal);  --faixa-2: var(--teal);  --faixa-3: var(--amber); }
+.secao--areia { --faixa: var(--amber); --faixa-2: var(--coral); --faixa-3: var(--teal); }
+.secao--tom   { --faixa: var(--cor, var(--teal)); --faixa-2: var(--cor, var(--teal)); --faixa-3: var(--amber); }
+/* Pontilhado fino que some para baixo */
+.secao--menta::before, .secao--areia::before, .secao--tom::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background-image: radial-gradient(color-mix(in srgb, var(--faixa) 30%, transparent) 1px, transparent 1.5px);
+  background-size: 22px 22px;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 55%);
+          mask-image: linear-gradient(180deg, #000 0%, transparent 55%);
+}
+.secao--areia .acento { color: var(--coral-ink); }
+
+/* ---------- Cartões lavados na própria cor ---------- */
+.dif, .servico, .modelo, .beneficio, .exemplo, .passo .cartao {
+  --tinta: var(--cor, var(--teal));
+  background:
+    radial-gradient(120% 75% at 0% 0%, color-mix(in srgb, var(--tinta) 14%, transparent), transparent 62%),
+    linear-gradient(180deg, #FFFFFF 0%, #FDFCF8 100%);
+  border-color: color-mix(in srgb, var(--tinta) 22%, var(--line));
+  box-shadow: var(--luz-topo), 0 1px 2px rgba(16, 41, 42, .05), 0 16px 32px -20px color-mix(in srgb, var(--tinta) 55%, rgba(16, 41, 42, .35));
+}
+a.servico:hover, .dif:hover, .modelo:hover, .beneficio:hover, .exemplo:hover, .passo .cartao:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--tinta) 48%, var(--line));
+  box-shadow: var(--luz-topo), 0 2px 4px rgba(16, 41, 42, .05), 0 30px 54px -24px color-mix(in srgb, var(--tinta) 70%, rgba(16, 41, 42, .4));
+}
+.beneficio, .exemplo { overflow: hidden; }
+.beneficio::before, .exemplo::before, .passo .cartao::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
+  background: linear-gradient(90deg, var(--tinta), color-mix(in srgb, var(--tinta) 25%, transparent));
+}
+.passo .cartao { overflow: hidden; }
+.servico::before { height: 4px; background: linear-gradient(90deg, var(--cor), color-mix(in srgb, var(--cor) 30%, transparent)); }
+
+/* Ícone sólido no degradê da cor */
+.ic {
+  color: var(--cor-sobre, #fff);
+  background: linear-gradient(150deg, var(--cor-alto, #19BCA8) 0%, var(--cor-baixo, var(--teal-ink)) 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .38), inset 0 -2px 0 rgba(0, 0, 0, .1), 0 10px 18px -8px color-mix(in srgb, var(--cor, var(--teal)) 80%, transparent);
+}
+
+/* Diferenciais: faixa cheia no topo e número em selo sólido */
+.dif::after { left: 0; right: 0; height: 4px; border-radius: var(--r) var(--r) 0 0; opacity: 1; background: linear-gradient(90deg, var(--cor), color-mix(in srgb, var(--cor) 25%, transparent)); }
+.dif__n {
+  display: inline-grid; place-items: center; min-width: 40px; height: 28px; padding: 0 .6rem; border-radius: 8px;
+  font-weight: 600; color: var(--cor-sobre);
+  background: linear-gradient(150deg, var(--cor-alto), var(--cor-baixo));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .35), 0 6px 14px -6px color-mix(in srgb, var(--cor) 75%, transparent);
+}
+
+/* Modelo em destaque: cartão escuro, o ponto de contraste da seção */
+.modelo--destaque {
+  color: var(--on-dark-2);
+  background:
+    radial-gradient(90% 60% at 100% 0%, rgba(238, 75, 65, .30), transparent 62%),
+    radial-gradient(80% 60% at 0% 100%, rgba(0, 163, 145, .26), transparent 65%),
+    linear-gradient(160deg, #1E4443 0%, var(--ink) 55%, var(--ink-3) 100%);
+  border-color: rgba(255, 255, 255, .08);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .12), 0 30px 60px -26px rgba(10, 29, 30, .6);
+}
+.modelo--destaque:hover { border-color: rgba(255, 255, 255, .16); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .14), 0 40px 70px -28px rgba(10, 29, 30, .7); }
+.modelo--destaque::before { height: 4px; background: linear-gradient(90deg, var(--teal), var(--coral), var(--amber)); }
+.modelo--destaque h3 { color: var(--on-dark); }
+.modelo--destaque > p { color: var(--on-dark-2); }
+.modelo--destaque .quando { border-top-color: var(--line-dark); }
+.modelo--destaque .quando small { color: var(--coral-light); }
+.modelo--destaque .quando p { color: var(--on-dark); }
+.modelo--destaque .selo { color: var(--teal-light); background: rgba(79, 214, 195, .12); border-color: rgba(79, 214, 195, .38); }
+
+/* Números em ladrilhos: um para cada cor do logo */
+.numeros { gap: 1rem; overflow: visible; background: none; border: 0; box-shadow: none; }
+.numeros > .numero:nth-child(1) { --cor: var(--teal);  --cor-ink: var(--teal-ink); }
+.numeros > .numero:nth-child(2) { --cor: var(--coral); --cor-ink: var(--coral-ink); }
+.numeros > .numero:nth-child(3) { --cor: var(--amber); --cor-ink: var(--amber-ink); }
+.numeros > .numero, .numeros > .numero:first-child {
+  position: relative; overflow: hidden; border-radius: var(--r);
+  border: 1px solid color-mix(in srgb, var(--cor) 30%, var(--line));
+  background:
+    radial-gradient(90% 100% at 50% 0%, color-mix(in srgb, var(--cor) 20%, transparent), transparent 72%),
+    linear-gradient(180deg, #FFFFFF, color-mix(in srgb, var(--cor) 8%, #FFFFFF));
+  box-shadow: var(--luz-topo), 0 18px 34px -22px color-mix(in srgb, var(--cor) 70%, transparent);
+}
+.numeros > .numero::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 4px; background: var(--cor); }
+.numeros .numero strong { color: var(--cor-ink); }
+.numeros .numero span { color: var(--body); }
+
+/* Lista-chave: ícone em ladrilho da cor */
+.lista-chave li { grid-template-columns: 40px minmax(0, 1fr); align-items: start; }
+.lista-chave iconify-icon {
+  width: 40px; height: 40px; margin-top: 0; border-radius: 10px;
+  color: var(--cor-sobre, #fff);
+  background: linear-gradient(150deg, var(--cor-alto, #19BCA8), var(--cor-baixo, var(--teal-ink)));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .35), 0 8px 16px -8px color-mix(in srgb, var(--cor, var(--teal)) 80%, transparent);
+}
+
+/* Stack: cada tecnologia na cor da própria marca */
+.stack__grade { box-shadow: var(--luz-topo), 0 18px 36px -26px rgba(16, 41, 42, .35); }
+.stack__item:hover { background: color-mix(in srgb, var(--teal) 6%, #fff); }
+.stack__item iconify-icon[icon="simple-icons:claude"]       { color: #D97757; }
+.stack__item iconify-icon[icon="simple-icons:react"]        { color: #149ECA; }
+.stack__item iconify-icon[icon="simple-icons:nodedotjs"]    { color: #5FA04E; }
+.stack__item iconify-icon[icon="simple-icons:android"]      { color: #2BB673; }
+.stack__item iconify-icon[icon="simple-icons:n8n"]          { color: #EA4B71; }
+.stack__item iconify-icon[icon="simple-icons:whatsapp"]     { color: #1FA855; }
+.stack__item iconify-icon[icon="simple-icons:php"]          { color: #777BB4; }
+.stack__item iconify-icon[icon="simple-icons:mysql"]        { color: #4479A1; }
+.stack__item iconify-icon[icon="simple-icons:postgresql"]   { color: #4169E1; }
+.stack__item iconify-icon[icon="simple-icons:googlecloud"]  { color: #4285F4; }
+.stack__item iconify-icon[icon="simple-icons:meta"]         { color: #0467DF; }
+.stack__item iconify-icon[icon="simple-icons:googlegemini"] { color: #8E75B2; }
+
+/* Faixa de setores: leve tom de menta */
+.faixa { background: linear-gradient(180deg, #E9F3EF, #F8F5EE); }
+
+/* Blocos escuros com as luzes do logo */
+.bloco-escuro {
+  background-image:
+    radial-gradient(55% 120% at 100% 50%, rgba(0, 163, 145, .32), transparent 66%),
+    radial-gradient(40% 90% at 0% 100%, rgba(238, 75, 65, .18), transparent 70%),
+    radial-gradient(120% 90% at 0% 0%, rgba(255, 255, 255, .07), transparent 55%),
+    linear-gradient(155deg, #1E4443 0%, var(--ink) 50%, var(--ink-3) 100%);
+}
+.diagnostico__marca { opacity: .2; }

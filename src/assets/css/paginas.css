@@ -173,3 +173,23 @@ a.canal:hover strong { color: var(--teal-ink); }
 .legal-contato small { display: block; margin-top: .45rem; font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--subtle); line-height: 1.3; }
 .legal-contato strong, .legal-contato a { display: block; margin-top: .15rem; font-size: .95rem; }
 @media (max-width: 560px) { .legal-contato { grid-template-columns: 1fr; } }
+
+/* ---------- Cor nas páginas internas ---------- */
+/* Topo com a luz da cor da página (serviço) ou teal, subindo por trás do cabeçalho */
+.pag-topo { isolation: isolate; }
+.pag-topo::before {
+  content: ""; position: absolute; inset: calc(var(--nav-h) * -1) 0 0 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(48% 85% at 88% 25%, color-mix(in srgb, var(--cor, var(--teal)) 20%, transparent), transparent 70%),
+    radial-gradient(38% 60% at 4% 0%, color-mix(in srgb, var(--amber) 12%, transparent), transparent 70%);
+}
+/* Exemplos práticos: as quatro cores se revezam */
+.exemplos .exemplo:nth-child(4n+1) { --tinta: var(--teal); }
+.exemplos .exemplo:nth-child(4n+2) { --tinta: var(--coral); }
+.exemplos .exemplo:nth-child(4n+3) { --tinta: var(--amber); }
+.exemplos .exemplo:nth-child(4n+4) { --tinta: var(--ink-2); }
+/* Chips com o check na cor e leve lavagem */
+.chips li { border-color: color-mix(in srgb, var(--cor, var(--teal)) 26%, var(--line)); background: linear-gradient(180deg, #FFFFFF, color-mix(in srgb, var(--cor, var(--teal)) 7%, #FFFFFF)); box-shadow: var(--luz-topo), 0 6px 14px -10px color-mix(in srgb, var(--cor, var(--teal)) 60%, transparent); }
+/* Mídia "em breve" e formulário com sombra na cor */
+.midia { box-shadow: var(--luz-topo), 0 30px 60px -30px color-mix(in srgb, var(--cor, var(--teal)) 60%, rgba(16, 41, 42, .4)); }
+.form-cartao { box-shadow: var(--luz-topo), 0 30px 60px -30px rgba(0, 122, 108, .45); }

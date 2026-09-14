@@ -67,7 +67,8 @@
 }
 
 /* Papel de cor por serviço: o componente lê --cor / --cor-ink / --cor-light */
-.cor-teal  { --cor: var(--teal);  --cor-ink: var(--teal-ink);  --cor-light: var(--teal-light);  --cor-marca: var(--marca-teal); }
-.cor-coral { --cor: var(--coral); --cor-ink: var(--coral-ink); --cor-light: var(--coral-light); --cor-marca: var(--marca-coral); }
-.cor-amber { --cor: var(--amber); --cor-ink: var(--amber-ink); --cor-light: var(--amber-light); --cor-marca: var(--marca-amber); }
-.cor-ink   { --cor: var(--ink-2); --cor-ink: var(--ink);       --cor-light: #9FC2BD;             --cor-marca: var(--ink-2); }
+/* --cor-alto/--cor-baixo: degradê das peças sólidas; --cor-sobre: texto por cima delas */
+.cor-teal  { --cor: var(--teal);  --cor-ink: var(--teal-ink);  --cor-light: var(--teal-light);  --cor-marca: var(--marca-teal);  --cor-alto: #19BCA8; --cor-baixo: var(--teal-ink);  --cor-sobre: #fff; }
+.cor-coral { --cor: var(--coral); --cor-ink: var(--coral-ink); --cor-light: var(--coral-light); --cor-marca: var(--marca-coral); --cor-alto: #F6695F; --cor-baixo: var(--coral-ink); --cor-sobre: #fff; }
+.cor-amber { --cor: var(--amber); --cor-ink: var(--amber-ink); --cor-light: var(--amber-light); --cor-marca: var(--marca-amber); --cor-alto: #FFC46B; --cor-baixo: #E08A0B;          --cor-sobre: var(--ink); }
+.cor-ink   { --cor: var(--ink-2); --cor-ink: var(--ink);       --cor-light: #9FC2BD;             --cor-marca: var(--ink-2);       --cor-alto: #2F5E5B; --cor-baixo: var(--ink);       --cor-sobre: #fff; }
