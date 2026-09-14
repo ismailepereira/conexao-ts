@@ -72,9 +72,6 @@
   document.querySelectorAll('.desenha').forEach(function (svg) {
     requestAnimationFrame(function () { svg.classList.add('vivo'); });
   });
-  document.querySelectorAll('.hero--escuro').forEach(function (hero) {
-    requestAnimationFrame(function () { hero.classList.add('vivo'); });
-  });
   var mapa = document.querySelector('.mapa');
   if (mapa) {
     requestAnimationFrame(function () { mapa.classList.add('vivo'); });
